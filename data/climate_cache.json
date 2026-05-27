@@ -1,5 +1,5 @@
 {
-  "generated": null,
+  "generated": "2026-05-27T19:30:08.338Z",
   "baseline": "ERA5 / Open-Meteo archive, daily 2019-01-01 to 2023-12-31 aggregated to monthly summaries",
   "variables": [
     "tmax",
@@ -8,6 +8,6 @@
     "ah",
     "sr"
   ],
-  "source_note": "Placeholder. Use the Generate climate cache JSON button in About \u2192 Data Sources & Methodology to create a populated file.",
+  "source_note": "Generated in browser by SHIFT Atlas cache builder. Place this file at data/climate_cache.json in the GitHub repository.",
   "locations": {}
 }
