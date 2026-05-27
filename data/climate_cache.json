@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-27T19:30:08.338Z",
+  "generated": "2026-05-27T19:34:30.476Z",
   "baseline": "ERA5 / Open-Meteo archive, daily 2019-01-01 to 2023-12-31 aggregated to monthly summaries",
   "variables": [
     "tmax",
