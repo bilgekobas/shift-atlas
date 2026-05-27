@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Atlas of Vernacular Architecture"
+message: "If you use this atlas, please cite it as below."
+type: software
+authors:
+  - family-names: Kobas
+    given-names: Bilge
+  - family-names: Auer
+    given-names: Thomas
+institution: "Chair of Building Technology and Climate Responsive Design, Technical University of Munich"
+year: 2026
+url: "https://bilgekobas.github.io/shift-atlas"
+repository-code: "https://github.com/bilgekobas/shift-atlas"

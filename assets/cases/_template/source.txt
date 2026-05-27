@@ -1,0 +1,15 @@
+Image credits template
+
+hero.jpg
+Author / source:
+URL / publication:
+License:
+Date accessed:
+Can be redistributed on GitHub Pages? yes/no/unknown
+
+diagram.jpg
+Author / source:
+URL / publication:
+License:
+Date accessed:
+Can be redistributed on GitHub Pages? yes/no/unknown
