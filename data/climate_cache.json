@@ -1,0 +1,13 @@
+{
+  "generated": null,
+  "baseline": "ERA5 / Open-Meteo archive, daily 2019-01-01 to 2023-12-31 aggregated to monthly summaries",
+  "variables": [
+    "tmax",
+    "tmin",
+    "prec",
+    "ah",
+    "sr"
+  ],
+  "source_note": "Placeholder. Use the Generate climate cache JSON button in About \u2192 Data Sources & Methodology to create a populated file.",
+  "locations": {}
+}
