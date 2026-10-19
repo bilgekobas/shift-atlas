@@ -6,6 +6,9 @@
 <title>Atlas of Climate-Responsive Architecture</title>
 <style>/* required styles */
 
+/* A quiet map background keeps the architectural cases prominent. */
+.leaflet-tile.atlas-basemap { filter: grayscale(1) contrast(0.8) brightness(1.12); }
+
 .leaflet-pane,
 .leaflet-tile,
 .leaflet-marker-icon,
@@ -3312,21 +3315,16 @@ function initMap(){
   if(typeof L === 'undefined'){ setTimeout(initMap,100); return; }
   if(map) return;
   map = L.map('map',{center:[20,20],zoom:2,minZoom:1,maxZoom:10,zoomControl:false});
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',{
-    attribution:'&copy; OpenStreetMap &copy; CARTO',subdomains:'abcd',maxZoom:20
+  // Standard OSM tiles include labels and require no API key.
+  // Keep the filter scoped to this layer so markers and hillshade are unaffected.
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom:19,className:'atlas-basemap'
   }).addTo(map);
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}',{
     opacity:0.2,attribution:'Esri'
   }).addTo(map);
   L.control.zoom({position:'bottomright'}).addTo(map);
-  // Labels pane — above hillshade, below markers
-  map.createPane('labels');
-  map.getPane('labels').style.zIndex='450';
-  map.getPane('labels').style.pointerEvents='none';
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',{
-    pane:'labels',subdomains:'abcd',maxZoom:20,
-    attribution:''
-  }).addTo(map);
 
   // ── MARKERS ──────────────────────────────────────────────
   cases.forEach(c=>{
