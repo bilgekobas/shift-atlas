@@ -1,0 +1,17 @@
+src: assets/cases/07-wind-catcher-houses-badgir/01.jpg
+label: Overview
+caption: Courtyard and windcatcher in a traditional house in Yazd; the tower is shown with its architectural context.
+author: s1ingshot from Berlin, Germany
+title: Traditional persian architecture house & windcatcher (20934374478).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Traditional_persian_architecture_house_%26_windcatcher_(20934374478).jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 7
+caseName: Wind Catcher Houses (Badgir)
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Traditional_persian_architecture_house_%26_windcatcher_%2820934374478%29.jpg/960px-Traditional_persian_architecture_house_%26_windcatcher_%2820934374478%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: traditional persian architecture house & windcatcher
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,17 @@
+src: assets/cases/09-ghadam-s-old-town/01.jpg
+label: Overview
+caption: Covered pedestrian passage in the old town of Ghadamès, showing the deeply shaded settlement fabric.
+author: giomodica
+title: Ghadames - Le vie della città antica all'ombra - panoramio.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Ghadames_-_Le_vie_della_citt%C3%A0_antica_all%27ombra_-_panoramio.jpg
+license: CC BY 3.0
+licenseUrl: https://creativecommons.org/licenses/by/3.0
+isDiagram: False
+caseId: 9
+caseName: Ghadamès Old Town
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ghadames_-_Le_vie_della_citt%C3%A0_antica_all%27ombra_-_panoramio.jpg/960px-Ghadames_-_Le_vie_della_citt%C3%A0_antica_all%27ombra_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Ghadames - Le vie della città antica all'ombra
+width: 960
+height: 643
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

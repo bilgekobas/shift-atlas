@@ -1,0 +1,35 @@
+src: assets/cases/37-mashrabiya/01.jpg
+label: Overview
+caption: Projecting timber mashrabiya at Al-Sadat House, Cairo.
+author: Dr.EOMR
+title: "Mashrabiya" at Al-Sadat house in Cairo.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:%22Mashrabiya%22_at_Al-Sadat_house_in_Cairo.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 37
+caseName: Mashrabiya
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/%22Mashrabiya%22_at_Al-Sadat_house_in_Cairo.jpg/960px-%22Mashrabiya%22_at_Al-Sadat_house_in_Cairo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: "Mashrabiya" at Al-Sadat house in Cairo
+width: 960
+height: 1707
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/37-mashrabiya/02.jpg
+label: Detail
+caption: Mashrabiya viewed from inside Bayt al-Suhaymi, Cairo, showing lattice patterns and filtered light.
+author: Ahmed Al.Badawy from Cairo, Egypt
+title: Flickr - HuTect ShOts - Mashrabiya مشربية - Bayt Al-Suhaymi بيت السحيمي - Cairo - Egypt - 29 05 2010.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Flickr_-_HuTect_ShOts_-_Mashrabiya_%D9%85%D8%B4%D8%B1%D8%A8%D9%8A%D8%A9_-_Bayt_Al-Suhaymi_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A_-_Cairo_-_Egypt_-_29_05_2010.jpg
+license: CC BY-SA 2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0
+isDiagram: False
+caseId: 37
+caseName: Mashrabiya
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Flickr_-_HuTect_ShOts_-_Mashrabiya_%D9%85%D8%B4%D8%B1%D8%A8%D9%8A%D8%A9_-_Bayt_Al-Suhaymi_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A_-_Cairo_-_Egypt_-_29_05_2010.jpg/960px-Flickr_-_HuTect_ShOts_-_Mashrabiya_%D9%85%D8%B4%D8%B1%D8%A8%D9%8A%D8%A9_-_Bayt_Al-Suhaymi_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A_-_Cairo_-_Egypt_-_29_05_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Bayt Al-Suhaymi or the House of Suhaymi is an old Ottoman era house museum in Cairo, Egypt. It was originally built in 1648 by Abdel Wahab el Tablawy along the Darb al-Asfar, a very prestigious and expensive part of Medieval Cairo. In 1796 it was purchased by Sheikh Ahmed as-Suhaymi whose family held it for several subsequent generations. The Sheikh greatly extended the house from its original through incorporating neighbouring houses into its structure. More. en.wikipedia.org/wiki/Bayt_Al-Suhaymi www.egyptarch.com/historicalcairo/elsehamy/home.htm archnet.org/library/sites/one-site.jsp?site_id=3332 en.wikipedia.org/wiki/Mashrabiya
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

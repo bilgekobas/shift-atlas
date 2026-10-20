@@ -1,0 +1,35 @@
+src: assets/cases/10-rumah-panggung-stilt-houses/01.jpg
+label: Overview
+caption: Rumah Betang Sei Pasah, Kapuas, Kalimantan: raised timber longhouse and entrance stair.
+author: Mia Sulisnawati
+title: Rumah Betang Sei Pasah, Kapuas.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Rumah_Betang_Sei_Pasah,_Kapuas.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 10
+caseName: Rumah Panggung (Stilt Houses)
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Rumah_Betang_Sei_Pasah%2C_Kapuas.jpg/960px-Rumah_Betang_Sei_Pasah%2C_Kapuas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Rumah Betang Sei Pasah, Kapuas
+width: 960
+height: 960
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/10-rumah-panggung-stilt-houses/02.jpg
+label: Detail
+caption: Communal timber circulation space at Rumah Betang Ensaid Panjang, Sintang, Kalimantan.
+author: Zhilal Darma
+title: Rumah Betang Ensaid Panjang Sintang.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Rumah_Betang_Ensaid_Panjang_Sintang.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 10
+caseName: Rumah Panggung (Stilt Houses)
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Rumah_Betang_Ensaid_Panjang_Sintang.jpg/960px-Rumah_Betang_Ensaid_Panjang_Sintang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Bagian dalam Rumah Betang Ensaid Panjang Sintang
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

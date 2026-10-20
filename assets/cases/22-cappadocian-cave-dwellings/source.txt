@@ -1,0 +1,17 @@
+src: assets/cases/22-cappadocian-cave-dwellings/01.png
+label: Overview
+caption: Cappadocian rock-cut settlement and stone-built additions; broad view of the dwelling landscape.
+author: Farhat0217
+title: Cappadocia cave houses.png
+sourceUrl: https://commons.wikimedia.org/wiki/File:Cappadocia_cave_houses.png
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 22
+caseName: Cappadocian Cave Dwellings
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Cappadocia_cave_houses.png/960px-Cappadocia_cave_houses.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: cave houses
+width: 960
+height: 1193
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

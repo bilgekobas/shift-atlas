@@ -1,0 +1,35 @@
+src: assets/cases/01-schwarzwaldhaus/01.jpg
+label: Overview
+caption: Thick thatched roof and low eaves of the Vogtsbauernhof farmhouse, Gutach, Black Forest.
+author: H. Zell
+title: Vogtsbauernhof Gutach.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Vogtsbauernhof_Gutach.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 1
+caseName: Schwarzwaldhaus
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Vogtsbauernhof_Gutach.jpg/960px-Vogtsbauernhof_Gutach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: The Vogtsbauernhof farmhouse, Black Forest Open Air Museum, Gutach, Black Forest, Germany. The farmhouse was built in 1612.
+width: 960
+height: 668
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/01-schwarzwaldhaus/02.jpg
+label: Detail
+caption: Timber-lined farmhouse room at the Lorenzhof; a second Black Forest farmhouse example.
+author: Colin Smith on geo.hlipp.de
+title: Lorenzhof, Bauernstube (Farmhouse Room) - geo.hlipp.de - 22741.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Lorenzhof,_Bauernstube_(Farmhouse_Room)_-_geo.hlipp.de_-_22741.jpg
+license: CC BY-SA 2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0
+isDiagram: False
+caseId: 1
+caseName: Schwarzwaldhaus
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/2/2a/Lorenzhof%2C_Bauernstube_%28Farmhouse_Room%29_-_geo.hlipp.de_-_22741.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Lorenzhof, Bauernstube (Farmhouse Room)
+width: 640
+height: 480
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

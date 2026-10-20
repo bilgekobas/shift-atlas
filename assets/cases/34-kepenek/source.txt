@@ -1,0 +1,17 @@
+src: assets/cases/34-kepenek/01.jpg
+label: Overview
+caption: A kepenek maker working felt, showing the local material-making process rather than a generic garment portrait.
+author: Şevki karaca
+title: Kepenek ustasi.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Kepenek_ustasi.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 34
+caseName: Kepenek
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Kepenek_ustasi.jpg/960px-Kepenek_ustasi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: balıkesir koyun yunu ile yapılan coban kepenkleri ustanın ellerinde sanata donerken.
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

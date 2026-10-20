@@ -1,0 +1,17 @@
+src: assets/cases/24-musgum-earthen-shells/01.jpg
+label: Overview
+caption: Ribbed earthen Musgum shell house at Pouss, Cameroon; the wall texture and catenary form are visible.
+author: Colibryus (Bruno Trédez)
+title: Cam0491 Habitation de Pouss.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Cam0491_Habitation_de_Pouss.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 24
+caseName: Musgum Earthen Shells
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Cam0491_Habitation_de_Pouss.jpg/960px-Cam0491_Habitation_de_Pouss.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Habitation mousgoum de Pouss dans l’extrême nord ; l'arrière
+width: 960
+height: 610
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

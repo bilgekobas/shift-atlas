@@ -1,0 +1,17 @@
+src: assets/cases/56-cairo-salsabil-courtyard-cooling/01.jpg
+label: Overview
+caption: Salsabil water chute inside the Sabil-kuttab of Qaytbay, Cairo. Comparative Cairo component example, not the mapped domestic courtyard.
+author: Robert Prazeres
+title: Qaytbay sabil interior salsabil.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Qaytbay_sabil_interior_salsabil.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 56
+caseName: Cairo Salsabil Courtyard Cooling
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Qaytbay_sabil_interior_salsabil.jpg/960px-Qaytbay_sabil_interior_salsabil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Sabil-kuttab of Sultan Qaytbay (1479). Salsabil inside the sabil chamber.
+width: 960
+height: 1280
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

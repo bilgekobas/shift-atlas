@@ -1,0 +1,17 @@
+src: assets/cases/20-ahmedabad-pol-houses/01.jpg
+label: Overview
+caption: Carved timber façades and projecting upper galleries of a pol house in Ahmedabad.
+author: Riyas16
+title: Pol House of Ahmedabad 02.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Pol_House_of_Ahmedabad_02.jpg
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0
+isDiagram: False
+caseId: 20
+caseName: Ahmedabad Pol Houses
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pol_House_of_Ahmedabad_02.jpg/960px-Pol_House_of_Ahmedabad_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Colonial style Pol House in Old Ahmedabad
+width: 960
+height: 1280
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

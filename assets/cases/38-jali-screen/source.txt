@@ -1,0 +1,35 @@
+src: assets/cases/38-jali-screen/01.jpg
+label: Overview
+caption: Perforated stone screen at Amber Fort, Rajasthan; a documented regional jali example.
+author: Michael Day
+title: Amber Fort Screen (6652771501).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Amber_Fort_Screen_(6652771501).jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 38
+caseName: Jali Screen
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Amber_Fort_Screen_%286652771501%29.jpg/960px-Amber_Fort_Screen_%286652771501%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Rajasthan
+width: 960
+height: 1440
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/38-jali-screen/02.jpg
+label: Detail
+caption: Jali screen at Mehrangarh Fort, Rajasthan, viewed from inside.
+author: Girishathreya
+title: Jalli screen work of mehrangarh fort.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Jalli_screen_work_of_mehrangarh_fort.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 38
+caseName: Jali Screen
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Jalli_screen_work_of_mehrangarh_fort.jpg/960px-Jalli_screen_work_of_mehrangarh_fort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Jali screen work at Mehrangarh Fort
+width: 960
+height: 1707
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

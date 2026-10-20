@@ -1,0 +1,17 @@
+src: assets/cases/50-c-rdoba-patio/01.jpg
+label: Overview
+caption: Planted patio in Córdoba, showing the enclosed garden court, paving and perimeter planting.
+author: Toxicosmos76
+title: Cordoba patio 25.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Cordoba_patio_25.jpg
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0
+isDiagram: False
+caseId: 50
+caseName: Córdoba Patio
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/7/79/Cordoba_patio_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Family patio in Cordoba, southern Spain
+width: 901
+height: 1600
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

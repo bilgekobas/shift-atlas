@@ -1,0 +1,17 @@
+src: assets/cases/11-mekong-delta-vernacular/01.jpg
+label: Overview
+caption: Timber waterfront dwellings on the Bassac River at Châu Đốc in the Vietnamese Mekong Delta.
+author: Vyacheslav Argenberg
+title: Vietnam, Chau Doc, Houses on Bassac River.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Vietnam,_Chau_Doc,_Houses_on_Bassac_River.jpg
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0
+isDiagram: False
+caseId: 11
+caseName: Mekong Delta Vernacular
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Vietnam%2C_Chau_Doc%2C_Houses_on_Bassac_River.jpg/960px-Vietnam%2C_Chau_Doc%2C_Houses_on_Bassac_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Vietnam, Châu Đốc, a city in the heart of the Mekong Delta bordering Cambodia.
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

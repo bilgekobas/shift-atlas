@@ -1,0 +1,35 @@
+src: assets/cases/23-norwegian-laftehus-farmstead/01.jpg
+label: Overview
+caption: Log-built farm buildings at Mølstertunet, Voss, Western Norway.
+author: Odd Roar Aalborg
+title: Voss - litt av Mølstertunet.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Voss_-_litt_av_M%C3%B8lstertunet.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 23
+caseName: Norwegian Laftehus Farmstead
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Voss_-_litt_av_M%C3%B8lstertunet.jpg/960px-Voss_-_litt_av_M%C3%B8lstertunet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: This is a photo of a monument in Norway, number: 87229 in the Norwegian Directorate for Cultural Heritage database.
+width: 960
+height: 565
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/23-norwegian-laftehus-farmstead/02.jpg
+label: Detail
+caption: Close view of log construction and turf roof at Mølstertunet, Voss.
+author: Svein Harkestad
+title: Mølstertunet.JPG
+sourceUrl: https://commons.wikimedia.org/wiki/File:M%C3%B8lstertunet.JPG
+license: CC BY-SA 3.0
+licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
+isDiagram: False
+caseId: 23
+caseName: Norwegian Laftehus Farmstead
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/M%C3%B8lstertunet.JPG/960px-M%C3%B8lstertunet.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Mølstertunet, Voss This is a photo of a monument in Norway, number: 87229 in the Norwegian Directorate for Cultural Heritage database.
+width: 960
+height: 1283
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

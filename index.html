@@ -696,6 +696,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background:rgba(0,0,0,.4);padding:5px 14px;border-radius:12px;
 }
 .ph-mainimg{cursor:zoom-in}
+.atlas-image-credit{padding:10px 18px;font-size:11px;line-height:1.5;color:#555;background:#fff;border-bottom:1px solid var(--border);}
+.atlas-image-credit:empty{display:none}
+.atlas-image-credit a{color:inherit;text-decoration:underline}
+.modal-body.atlas-case-reader .ph-mainimg{object-fit:contain;background:#ecebe6}
 
 
 .panel-header{
@@ -1544,6 +1548,7 @@ if (typeof L !== 'undefined') {
 //# sourceMappingURL=chart.umd.js.map
 
 </script>
+<script src="data/case-images.js"></script>
 <script>
 // Resolve deferred image references
 function resolveImg(src){
@@ -3843,17 +3848,37 @@ function setGalleryImage(idx){
   document.querySelectorAll('.gthumb').forEach((t,i)=>t.classList.toggle('active',i===idx));
 }
 
+// Curated local photographs take priority over legacy placeholder paths.
+// An explicit empty list means documentation is still needed for that case.
+function caseImageRecords(c){
+  const curated=window.ATLAS_CASE_IMAGES||{};
+  return Object.prototype.hasOwnProperty.call(curated,c.id)?curated[c.id]:(c.imgs||[]);
+}
+function imageText(value){
+  return String(value||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+function imageCreditHTML(img){
+  if(!img)return '';
+  const caption=img.caption||img.label||'';
+  const credit=img.author?`Image: ${imageText(img.author)}`:'';
+  const source=img.sourceUrl?`${credit}${credit?' · ':''}<a href="${imageText(img.sourceUrl)}" target="_blank" rel="noopener">${imageText(img.title||'Image source')}</a>`:credit;
+  const license=img.licenseUrl?`<a href="${imageText(img.licenseUrl)}" target="_blank" rel="noopener">${imageText(img.license)}</a>`:imageText(img.license);
+  return `${imageText(caption)}${source?`<br>${source}`:''}${license?` · ${license}`:''}`;
+}
+async function loadCaseGallery(c){
+  const records=caseImageRecords(c).filter(img=>img.src).map(img=>({...img,src:resolveImg(img.src)}));
+  const checked=await Promise.all(records.map(img=>new Promise(resolve=>{
+    const probe=new Image();
+    const timer=setTimeout(()=>resolve(null),12000);
+    probe.onload=()=>{clearTimeout(timer);resolve(img);};
+    probe.onerror=()=>{clearTimeout(timer);resolve(null);};
+    probe.src=img.src;
+  })));
+  return checked.filter(Boolean);
+}
+
 async function buildGallery(c,color){
-  galleryImages=[];
-  if(c.imgs&&c.imgs.length>0){
-    // Student case: embedded images
-    c.imgs.forEach(img=>{ if(img.src&&(img.src.startsWith('data:')||img.src.startsWith('__IMG_')||img.src.startsWith('http'))&&img.src.length>8) galleryImages.push({...img, src:resolveImg(img.src)}); });
-  } else if(c.wikiTitle){
-    // Atlas case: fetch from Wikipedia
-    const src=await loadWikiImage(c.wikiTitle);
-    if(src) galleryImages.push({src,label:'Photograph',isDiagram:false});
-    else galleryImages.push({src:'',label:'No image',isDiagram:false});
-  }
+  galleryImages=await loadCaseGallery(c);
   
   // Render gallery
   const strip=document.getElementById('gallery-strip');
@@ -4306,13 +4331,8 @@ async function openPanel(c){
   const hasPdf=c.hasPdf;
   const refsHtml=(c.refs||[]).map(r=>`<li>${linkifyRefs(r)}</li>`).join('');
 
-  let galleryImgs=[];
-  if(c.imgs&&c.imgs.length>0){
-    galleryImgs=c.imgs.filter(img=>img.src&&img.src.length>4).map(img=>({...img,src:resolveImg(img.src)}));
-  } else if(c.wikiTitle){
-    const wikiSrc=await loadWikiImage(c.wikiTitle);
-    if(wikiSrc)galleryImgs=[{src:wikiSrc,label:'Photograph',isDiagram:false}];
-  }
+  const galleryImgs=await loadCaseGallery(c);
+  if(activeCaseId!==c.id)return;
 
   const passportFields=[
     {k:'Location',v:c.location},
@@ -4358,12 +4378,13 @@ async function openPanel(c){
       <!-- LEFT: Gallery + Passport -->
       <div class="modal-left">
         <div class="ph" id="modal-ph" style="background:${color}33;min-height:200px;flex-shrink:0;position:relative;overflow:hidden">
-          ${mainImgSrc?`<img id="modal-main-img" class="ph-mainimg" src="${mainImgSrc}" alt=""
+          ${mainImgSrc?`<img id="modal-main-img" class="ph-mainimg" src="${mainImgSrc}" alt="${imageText(galleryImgs[0].caption||galleryImgs[0].label||c.name)}"
             onclick="openLightbox(this.src,'${c.name}')" title="Click to enlarge">`
-            :`<div style="height:200px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,0,0,.3)">Loading…</div>`}
+            :`<div style="height:200px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:rgba(0,0,0,.55);padding:24px;text-align:center">Case-specific image documentation pending</div>`}
           <div class="ph-overlay"></div>
         </div>
         ${thumbsHtml?`<div class="gallery-strip" id="modal-gallery-strip" style="display:flex">${thumbsHtml}</div>`:''}
+        <div id="modal-image-credit" class="atlas-image-credit">${imageCreditHTML(galleryImgs[0])}</div>
         <div class="case-passport-title">Case Passport</div>
         <div class="passport">
           ${[
@@ -4583,8 +4604,11 @@ function modalGallerySet(idx){
   const mainImg=document.getElementById('modal-main-img');
   if(mainImg){
     mainImg.src=imgs[idx].src;
+    mainImg.alt=imgs[idx].caption||imgs[idx].label||'';
     mainImg.onclick=()=>openLightbox(imgs[idx].src,imgs[idx].label||'');
   }
+  const credit=document.getElementById('modal-image-credit');
+  if(credit)credit.innerHTML=imageCreditHTML(imgs[idx]);
   document.querySelectorAll('.gthumb[data-gi]').forEach(t=>{
     t.classList.toggle('active',parseInt(t.dataset.gi)===idx);
   });

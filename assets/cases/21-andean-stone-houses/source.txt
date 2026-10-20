@@ -1,0 +1,17 @@
+src: assets/cases/21-andean-stone-houses/01.jpg
+label: Overview
+caption: Historic Quechua farmstead in the Saqui valley, Peru, photographed by Erland Nordenskiöld. Typological comparison, not an identified Cusco case.
+author: Erland Nordenskiöld
+title: Quichuagård. Saquidalen, Sydamerika. Peru - SMVK - 002531.tif
+sourceUrl: https://commons.wikimedia.org/wiki/File:Quichuag%C3%A5rd._Saquidalen,_Sydamerika._Peru_-_SMVK_-_002531.tif
+license: Public domain
+licenseUrl: https://creativecommons.org/publicdomain/mark/1.0/
+isDiagram: False
+caseId: 21
+caseName: Andean Stone Houses
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Quichuag%C3%A5rd._Saquidalen%2C_Sydamerika._Peru_-_SMVK_-_002531.tif/lossy-page1-960px-Quichuag%C3%A5rd._Saquidalen%2C_Sydamerika._Peru_-_SMVK_-_002531.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Note: For documentary purposes the original description provided by the National Museums of World Culture has been retained. These historical descriptions may be factually incorrect, outdated or offensive. Alternative descriptions are encouraged separately from the original description. Additionally errors can be reported at this page . Quichuagård Plats : Peru (land); Saquidalen, Sydamerika (annan) Etnisk grupp : quichua Motivord : bebyggelse, gård Sökord : hus
+width: 960
+height: 755
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,17 @@
+src: assets/cases/19-moroccan-riad/01.jpg
+label: Overview
+caption: Courtyard planting, arcades and water basin at Riad Leila, Marrakech; contemporary view of the riad form.
+author: Flickr user: sdbj https://www.flickr.com/photos/sdbj/84520698/
+title: Riad Leila - Marrakech - Maroc - Mai 2005.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Riad_Leila_-_Marrakech_-_Maroc_-_Mai_2005.jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 19
+caseName: Moroccan Riad
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/3/32/Riad_Leila_-_Marrakech_-_Maroc_-_Mai_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Riad, Location: Marrakech
+width: 390
+height: 306
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

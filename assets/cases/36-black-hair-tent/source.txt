@@ -1,0 +1,17 @@
+src: assets/cases/36-black-hair-tent/01.jpg
+label: Overview
+caption: Qashqai black tent in Isfahan Province, Iran: woven tent covering, tension ropes and low enclosure.
+author: ninara
+title: A Qashqai nomad tent in Isfahan Province.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:A_Qashqai_nomad_tent_in_Isfahan_Province.jpg
+license: CC BY-SA 2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0
+isDiagram: False
+caseId: 36
+caseName: Black Hair Tent
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/A_Qashqai_nomad_tent_in_Isfahan_Province.jpg/960px-A_Qashqai_nomad_tent_in_Isfahan_Province.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: یک سیاه‌چادر مردمان قشقایی در شهرستان سمیرم استان اصفهان
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

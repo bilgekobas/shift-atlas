@@ -1,0 +1,17 @@
+src: assets/cases/44-lhasa-storey-building/01.jpg
+label: Overview
+caption: Multi-storey traditional façade and projecting eaves in Lhasa Old Town; a typological street view, not a surveyed individual house.
+author: Andrew and Annemarie
+title: Building and Street in Lhasa Old Town on 19 May 2014.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Building_and_Street_in_Lhasa_Old_Town_on_19_May_2014.jpg
+license: CC BY-SA 2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0
+isDiagram: False
+caseId: 44
+caseName: Lhasa Storey Building
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Building_and_Street_in_Lhasa_Old_Town_on_19_May_2014.jpg/960px-Building_and_Street_in_Lhasa_Old_Town_on_19_May_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Building and Street in Lhasa Old Town on 19 May 2014
+width: 960
+height: 638
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

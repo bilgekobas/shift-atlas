@@ -1,0 +1,35 @@
+src: assets/cases/40-capiz-shell-window/01.jpg
+label: Overview
+caption: Capiz-shell window in the former provincial jail, Vigan; the translucent shell panels are visible.
+author: ShiminUfesoj
+title: Old Capiz Window in Old provincial jail of Vigan.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Old_Capiz_Window_in_Old_provincial_jail_of_Vigan.jpg
+license: CC0
+licenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+isDiagram: False
+caseId: 40
+caseName: Capiz Shell Window
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Old_Capiz_Window_in_Old_provincial_jail_of_Vigan.jpg/960px-Old_Capiz_Window_in_Old_provincial_jail_of_Vigan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: A capiz window in the NMP in Ilocos region
+width: 960
+height: 2133
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/40-capiz-shell-window/02.jpg
+label: Detail
+caption: Capiz window façade of the Café Leona building, Vigan.
+author: Carlo Joseph Moskito
+title: Cafe Leona Building 1.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Cafe_Leona_Building_1.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 40
+caseName: Capiz Shell Window
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Cafe_Leona_Building_1.jpg/960px-Cafe_Leona_Building_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Facade of Cafe Leona Building
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,35 @@
+src: assets/cases/58-dolat-abad-windcatcher/01.jpg
+label: Overview
+caption: Windcatcher pavilion and garden water axis at Dowlat Abad, Yazd.
+author: Seyedhosseini
+title: Dowlat Abad Garden-Yazd.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Dowlat_Abad_Garden-Yazd.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 58
+caseName: Dolat Abad Windcatcher
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Dowlat_Abad_Garden-Yazd.jpg/960px-Dowlat_Abad_Garden-Yazd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: This is a photo of a monument in Iran identified by the ID
+width: 960
+height: 632
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/58-dolat-abad-windcatcher/02.jpg
+label: Detail
+caption: Interior pool and lattice windows of the Dowlat Abad pavilion, showing the water-and-building relationship.
+author: Hadi Karimi
+title: Dowlat Abad Garden Hadi Karimi.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Dowlat_Abad_Garden_Hadi_Karimi.jpg
+license: CC BY 3.0
+licenseUrl: https://creativecommons.org/licenses/by/3.0
+isDiagram: False
+caseId: 58
+caseName: Dolat Abad Windcatcher
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Dowlat_Abad_Garden_Hadi_Karimi.jpg/960px-Dowlat_Abad_Garden_Hadi_Karimi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: پنجره مشبک با شیشه‌های رنگی، نمونه معماری داخلی ایرانی در باغ دولت‌آباد یزد باغ دولت آباد از باغهای قدیمی شهر یزد در کشور ایران و هم ردیف باغ فین در کاشان و باغ شاهزاده ماهان در کرمان میباشد. بادگیر عمارت بادگیر آن با ارتفاع ۳۳/۸ متر بلندترین بادگیر خشتی شناخته شده در جهان است. این باغ در تاریخ ۱۳۴۶/۱۲/۲۳ به شماره ۷۷۴ در ردیف آثار ملی ایران قرار گرفته است. و همچنین یکی از باغهای ایرانی ثبت شده در میراث جهانی توسط یونسکو است.
+width: 960
+height: 1934
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

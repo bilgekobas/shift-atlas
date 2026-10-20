@@ -1,0 +1,35 @@
+src: assets/cases/42-thinnai/01.jpg
+label: Overview
+caption: Thinnai-palli school frontage at Perambur, Tamil Nadu, showing the tiled roof and raised covered edge.
+author: Destination8infinity
+title: Perambur-Heritage-Walk-JRET-Raghava-Middle-School-Thinnai-Palli.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Perambur-Heritage-Walk-JRET-Raghava-Middle-School-Thinnai-Palli.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 42
+caseName: Thinnai
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Perambur-Heritage-Walk-JRET-Raghava-Middle-School-Thinnai-Palli.jpg/960px-Perambur-Heritage-Walk-JRET-Raghava-Middle-School-Thinnai-Palli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Perambur-Heritage-Walk-JRET-Raghava-Middle-School-Thinnai-Palli
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/42-thinnai/02.jpg
+label: Detail
+caption: Covered verandah around a Chettinad courtyard at Athangudi. Comparative threshold construction, not a street-facing thinnai.
+author: Koshy Koshy from Faridabad, Haryana, India
+title: Splendor of Chettinad (4732589451).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Splendor_of_Chettinad_(4732589451).jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 42
+caseName: Thinnai
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/3/32/Splendor_of_Chettinad_%284732589451%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Verandah of the open courtyard in a Chettiyar house in Attangudi. Traditional Chettinad houses have at least two open courtyards with covered verandahs running around them. The first such courtyard is the most elaborate and is the living quarters of married sons, each of whom is allotted a suit of rooms opening into the verandah.
+width: 854
+height: 1178
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

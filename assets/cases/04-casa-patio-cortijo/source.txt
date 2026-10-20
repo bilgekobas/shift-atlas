@@ -1,0 +1,17 @@
+src: assets/cases/04-casa-patio-cortijo/01.jpg
+label: Overview
+caption: Planted domestic patio in Córdoba, illustrating the Andalusian courtyard-house tradition.
+author: John Martin PERRY
+title: Cordoba patio 2.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Cordoba_patio_2.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 4
+caseName: Casa Patio / Cortijo
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Cordoba_patio_2.jpg/960px-Cordoba_patio_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Cordoba patio. Many pots of flowers hanging on the wall. Mostly blue or red flowers, occasionally white or yellow
+width: 960
+height: 1440
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,17 @@
+src: assets/cases/06-sassi-di-matera/01.jpg
+label: Overview
+caption: Stone façades integrated into the rock-cut Sassi settlement, Matera.
+author: Velvet
+title: Matera maisons sassi.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Matera_maisons_sassi.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 6
+caseName: Sassi di Matera
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Matera_maisons_sassi.jpg/960px-Matera_maisons_sassi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Houses in the Sassi di Matera, Italy
+width: 960
+height: 461
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

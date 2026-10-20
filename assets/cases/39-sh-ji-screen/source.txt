@@ -1,0 +1,35 @@
+src: assets/cases/39-sh-ji-screen/01.jpg
+label: Overview
+caption: Shōji screens and timber interior at Tenryū-ji, Kyoto.
+author: Masahiro Hayata
+title: Shoji Doors at Tenryu-ji.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Shoji_Doors_at_Tenryu-ji.jpg
+license: CC BY-SA 2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0
+isDiagram: False
+caseId: 39
+caseName: Shōji Screen
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Shoji_Doors_at_Tenryu-ji.jpg/960px-Shoji_Doors_at_Tenryu-ji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: <a href=" http://clip.alpslab.jp/bin/rd?flickr=372005838 " target="_blank">[MAP]</a>
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/39-sh-ji-screen/02.jpg
+label: Detail
+caption: Shōji beside an interior threshold at Kaisuian; a comparative Japanese screen detail.
+author: TANAKA Juuyoh (田中十洋) , cropped by User:HLHJ
+title: Kaisuian Interior window crop.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Kaisuian_Interior_window_crop.jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 39
+caseName: Shōji Screen
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Kaisuian_Interior_window_crop.jpg/960px-Kaisuian_Interior_window_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: 江戸東京たてもの園の会水庵の室内。
+width: 960
+height: 1689
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

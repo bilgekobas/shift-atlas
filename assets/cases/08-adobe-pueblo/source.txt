@@ -1,0 +1,17 @@
+src: assets/cases/08-adobe-pueblo/01.jpg
+label: Overview
+caption: Adobe walls, roof access and external ladder at Taos Pueblo, New Mexico.
+author: Aaron Zhu
+title: Adobe in blue, Taos Pueblo, NM - panoramio.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Adobe_in_blue,_Taos_Pueblo,_NM_-_panoramio.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 8
+caseName: Adobe Pueblo
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Adobe_in_blue%2C_Taos_Pueblo%2C_NM_-_panoramio.jpg/960px-Adobe_in_blue%2C_Taos_Pueblo%2C_NM_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Adobe in blue, Taos Pueblo, NM
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

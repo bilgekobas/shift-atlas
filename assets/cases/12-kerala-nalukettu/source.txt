@@ -1,0 +1,35 @@
+src: assets/cases/12-kerala-nalukettu/01.jpg
+label: Overview
+caption: Paliam Nalukettu, Kerala: tiled roof, timber upper storey and shaded perimeter.
+author: Vivin at English Wikipedia
+title: Paliam naalukettu.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Paliam_naalukettu.jpg
+license: CC BY-SA 3.0
+licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
+isDiagram: False
+caseId: 12
+caseName: Kerala Nalukettu
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/a/a1/Paliam_naalukettu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Paliam Naalukettu (5/2006) -- Vivin Paliath (വിവി൯ പാലിയത്) 17:18, 13 January 2007 (UTC)
+width: 480
+height: 360
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/12-kerala-nalukettu/02.jpg
+label: Detail
+caption: Covered timber verandah of a nalukettu, Kerala; detail of the shaded circulation edge.
+author: Sankarkeloth
+title: Varanda nalukettu.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Varanda_nalukettu.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 12
+caseName: Kerala Nalukettu
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Varanda_nalukettu.jpg/960px-Varanda_nalukettu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: നാലുകെട്ടിന് മുമ്പിലെ നീളന്‍ വരാന്ത
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

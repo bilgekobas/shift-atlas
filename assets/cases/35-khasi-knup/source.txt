@@ -1,0 +1,17 @@
+src: assets/cases/35-khasi-knup/01.jpg
+label: Overview
+caption: A Khasi knup worn during the monsoon in Sohra, Meghalaya; the rain-shield form is visible in use.
+author: Wann Majaw
+title: Monsoon in Sohra.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Monsoon_in_Sohra.jpg
+license: CC0
+licenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+isDiagram: False
+caseId: 35
+caseName: Khasi Knup
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Monsoon_in_Sohra.jpg/960px-Monsoon_in_Sohra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: A person wearing a 'Knup' used by Khasi people as a means of protection form heavy rain during monsoon season.
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

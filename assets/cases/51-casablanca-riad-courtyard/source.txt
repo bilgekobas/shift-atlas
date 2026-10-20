@@ -1,0 +1,17 @@
+src: assets/cases/51-casablanca-riad-courtyard/01.jpg
+label: Overview
+caption: Vine-covered courtyard at Dar Khalifa, Casablanca.
+author: Secretum Mundi
+title: Courtyard at Dar Khalifa.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Courtyard_at_Dar_Khalifa.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 51
+caseName: Casablanca Riad Courtyard
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Courtyard_at_Dar_Khalifa.jpg/960px-Courtyard_at_Dar_Khalifa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Courtyard with vines at Dar Khalifa, Casablanca
+width: 960
+height: 960
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

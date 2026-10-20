@@ -1,0 +1,17 @@
+src: assets/cases/14-icelandic-turf-house-torfb-r/01.jpg
+label: Overview
+caption: Earth- and turf-covered building envelopes at Glaumbær open-air museum, Iceland.
+author: Jakub Hałun
+title: Turf houses in Glaumbær open-air museum, Iceland, 20240715 1430 0924.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Turf_houses_in_Glaumb%C3%A6r_open-air_museum,_Iceland,_20240715_1430_0924.jpg
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0
+isDiagram: False
+caseId: 14
+caseName: Icelandic Turf House (Torfbær)
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Turf_houses_in_Glaumb%C3%A6r_open-air_museum%2C_Iceland%2C_20240715_1430_0924.jpg/960px-Turf_houses_in_Glaumb%C3%A6r_open-air_museum%2C_Iceland%2C_20240715_1430_0924.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Turf houses in Glaumbær open-air museum, Iceland
+width: 960
+height: 637
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

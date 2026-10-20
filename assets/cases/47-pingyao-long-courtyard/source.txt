@@ -1,0 +1,17 @@
+src: assets/cases/47-pingyao-long-courtyard/01.jpg
+label: Overview
+caption: Traditional courtyard accommodation in Pingyao, with galleries around the open court. Typological example, not a surveyed long-house plan.
+author: Bbb0777
+title: Pingyao, China Courtyard.JPG
+sourceUrl: https://commons.wikimedia.org/wiki/File:Pingyao,_China_Courtyard.JPG
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 47
+caseName: Pingyao Long Courtyard
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/b/b7/Pingyao%2C_China_Courtyard.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Courtyard of traditional accommodation in Pingyao, China
+width: 912
+height: 684
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

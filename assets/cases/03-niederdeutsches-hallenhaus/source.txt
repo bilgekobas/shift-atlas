@@ -1,0 +1,35 @@
+src: assets/cases/03-niederdeutsches-hallenhaus/01.jpg
+label: Overview
+caption: Thatched Hallenhaus in Husum: broad roof, timber frame and large central entrance.
+author: Jan oe meier
+title: Niederdeutsches Hallenhaus in Husum.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Niederdeutsches_Hallenhaus_in_Husum.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 3
+caseName: Niederdeutsches Hallenhaus
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Niederdeutsches_Hallenhaus_in_Husum.jpg/960px-Niederdeutsches_Hallenhaus_in_Husum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Ostenfelder Bauernhaus, Standort Husum, Nordfriesland.
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/03-niederdeutsches-hallenhaus/02.jpg
+label: Detail
+caption: Large farm entrance and brick-and-timber gable of a former farmhouse in Ekern, Lower Saxony.
+author: JoachimKohler-HB
+title: Giebelseite eine ehem. Bauernhauses in Ekern (Bad Zwischenahn).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Giebelseite_eine_ehem._Bauernhauses_in_Ekern_(Bad_Zwischenahn).jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 3
+caseName: Niederdeutsches Hallenhaus
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Giebelseite_eine_ehem._Bauernhauses_in_Ekern_%28Bad_Zwischenahn%29.jpg/960px-Giebelseite_eine_ehem._Bauernhauses_in_Ekern_%28Bad_Zwischenahn%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Former farmhouse in Ekern, Lower Saxony
+width: 960
+height: 1200
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

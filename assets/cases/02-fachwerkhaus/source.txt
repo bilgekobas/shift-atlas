@@ -1,0 +1,17 @@
+src: assets/cases/02-fachwerkhaus/01.jpg
+label: Overview
+caption: Exposed timber framing and projecting upper storey, Obergasse 11, Alsfeld, Hesse.
+author: Krzysztof Golik
+title: Obergasse 11 in Alsfeld.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Obergasse_11_in_Alsfeld.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 2
+caseName: Fachwerkhaus
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Obergasse_11_in_Alsfeld.jpg/960px-Obergasse_11_in_Alsfeld.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Building at Obergasse 11 in Alsfeld, Hesse, Germany
+width: 960
+height: 1606
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

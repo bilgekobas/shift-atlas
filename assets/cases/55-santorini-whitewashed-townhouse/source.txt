@@ -1,0 +1,17 @@
+src: assets/cases/55-santorini-whitewashed-townhouse/01.jpg
+label: Overview
+caption: Whitewashed masonry buildings and compact settlement form in Oia, Santorini.
+author: Radek Kucharski from Warsaw, Poland
+title: White houses of Oia on Santorini (52181448879).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:White_houses_of_Oia_on_Santorini_(52181448879).jpg
+license: CC BY 2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0
+isDiagram: False
+caseId: 55
+caseName: Santorini Whitewashed Townhouse
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/White_houses_of_Oia_on_Santorini_%2852181448879%29.jpg/960px-White_houses_of_Oia_on_Santorini_%2852181448879%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: White houses of Oia on Santorini
+width: 960
+height: 540
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

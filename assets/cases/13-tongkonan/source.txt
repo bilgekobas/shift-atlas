@@ -1,0 +1,17 @@
+src: assets/cases/13-tongkonan/01.jpg
+label: Overview
+caption: Elevated tongkonan houses with projecting saddle roofs, Toraja, Sulawesi.
+author: RianHS
+title: Tongkonan, Toraja houses (3).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tongkonan,_Toraja_houses_(3).jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 13
+caseName: Tongkonan
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Tongkonan%2C_Toraja_houses_%283%29.jpg/960px-Tongkonan%2C_Toraja_houses_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Rumah tongkonan di Toraja, Indonesia
+width: 960
+height: 1280
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

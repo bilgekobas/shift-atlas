@@ -1,0 +1,17 @@
+src: assets/cases/54-dammuso/01.jpg
+label: Overview
+caption: Traditional dammusi on Pantelleria, showing thick stone walls and shallow domed roofs.
+author: Mediterranean.web
+title: Antichi-dammusi.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Antichi-dammusi.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 54
+caseName: Dammuso
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/c/c4/Antichi-dammusi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Pantelleria, Dammusi
+width: 450
+height: 344
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

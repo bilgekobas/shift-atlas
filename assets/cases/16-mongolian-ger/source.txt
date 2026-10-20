@@ -1,0 +1,17 @@
+src: assets/cases/16-mongolian-ger/01.jpg
+label: Overview
+caption: Mongolian ger displayed in a museum, showing the felt covering, circular form and door assembly.
+author: Gary Todd
+title: Mongolian Traditional Home - Ger (Yurt).jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Mongolian_Traditional_Home_-_Ger_(Yurt).jpg
+license: CC0
+licenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+isDiagram: False
+caseId: 16
+caseName: Mongolian Ger
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Mongolian_Traditional_Home_-_Ger_%28Yurt%29.jpg/960px-Mongolian_Traditional_Home_-_Ger_%28Yurt%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Mongolian Traditional Life Gallery, National Museum of Mongolia, Ulaanbaatar. Complete indexed photo collection at WorldHistoryPics.com.
+width: 960
+height: 640
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

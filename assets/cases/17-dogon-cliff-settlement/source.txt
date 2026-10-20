@@ -1,0 +1,17 @@
+src: assets/cases/17-dogon-cliff-settlement/01.jpg
+label: Overview
+caption: Earthen buildings clustered below the Bandiagara cliff in Dogon Country, Mali.
+author: Dr. Ondřej Havelka (cestovatel)
+title: Dogon Country, Bandiagara, Mali, West Africa.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Dogon_Country,_Bandiagara,_Mali,_West_Africa.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 17
+caseName: Dogon Cliff Settlement
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Dogon_Country%2C_Bandiagara%2C_Mali%2C_West_Africa.jpg/960px-Dogon_Country%2C_Bandiagara%2C_Mali%2C_West_Africa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: The village under the cliff Bandiagara in Dogon country, Mali, Africa.
+width: 960
+height: 505
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

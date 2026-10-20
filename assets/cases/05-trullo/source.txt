@@ -1,0 +1,17 @@
+src: assets/cases/05-trullo/01.jpg
+label: Overview
+caption: Dry-stone conical roofs and whitewashed walls of trulli in Alberobello.
+author: MPhernambucq
+title: Street with trulli Alberobello.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Street_with_trulli_Alberobello.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 5
+caseName: Trullo
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Street_with_trulli_Alberobello.jpg/960px-Street_with_trulli_Alberobello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: A street with trulli houses in Alberobello
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

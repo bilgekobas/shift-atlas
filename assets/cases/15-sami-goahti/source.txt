@@ -1,0 +1,35 @@
+src: assets/cases/15-sami-goahti/01.jpg
+label: Overview
+caption: Interior of a goahti in Salla, Finnish Lapland; regional typological example, not the mapped Norwegian site.
+author: Ximonic (Simo Räsänen)
+title: Goahti on the lower peak of Sallatunturit in Salla, Lapland, Finland.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Goahti_on_the_lower_peak_of_Sallatunturit_in_Salla,_Lapland,_Finland.jpg
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 15
+caseName: Sami Goahti
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Goahti_on_the_lower_peak_of_Sallatunturit_in_Salla%2C_Lapland%2C_Finland.jpg/960px-Goahti_on_the_lower_peak_of_Sallatunturit_in_Salla%2C_Lapland%2C_Finland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: A goahti (kota) on Pieni Pyhätunturi of Sallatunturit in Salla municipality, Lapland, Finland in 2021 September.
+width: 960
+height: 706
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/15-sami-goahti/02.jpg
+label: Detail
+caption: Construction drawing of a coastal Sámi earth-covered gamme; comparative view of frame and covering.
+author: Tromsø Museum/ Ottar
+title: Kystsamisk jordgamme.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Kystsamisk_jordgamme.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: True
+caseId: 15
+caseName: Sami Goahti
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/9/97/Kystsamisk_jordgamme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: A coastal sami peat en:goahti with its framework, from Finnmark, Norway
+width: 431
+height: 473
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,17 @@
+src: assets/cases/43-bologna-porticoes/01.webp
+label: Overview
+caption: Continuous covered portico in Bologna, showing the shaded pedestrian route and structural rhythm.
+author: PsyChooGen
+title: Bologna - Portici di Bologna - 202109132046.webp
+sourceUrl: https://commons.wikimedia.org/wiki/File:Bologna_-_Portici_di_Bologna_-_202109132046.webp
+license: CC BY-SA 4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+isDiagram: False
+caseId: 43
+caseName: Bologna Porticoes
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Bologna_-_Portici_di_Bologna_-_202109132046.webp/960px-Bologna_-_Portici_di_Bologna_-_202109132046.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: Bologna - Portici di Bologna
+width: 960
+height: 1200
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

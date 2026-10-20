@@ -1,0 +1,35 @@
+src: assets/cases/41-engawa/01.jpg
+label: Overview
+caption: Engawa and operable screen beside a timber threshold at a historic Japanese house.
+author: Toshihiro Matsui
+title: 風土記の丘の古い家､縁側 - panoramio.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:%E9%A2%A8%E5%9C%9F%E8%A8%98%E3%81%AE%E4%B8%98%E3%81%AE%E5%8F%A4%E3%81%84%E5%AE%B6%EF%BD%A4%E7%B8%81%E5%81%B4_-_panoramio.jpg
+license: CC BY-SA 3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+isDiagram: False
+caseId: 41
+caseName: Engawa
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%E9%A2%A8%E5%9C%9F%E8%A8%98%E3%81%AE%E4%B8%98%E3%81%AE%E5%8F%A4%E3%81%84%E5%AE%B6%EF%BD%A4%E7%B8%81%E5%81%B4_-_panoramio.jpg/960px-%E9%A2%A8%E5%9C%9F%E8%A8%98%E3%81%AE%E4%B8%98%E3%81%AE%E5%8F%A4%E3%81%84%E5%AE%B6%EF%BD%A4%E7%B8%81%E5%81%B4_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: 風土記の丘の古い家､縁側
+width: 960
+height: 720
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
+
+src: assets/cases/41-engawa/02.jpg
+label: Detail
+caption: Shōji and engawa at the former Miura residence, Fukuoka; another documented Japanese threshold example.
+author: LLAAYY
+title: Shōji and Engawa of the former Miura residence 6-10 Reisenmachi Hakata-ku Fukuoka 20240119.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dji_and_Engawa_of_the_former_Miura_residence_6-10_Reisenmachi_Hakata-ku_Fukuoka_20240119.jpg
+license: CC BY 4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0
+isDiagram: False
+caseId: 41
+caseName: Engawa
+retrieved: 2026-10-20
+downloadUrl: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Sh%C5%8Dji_and_Engawa_of_the_former_Miura_residence_6-10_Reisenmachi_Hakata-ku_Fukuoka_20240119.jpg/960px-Sh%C5%8Dji_and_Engawa_of_the_former_Miura_residence_6-10_Reisenmachi_Hakata-ku_Fukuoka_20240119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+description: 旧三浦邸の障子と縁側
+width: 960
+height: 540
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.

@@ -1,0 +1,17 @@
+src: assets/cases/18-djenn-adobe-town/01.jpg
+label: Overview
+caption: Historic photograph of earthen domestic street façades in Djenné, by Edmond Fortier.
+author: Edmond Fortier (1862-1928)
+title: Djenne Fortier 414 cropped.jpg
+sourceUrl: https://commons.wikimedia.org/wiki/File:Djenne_Fortier_414_cropped.jpg
+license: Public domain
+licenseUrl: https://creativecommons.org/publicdomain/mark/1.0/
+isDiagram: False
+caseId: 18
+caseName: Djenné Adobe Town
+retrieved: 2026-10-20
+downloadUrl: https://upload.wikimedia.org/wikipedia/commons/7/74/Djenne_Fortier_414_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+description: Cropped postcard 414 by Edmond Fortier. A street in Djenné, Mali in 1906 showing houses with Toucolor–style facades
+width: 924
+height: 1270
+changes: Uncropped Wikimedia-served thumbnail; no image content edits.
