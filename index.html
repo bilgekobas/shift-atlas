@@ -1785,7 +1785,7 @@ function climateStatsHTML(d){
     {k:'Annual solar irradiation',v:metric(s.annualSolar,'kWh/m²')},
     {k:'Mean absolute humidity',v:metric(s.meanAH,'g/m³',1)}
   ];
-  return rows.map(s=>`<div class="cs"><div class="cs-k">${s.k}</div><div class="cs-v">${s.v}</div><div class="cs-note">1991–2020 regional reanalysis</div></div>`).join('');
+  return rows.map(s=>`<div class="cs"><div class="cs-k">${s.k}</div><div class="cs-v">${s.v}</div><div class="cs-note">1991–2020 NASA POWER</div></div>`).join('');
 }
 
 function renderClimateChart(canvasId,climData,color){
@@ -2043,42 +2043,6 @@ function sourcebookTitle(c){
 }
 
 
-function inferMatrixMechanism(row, fallback){
-  const txt = `${row.c||''} ${row.s||''} ${row.e||''}`.toLowerCase();
-  if(/evapor|fountain|water film|salsabil|transpir|mist|humid/.test(txt)) return 'Evaporate';
-  if(/cistern|rainwater|collect|channel|drainage|qanat|water storage|store water/.test(txt)) return 'Collect / store water';
-  if(/ventilat|airflow|breeze|stack|wind|cross-flow|air well|badgir|windcatcher/.test(txt)) return 'Ventilate';
-  if(/shade|shading|overhang|canopy|screen|jali|mashrabiya|pergola|portico|arcade|self-shad|solar/.test(txt)) return 'Shade / reduce radiation';
-  if(/reflect|whitewash|limewash|albedo/.test(txt)) return 'Reflect';
-  if(/insulat|thatch|felt|turf|wool|hide|air gap|superinsulation/.test(txt)) return 'Insulate';
-  if(/thermal mass|mass|stone|tuff|adobe|rammed earth|loess|diurnal|lag|store heat|release/.test(txt)) return 'Store / release heat';
-  if(/earth|embedded|buried|cave|rock-cut|ground|subsurface|sunken|excavat/.test(txt)) return 'Earth-couple';
-  if(/flood|stilt|raised|elevat/.test(txt)) return 'Elevate';
-  if(/privacy|boundary|threshold|mediate|social/.test(txt)) return 'Mediate boundary';
-  if(/compact|surface.volume|low profile|orientation|aerodynamic/.test(txt)) return 'Reduce exposure';
-  return fallback || 'Modify exposure';
-}
-
-function inferMatrixStrategyFamily(row, fallback){
-  const txt = `${row.c||''} ${row.s||''} ${row.e||''}`.toLowerCase();
-  if(/cave|rock-cut|tuff|excavat|sunken|buried|ground-sheltered|earth-coupled|loess|subsurface/.test(txt)) return 'Earth-embedded dwelling';
-  if(/cistern|rainwater|drainage|water storage|qanat/.test(txt)) return 'Water-harvesting system';
-  if(/courtyard|patio|riad|impluvium|air well/.test(txt)) return 'Courtyard system';
-  if(/windcatcher|badgir|wind tower|ventilation tower/.test(txt)) return 'Ventilation tower';
-  if(/pergola|vine|vegetated|plant|garden/.test(txt)) return 'Vegetated shade layer';
-  if(/jali|mashrabiya|screen|lattice|perforated/.test(txt)) return 'Perforated screen';
-  if(/shoji|capiz|translucent/.test(txt)) return 'Translucent screen';
-  if(/overhang|deep roof|roof edge|eaves/.test(txt)) return 'Deep roof edge';
-  if(/portico|arcade|covered walkway/.test(txt)) return 'Arcade / portico';
-  if(/felt|kepenek|wearable|body/.test(txt)) return 'Wearable climate shelter';
-  if(/tent|goat-hair|portable/.test(txt)) return 'Portable shelter';
-  if(/thermal mass|adobe|stone|rammed earth|masonry|log wall|turf/.test(txt)) return 'Thermal mass envelope';
-  if(/stilt|raised|elevated/.test(txt)) return 'Elevated floor system';
-  if(/whitewash|reflective|albedo/.test(txt)) return 'Reflective mineral surface';
-  if(/threshold|veranda|engawa|thinnai|balcony|gallery/.test(txt)) return 'Shaded threshold';
-  return fallback || 'Climate-responsive spatial system';
-}
-
 function claimEvidenceHTML(row){
   const e=row.evidence;
   if(!e)return '<small>Evidence not assessed</small>';
@@ -2124,8 +2088,8 @@ async function openPanel(c){
   const caseMechanism=firstOrDash(c.tax?.mechanisms);
   const caseStrategyFamily=firstOrDash(getStrategyFamilies(c));
   const matrixRows=(c.re||[]).map(r=>{
-    const mechanism=taxLabel(r.mechanism||r.m||inferMatrixMechanism(r,caseMechanism));
-    const strategy=taxLabel(r.strategyFamily||r.family||inferMatrixStrategyFamily(r,caseStrategyFamily));
+    const mechanism=taxLabel(r.mechanism||r.m||'Classification pending');
+    const strategy=taxLabel(r.strategyFamily||r.family||'Classification pending');
     return `<tr><td>${sentenceCaseValue(r.c)}</td><td>${mechanism}</td><td>${strategy}</td><td>${sentenceCaseValue(r.s)}</td><td>${sentenceCaseValue(r.e)}${claimEvidenceHTML(r)}</td></tr>`;
   }).join('');
 
