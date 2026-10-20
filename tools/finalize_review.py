@@ -27,6 +27,7 @@ def main():
         h+=f'| {c["id"]} | {c["name"]} | {len(c["re"])} | {"Yes" if c["evidencePilot"] else "No"} | Source text/locators, history, geometry and map-point precision |\n'
     counts=Counter(r['status'] for r in refs)
     h+='\n## Bibliography screening\n\n'+', '.join(f'{n} {k.replace("_"," ")}' for k,n in sorted(counts.items()))+'. Status concerns the reference record, not every associated claim.\n\n[Full reference table](reference-audit.md).\n'
+    h+='\n## Daily source archive\n\nSee [publication status and reproduction instructions](../data/climate-raw/README.md).\n'
     p.write_text(h)
     rows=['# Reference audit, 20 October 2026','',
           'All supplied reference strings are accounted for. Metadata verification is not claim validation. Candidate search results remain unaccepted leads. Original citations and complete candidate metadata are preserved in [the JSON audit](../data/reference-audit.json).','',

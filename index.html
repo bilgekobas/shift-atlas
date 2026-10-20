@@ -1552,7 +1552,7 @@ if (typeof L !== 'undefined') {
 
 </script>
 <script src="data/case-images.js"></script>
-<script src="data/cases-reviewed.js?v=d6099bbb7963"></script>
+<script src="data/cases-reviewed.js?v=ed02594b740c"></script>
 <script src="data/climate-tools.js"></script>
 <script>
 // Resolve deferred image references
@@ -1684,6 +1684,7 @@ function getEra(period){
   return'contemporary';
 }
 function getStrategyFamilies(c){
+  if(Array.isArray(c.strategyFamilies)&&c.strategyFamilies.length)return c.strategyFamilies;
   if(c?.tax?.strategyFamilies?.length)return c.tax.strategyFamilies;
   const txt=((c.name||'')+' '+(c.typology||'')+' '+(c.tags||[]).join(' ')+' '+(c.strats||[]).join(' ')+' '+(c.tax?.elements||[]).join(' ')+' '+(c.re||[]).map(r=>(r.s||'')+' '+(r.e||'')).join(' ')).toLowerCase();
   const out=[];
@@ -1707,6 +1708,7 @@ function getStrategyFamilies(c){
   return out.length?out:['thermal_mass_envelope'];
 }
 const STRATEGY_LABELS={
+  hybrid_cooling:'Hybrid public-space cooling',
   courtyard_system:'Courtyard system',perforated_screen:'Perforated screen',translucent_screen:'Translucent screen',operable_shutter:'Operable shutter / blind',textile_canopy:'Textile canopy / sail',arcade_portico:'Arcade / portico',vegetated_pergola:'Vegetated pergola',deep_roof_edge:'Deep roof edge',shaded_threshold:'Shaded threshold',earth_embedded:'Earth-embedded dwelling',thermal_mass_envelope:'Thermal-mass envelope',elevated_floor:'Elevated floor / stilt',ventilation_tower:'Ventilation tower',portable_shelter:'Portable shelter',wearable_shelter:'Wearable shelter',self_shading_fabric:'Self-shading urban fabric'
 };
 function strategyFamilyLabel(c){return getStrategyFamilies(c).map(v=>STRATEGY_LABELS[v]||titleCaseValue(v)).join(' · ');}

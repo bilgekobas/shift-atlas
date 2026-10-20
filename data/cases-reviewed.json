@@ -6059,7 +6059,7 @@
         }
       },
       {
-        "c": "Cross-ventilation",
+        "c": "Inadequate air movement",
         "s": "Multi-directional courtyard entrances",
         "e": "Multiple openings can enable cross-flow where pressure differences exist.",
         "mechanism": "Ventilate",
@@ -12356,13 +12356,14 @@
     ],
     "instructors": "Bilge Kobas · Prof. Thomas Auer",
     "ch": [
-      "Extreme heat",
-      "Hot urban public space",
-      "Solar radiation"
+      "Summer solar exposure",
+      "Outdoor heat",
+      "Water and energy demand",
+      "Public-space habitability"
     ],
     "re": [
       {
-        "c": "Arid water scarcity",
+        "c": "Solar exposure",
         "mechanism": "Shade",
         "strategyFamily": "Shading and vegetation",
         "s": "Shade and vegetation",
@@ -12386,7 +12387,7 @@
         }
       },
       {
-        "c": "High surface heat",
+        "c": "Outdoor heat",
         "mechanism": "Exchange heat",
         "strategyFamily": "Water-based hybrid cooling",
         "s": "Water-based cooling systems",
@@ -12410,7 +12411,7 @@
         }
       },
       {
-        "c": "Low-energy distribution",
+        "c": "Operational energy demand",
         "mechanism": "Supply / manage energy",
         "strategyFamily": "Photovoltaic and hybrid systems",
         "s": "Hybrid energy and operation",
@@ -12434,7 +12435,7 @@
         }
       },
       {
-        "c": "Settlement microclimate",
+        "c": "Public-space habitability",
         "mechanism": "Support collective adaptation",
         "strategyFamily": "Public-space governance",
         "s": "Public-space use and governance",
@@ -12534,7 +12535,10 @@
       "mapping_basis": "Representative point unless a specific building is explicitly documented; precision not independently verified.",
       "scope": "Qualitative editorial interpretation; no blanket performance grade.",
       "pilot_note": "Each response has an explicit evidence type, relationship, conditions and limitation. Empty source links mean verification is still required."
-    }
+    },
+    "strategyFamilies": [
+      "hybrid_cooling"
+    ]
   },
   {
     "id": 58,

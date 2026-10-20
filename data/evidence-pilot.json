@@ -946,7 +946,7 @@
       "name": "Cartuja Qanat",
       "claims": [
         {
-          "c": "Arid water scarcity",
+          "c": "Solar exposure",
           "mechanism": "Shade",
           "strategyFamily": "Shading and vegetation",
           "s": "Shade and vegetation",
@@ -970,7 +970,7 @@
           }
         },
         {
-          "c": "High surface heat",
+          "c": "Outdoor heat",
           "mechanism": "Exchange heat",
           "strategyFamily": "Water-based hybrid cooling",
           "s": "Water-based cooling systems",
@@ -994,7 +994,7 @@
           }
         },
         {
-          "c": "Low-energy distribution",
+          "c": "Operational energy demand",
           "mechanism": "Supply / manage energy",
           "strategyFamily": "Photovoltaic and hybrid systems",
           "s": "Hybrid energy and operation",
@@ -1018,7 +1018,7 @@
           }
         },
         {
-          "c": "Settlement microclimate",
+          "c": "Public-space habitability",
           "mechanism": "Support collective adaptation",
           "strategyFamily": "Public-space governance",
           "s": "Public-space use and governance",
