@@ -1894,18 +1894,11 @@ function imageCreditHTML(img){
   const license=img.licenseUrl?`<a href="${imageText(img.licenseUrl)}" target="_blank" rel="noopener">${imageText(img.license)}</a>`:imageText(img.license);
   return `${imageText(caption)}${source?`<br>${source}`:''}${license?` · ${license}`:''}`;
 }
-async function loadCaseGallery(c){
-  const records=caseImageRecords(c).filter(img=>img.src).map(img=>({...img,src:resolveImg(img.src)}));
-  const checked=await Promise.all(records.map(img=>new Promise(resolve=>{
-    const probe=new Image();
-    const timer=setTimeout(()=>resolve(null),12000);
-    probe.onload=()=>{clearTimeout(timer);resolve(img);};
-    probe.onerror=()=>{clearTimeout(timer);resolve(null);};
-    probe.src=img.src;
-  })));
-  return checked.filter(Boolean);
+function loadCaseGallery(c){
+  // Curated manifest paths are checked at publication. Let the browser load images
+  // without blocking case text or climate data on network/image decoding.
+  return caseImageRecords(c).filter(img=>img.src).map(img=>({...img,src:resolveImg(img.src)}));
 }
-
 async function buildGallery(c,color){
   galleryImages=await loadCaseGallery(c);
 
@@ -2059,7 +2052,7 @@ async function openPanel(c){
   const hasPdf=c.hasPdf;
   const refsHtml=(c.referenceRecords||[]).map(r=>`<li>${linkifyRefs(imageText(r.citation))}<br><small>${imageText(r.status.replace(/_/g,' '))} · ${imageText(r.id)}</small></li>`).join('');
 
-  const galleryImgs=await loadCaseGallery(c);
+  const galleryImgs=loadCaseGallery(c);
   if(activeCaseId!==c.id)return;
 
   const passportFields=[
@@ -2106,9 +2099,10 @@ async function openPanel(c){
       <!-- LEFT: Gallery + Passport -->
       <div class="modal-left">
         <div class="ph" id="modal-ph" style="background:${color}33;min-height:200px;flex-shrink:0;position:relative;overflow:hidden">
-          ${mainImgSrc?`<img id="modal-main-img" class="ph-mainimg" src="${mainImgSrc}" alt="${imageText(galleryImgs[0].caption||galleryImgs[0].label||c.name)}"
+          ${mainImgSrc?`<img id="modal-main-img" class="ph-mainimg" src="${mainImgSrc}" onerror="this.style.display='none';document.getElementById('modal-image-unavailable').style.display='flex'" alt="${imageText(galleryImgs[0].caption||galleryImgs[0].label||c.name)}"
             onclick="openLightbox(this.src,'${c.name}')" title="Click to enlarge">`
             :`<div style="height:200px;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:10px;color:rgba(0,0,0,.55);padding:24px;text-align:center">Case-specific image documentation pending</div>`}
+          <div id="modal-image-unavailable" style="display:none;min-height:200px;align-items:center;justify-content:center;padding:24px;font-size:12px">Image temporarily unavailable</div>
           <div class="ph-overlay"></div>
         </div>
         ${thumbsHtml?`<div class="gallery-strip" id="modal-gallery-strip" style="display:flex">${thumbsHtml}</div>`:''}
@@ -2223,6 +2217,8 @@ function modalGallerySet(idx){
   window._modalGalleryIdx=idx;
   const mainImg=document.getElementById('modal-main-img');
   if(mainImg){
+    mainImg.style.display='';
+    const fallback=document.getElementById('modal-image-unavailable');if(fallback)fallback.style.display='none';
     mainImg.src=imgs[idx].src;
     mainImg.alt=imgs[idx].caption||imgs[idx].label||'';
     mainImg.onclick=()=>openLightbox(imgs[idx].src,imgs[idx].label||'');
