@@ -22,12 +22,12 @@ Kobas, B. & Auer, T. (Eds.) (2026–). *Atlas of Vernacular Architecture*. Chair
 
 The atlas combines:
 
-- curated architectural case studies
+- 58 reviewed case entries with 199 explicitly labelled response claims
 - student research booklets
 - editorial review and supplementary case completion
-- climate data from ERA5/Open-Meteo
-- future climate projections based on SSP5-8.5
-- present-day climate analogue matching
+- a fixed 1991–2020 NASA POWER climate baseline with provenance and source-response checksums
+- future projections withheld pending a traceable, validated model pipeline
+- analogue scores withheld pending validation
 - an editorial taxonomy of climate pressures, mechanisms, strategy families, regional variants, and architectural/body-scale elements
 
 ## Repository structure
@@ -75,3 +75,7 @@ For contributions or corrections, contact Bilge Kobas at:
 ## License
 
 License to be defined. Until a license is selected, reuse of source material, images, and case texts should be treated as restricted.
+
+## Research review
+
+See [research audit](docs/research-audit.md), [reference audit](docs/reference-audit.md), [evidence protocol](docs/evidence-protocol.md) and [climate methods](docs/data-method.md). The 12-case pilot contains 43 claims; bibliography screening does not imply full-text validation of every claim.

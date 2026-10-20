@@ -49,6 +49,12 @@ Condition → Mechanism → Strategy Family → Regional Variant → Element
 |---|---|---|---|---|
 |  |  |  |  |  |
 
+Assign each row a stable Response ID. Record its evidence type (Measured, Simulated, Documented design, Documented use, Mechanism inference or Unknown), exact source ID and page/figure/section. Separately record whether evidence concerns the same object, a comparable building/type, a generic mechanism or an unknown relation.
+
+For every claim, specify the outcome variable, comparator, operating/study conditions, verification status and limitations. Numerical values require a traceable source, units and scope. Leave numerical fields blank for unquantified effects; do not substitute zero. Distinguish air, surface, mean radiant and operative temperature. Source metadata verification is not claim verification.
+
+The partner workbook version 1.2 uses matching IDs in Responses and Evidence. See [the evidence protocol](evidence-protocol.md). Climate charts use a centrally supplied 1991–2020 regional baseline; future projections and analogue scores are currently withheld pending validation.
+
 ### 6. Media
 
 Provide only images that can be used legally.

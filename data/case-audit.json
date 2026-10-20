@@ -1,0 +1,2253 @@
+{
+  "review_date": "2026-10-20",
+  "scope": "All 58 matrix and narrative records screened; bibliography candidates are not full-text verification.",
+  "cases": [
+    {
+      "case_id": 1,
+      "name": "Schwarzwaldhaus",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Winter cold",
+          "s": "Passive solar gain",
+          "e": "South-facing orientation with calibrated south windows maximises passive solar gain in winter; bioclimatic reviews confirm south-facing vernacular forms reduce heating demand by up to 40% in Cfb climates"
+        },
+        {
+          "c": "Winter cold",
+          "s": "Livestock thermal buffer",
+          "e": "Cattle quarters on ground floor act as radiant heat source; zoothermal gain from livestock estimated at 500–800 W per head, providing meaningful base-load heating in adjacent spaces"
+        },
+        {
+          "c": "Summer overheating",
+          "s": "Solar shading",
+          "e": "Dramatically overhanging eaves (1–1.5m) block high summer sun angle while admitting lower winter sun; a fundamental passive solar shading principle confirmed across vernacular temperate typologies"
+        },
+        {
+          "c": "Heavy snowfall",
+          "s": "Structural shedding",
+          "e": "Steep roof pitch sheds snow load rapidly; prevents accumulation"
+        }
+      ],
+      "original_narrative": "The Schwarzwaldhaus integrates farming life — livestock, hay, tools, and family — under one massive roof. This was a deliberate social-economic strategy of the Black Forest peasant economy: the entire farm could function self-sufficiently through winter without leaving the building. The roof was a symbol of pride and the farmer's wealth.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 2,
+      "name": "Fachwerkhaus",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Cold winters",
+          "s": "Composite thermal mass wall",
+          "e": "Wattle-and-daub or brick infill between oak frame provides thermal mass; Fraunhofer IBP measurements on comparable half-timbered walls record effective U-values of 0.8–1.2 W/m²K, with moisture buffering a critical secondary function"
+        },
+        {
+          "c": "Limited solar access",
+          "s": "Calibrated window sizing",
+          "e": "Larger windows on south facades; smaller north openings limit heat loss"
+        },
+        {
+          "c": "Dense settlement",
+          "s": "Compact street morphology",
+          "e": "Tight medieval street plans create mutual shading and reduce wind exposure; street-level wind speed reductions of 30–50% measured in comparable dense historic street networks"
+        }
+      ],
+      "original_narrative": "The exposed timber frame was a visible social status marker — elaborate carved patterns indicated the owner's trade guild or wealth. The communal street pattern reflects medieval guild self-governance, where neighbours shared party walls and the economic life of the settlement was encoded in the building fabric.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 3,
+      "name": "Niederdeutsches Hallenhaus",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Strong westerly winds",
+          "s": "Aerodynamic gable orientation",
+          "e": "Low gable end faces into prevailing wind; minimal exposed surface area"
+        },
+        {
+          "c": "Damp maritime cold",
+          "s": "Thatched roof superinsulation",
+          "e": "Deep thatch provides R-value ~3.0; moss-caulked joints ensure airtightness"
+        },
+        {
+          "c": "Shared thermal provision",
+          "s": "Livestock-hall integration",
+          "e": "Animals, threshing floor, and family share continuous hall for shared warmth"
+        }
+      ],
+      "original_narrative": "The Niederdeutsches Hallenhaus was not merely a building type but the basic unit of North German agrarian political economy. The single roof sheltering animals, grain, tools, and family under one open hall dissolved the boundary between labour and dwelling — the threshing floor was worked in winter without leaving shelter. Farm names were legally heritable titles; the dugnad tradition of reciprocal construction labour meant the entire community was invested in each new building. The harsh maritime climate of the North Sea plain made this integration necessary: warmth was shared because it could not be individually produced.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 4,
+      "name": "Casa Patio / Cortijo",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme summer heat",
+          "s": "Evaporative courtyard cooling",
+          "e": "Central fountain combined with plants lowers courtyard air temperature by up to 12°C versus outdoor conditions in summer (Perez et al. 2023 Seville measurements), with 92% of daylight hours within thermal comfort range"
+        },
+        {
+          "c": "High solar radiation",
+          "s": "Self-shading courtyard",
+          "e": "High whitewashed walls shade ground during peak sun hours; wall reflectance ~0.8 and self-shading geometry provide mean radiant temperature reductions of 6–8°C at pedestrian level"
+        },
+        {
+          "c": "Solar gain",
+          "s": "Extreme thermal mass",
+          "e": "60–80cm stone/adobe walls delay heat penetration 8–10 hours (thermal time constant ~8–12h); EnergyPlus models of comparable Mediterranean courtyard houses confirm near-zero mechanical cooling demand in summer when combined with night purging"
+        }
+      ],
+      "original_narrative": "The patio tradition originates with the Roman atrium and was refined through eight centuries of Moorish rule in Al-Andalus. The enclosed garden is a cultural symbol of paradise (Arabic firdaws). The Córdoba Patios Festival (UNESCO Intangible Heritage) shows its ongoing function as a space of neighbourhood pride, display, and social identity.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 5,
+      "name": "Trullo",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot summer days",
+          "mechanism": "Buffer",
+          "strategyFamily": "Thermal mass envelope",
+          "s": "60–80 cm dry-stone limestone walls",
+          "e": "Delays indoor heat gain and reduces daytime temperature peaks"
+        },
+        {
+          "c": "High solar radiation",
+          "mechanism": "Reflect / shade",
+          "strategyFamily": "Reflective mineral surface",
+          "s": "Whitewashed exterior and conical roof geometry",
+          "e": "Reduces absorbed shortwave radiation and limits overheated roof surfaces"
+        },
+        {
+          "c": "Diurnal temperature swing",
+          "mechanism": "Store / release heat",
+          "strategyFamily": "Thermal lag dwelling",
+          "s": "Large stone mass around a small interior volume",
+          "e": "Stabilizes indoor temperature by shifting heat release toward evening and night"
+        },
+        {
+          "c": "Timber scarcity",
+          "mechanism": "Reduce dependency",
+          "strategyFamily": "Local material substitution",
+          "s": "Corbelled stone roof without timber structure",
+          "e": "Creates a roof span from abundant limestone rather than scarce wood"
+        },
+        {
+          "c": "Seasonal water scarcity",
+          "mechanism": "Collect / conserve",
+          "strategyFamily": "Roof-to-cistern system",
+          "s": "Sloped stone roof and underground storage",
+          "e": "Turns episodic rainfall into stored domestic water supply"
+        }
+      ],
+      "original_narrative": "The trullo is a dry-stone dwelling typology from the limestone plateau of Puglia, where hot summers, strong solar exposure, limited timber, and seasonal water scarcity shaped a compact mineral architecture. Thick limestone walls and conical stone roofs create high thermal inertia, slowing daytime heat gain and releasing stored heat after sunset. Whitewashed surfaces reduce absorbed solar radiation, while small openings and compact interior volume limit unwanted heat exchange. Its climatic logic depends on mass, reflectance, geometry, and locally abundant stone rather than mechanical cooling.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 6,
+      "name": "Sassi di Matera",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme seasonal variation",
+          "mechanism": "Earth-couple",
+          "strategyFamily": "Earth-embedded dwelling",
+          "s": "Rock-cut rooms in tuff hillside",
+          "e": "Ground temperature and stone mass dampen summer heat and winter cold"
+        },
+        {
+          "c": "High solar radiation",
+          "mechanism": "Reduce radiation",
+          "strategyFamily": "Ground-sheltered form",
+          "s": "Semi-buried dwellings with limited exposed roof and wall area",
+          "e": "Minimizes solar gain on occupied surfaces compared with freestanding buildings"
+        },
+        {
+          "c": "Water scarcity",
+          "mechanism": "Collect / store water",
+          "strategyFamily": "Water-harvesting system",
+          "s": "Hewn cisterns, channels, and porous stone catchments",
+          "e": "Captures episodic rainfall and stores it within the settlement fabric"
+        },
+        {
+          "c": "Moisture and hygiene risk",
+          "mechanism": "Ventilate / drain",
+          "strategyFamily": "Managed earth-embedded infrastructure",
+          "s": "Courtyards, openings, and drainage paths require continuous maintenance",
+          "e": "Shows the limit of the strategy: mass and ground contact must be paired with air and water management"
+        }
+      ],
+      "original_narrative": "The Sassi di Matera are a rock-cut settlement system carved into soft tuff, where dwellings, cisterns, paths, and courtyards work as one ground-coupled infrastructure. Rather than treating the cave as a primitive shelter, the system uses geological mass to buffer extreme seasonal variation, shields most occupied surfaces from direct solar radiation, and stores scarce rainwater in excavated cisterns. Its climatic intelligence lies in coupling habitation, water management, and topography.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 7,
+      "name": "Wind Catcher Houses (Badgir)",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme summer heat",
+          "s": "Wind-tower forced ventilation",
+          "e": "Badgir tower funnels prevailing wind downward: Hosseini et al. (2016) CFD simulations of six Yazd wind-catcher geometries show indoor air velocities of 0.5–1.5 m/s under 3 m/s external wind; Hedayat et al. (2017) long-term field measurement confirms cooling effectiveness even when wind speed peaks"
+        },
+        {
+          "c": "Very low humidity",
+          "s": "Qanat evaporative pre-cooling",
+          "e": "Air passes over qanat underground water channel (12–14°C) before entering rooms; combined wind-tower and qanat system achieves indoor temperature reductions of up to 15°C below ambient — Nejat et al. (2021) estimate cooling load reduction of 73% versus a reference building in hot season"
+        },
+        {
+          "c": "Intense solar radiation",
+          "s": "Blank street walls",
+          "e": "All rooms face inward; zero glazing on hot street-facing facades"
+        }
+      ],
+      "original_narrative": "The badgir is Persian urban civilization materialized. The qanat — underground water channels — was collective civic infrastructure. Wind tower height signalled the owner's wealth. Yazd's entire city was engineered as a passive climate machine.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 8,
+      "name": "Adobe Pueblo",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme diurnal variation",
+          "s": "Adobe thermal mass inversion",
+          "e": "50–80cm adobe walls absorb solar heat by day and release it through the cold desert night; Balcomb et al. (1983) Southwest Thermal Mass Study at Tesuque Pueblo measured buildings supplying 18–78% of annual heating need passively depending on glazing ratio and orientation"
+        },
+        {
+          "c": "Hot summer afternoons",
+          "s": "Stepped self-shading terraces",
+          "e": "Buildings step back at each storey creating shaded outdoor terraces"
+        },
+        {
+          "c": "Cold winter",
+          "s": "Passive solar orientation",
+          "e": "South-facing mass maximises winter solar gain; combined with high desert insolation (~300 days/year) adobe construction achieves positive heat balance without supplementary heating for significant portions of the heating season"
+        }
+      ],
+      "original_narrative": "Pueblo architecture is inseparable from Ancestral Puebloan cosmology — room layout, kivas, and plazas reflect astronomical alignments and ritual calendars. Multi-storey form with no individual ground-floor entrances reflects egalitarian social structure. Taos Pueblo is a UNESCO World Heritage living site.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 9,
+      "name": "Ghadamès Old Town",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme desert heat",
+          "s": "Oasis microclimate engineering",
+          "e": "Date palm canopy reduces ambient temperature by 5–8°C"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "100% covered street network",
+          "e": "Houses connected at upper storey create fully shaded ground-level streets"
+        },
+        {
+          "c": "Hot dust winds",
+          "s": "Collective building enclosure",
+          "e": "Buildings form continuous wind barrier; tiny ventilation holes only"
+        }
+      ],
+      "original_narrative": "Ghadamès has a unique gendered spatial structure: upper-storey covered streets were traditionally reserved for women, while men used ground-level paths. This division is directly encoded in the architecture. A major trans-Saharan trade hub — its covered passageways were commercial and climatic infrastructure simultaneously.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 10,
+      "name": "Rumah Panggung (Stilt Houses)",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Constant humidity",
+          "s": "Under-floor ventilation",
+          "e": "1–3m stilts create continuous airflow beneath floor: Feriadi & Wong (2004) field survey of 525 Indonesian naturally ventilated houses confirms significantly higher adaptive comfort satisfaction than PMV predicts, with under-floor ventilation a primary driver of moisture management and perceived comfort"
+        },
+        {
+          "c": "Torrential rainfall",
+          "s": "Deep overhangs + steep roof",
+          "e": "2–3m overhangs protect walls; 50–60° roof pitch sheds monsoon rain rapidly — deep eaves measured to reduce wall exposure to driving rain by over 80% in comparable tropical vernacular houses"
+        },
+        {
+          "c": "Flooding",
+          "s": "Stilt elevation",
+          "e": "Floor raised above flood level; water passes beneath harmlessly"
+        }
+      ],
+      "original_narrative": "The Borneo longhouse was a political structure — entire community lived under one roof, each family with its own hearth. Longhouse length signified the chief's power. The communal veranda (ruai) hosted ceremonies, dispute resolution, and daily work. The building was literally the community's social constitution.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 11,
+      "name": "Mekong Delta Vernacular",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Heat and humidity",
+          "s": "Multi-directional veranda buffers",
+          "e": "Shaded verandas on multiple sides shade rooms and capture cross-breezes; Nguyen et al. (2011) field investigation of Vietnamese vernacular housing identifies veranda depth and multi-directional orientation as the most decisive passive cooling strategies in humid tropical Vietnam"
+        },
+        {
+          "c": "Hot air in roof",
+          "s": "Ridge stack-effect ventilation",
+          "e": "Ventilated ridge allows convective hot air to escape upward; stack-effect ventilation in comparable tropical ridge-vented roofs reduces indoor operative temperature by 2–4°C relative to sealed roof constructions"
+        },
+        {
+          "c": "Flooding",
+          "s": "Raised platform construction",
+          "e": "Elevated platform separates structure from saturated tropical ground"
+        }
+      ],
+      "original_narrative": "The Mekong Delta house stood in an intimate, ambiguous relationship with water: the river was road, food source, and seasonal threat simultaneously. Structures were deliberately lightweight and modular — lashed bamboo and timber construction could be disassembled and moved as land ownership, flooding, and family circumstance changed. The veranda-as-dock collapsed the distinction between domestic threshold and waterway, making social life continuous with the movement of commerce. Climate adaptation here was not insulation or mass but adaptability: the right to relocate was itself a climate strategy.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 12,
+      "name": "Kerala Nalukettu",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Heat + humidity",
+          "s": "Stack-effect courtyard",
+          "e": "Central open nadumuttam draws hot air upward; cool air drawn in through shaded verandas"
+        },
+        {
+          "c": "3000mm monsoon",
+          "s": "Steep tiled roof + deep overhangs",
+          "e": "45° gable + massive overhangs drain rain and protect walls"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "Perforated timber screens",
+          "e": "Jali lattice allows ventilation while blocking direct solar penetration"
+        }
+      ],
+      "original_narrative": "The Nalukettu is a cosmological diagram — the nadumuttam aligns with cardinal directions and sacred geometry. Room sequence encodes Nair caste social hierarchy. The house is simultaneously a climate machine and a ritual space for births, marriages, and funerals.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 13,
+      "name": "Tongkonan",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Heavy rainfall",
+          "s": "Curved saddle roof",
+          "e": "Boat-shaped saddle roof with overhangs of 1.5–2m sheds monsoon rain rapidly while shading walls; the curved form reduces wind pressure on the ridge compared to a gabled profile, improving structural performance in typhoon conditions"
+        },
+        {
+          "c": "Moisture",
+          "s": "Bamboo hygroscopic regulation",
+          "e": "Bamboo absorbs excess humidity and releases it when air dries — hygroscopic buffering capacity ~10% of dry weight measurably dampens indoor RH peaks during monsoon periods relative to timber-framed equivalents"
+        },
+        {
+          "c": "Heat accumulation",
+          "s": "Stilt under-floor ventilation",
+          "e": "Elevated floor on stilts creates continuous under-floor air circulation"
+        }
+      ],
+      "original_narrative": "The tongkonan is both climate machine and political instrument. Its construction demands collective labour, ritual sacrifice of buffalo, and the physical participation of all clan members — the act of building reaffirms social hierarchy and spiritual obligation simultaneously. The boat-shaped roof, oriented north-south, is understood as the vessel carrying ancestors. Material choices are ecological signals: bamboo for moisture regulation, ironwood for structural permanence, palm thatch graded by social rank. The raised floor creates the ventilated undercroft that makes tropical habitation tolerable — but it is also the space where livestock and ritual objects are kept. Thermal function and cosmological meaning are inseparable.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 14,
+      "name": "Icelandic Turf House (Torfbær)",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Subarctic cold",
+          "s": "Turf superinsulation",
+          "e": "1m+ turf walls and roof achieve substantial insulation: Hansen et al. (2008) building physics analysis confirms turf walls functioned as thermally insulating envelopes, with wall geometry and material arrangement derived empirically to optimise thermal comfort in a climate with minimal building material alternatives"
+        },
+        {
+          "c": "Storm-force winds",
+          "s": "Semi-buried low form",
+          "e": "Low profile and semi-buried footprint reduce wind loading and exploit stable ground temperature (~4°C): Hansen et al. note farmhouse siting on natural or man-made elevations was strategic — combining shelter from wind with drainage and thermal stability"
+        },
+        {
+          "c": "Cold infiltration",
+          "s": "Thermal airlock entrance",
+          "e": "Long entrance tunnel acts as airlock preventing warm air escaping"
+        }
+      ],
+      "original_narrative": "Extreme material scarcity — no building timber in Iceland. Norse settlers improvised entirely from the landscape: turf, volcanic stone, and driftwood. The farmstead cluster was a subsistence economy in architectural form. In use until the mid-20th century.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 15,
+      "name": "Sami Goahti",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme cold",
+          "s": "Minimum surface/volume ratio",
+          "e": "Conical form minimises heat-loss surface area relative to enclosed volume; at the goahti's typical diameter of 3–4m, the geometry reduces envelope heat loss by approximately 20–30% compared to a rectangular room of equal floor area"
+        },
+        {
+          "c": "Extreme cold",
+          "s": "Layered reindeer-hide insulation",
+          "e": "Multiple reindeer-hide layers added in winter, removed in summer: hide thermal conductivity ~0.04 W/mK; three layers achieve R-value ~1.5 m²K/W — meaningful insulation in −30°C subarctic conditions"
+        },
+        {
+          "c": "Nomadic lifestyle",
+          "s": "Portable birch pole frame",
+          "e": "Frame disassembles in minutes; entire dwelling carried by reindeer sledge"
+        },
+        {
+          "c": "Subarctic cold",
+          "s": "Microsite wind shelter",
+          "e": "Goahti is sited in natural topographic hollows or against rock outcrops; windward snow accumulation around the structure provides additional insulation — average 30–50% reduction in convective heat loss compared to exposed flat-ground siting"
+        }
+      ],
+      "original_narrative": "The goahti is the material form of Sami sovereignty over landscape. Its portability was not a limitation but a political capacity: the ability to follow reindeer herds across seasonal territories was the economic and cultural foundation of Sami life. The interior geography — hearth at centre, altar-back at the far wall, gender-coded entry sides — encodes the social order of the family in spatial form. The conical birch-pole frame and layered hide covering were calibrated over centuries to the specific thermal demands of subarctic nomadic life: maximum insulation per unit of carried weight, rapid erection and dismantling, and a single central opening that serves simultaneously as smoke exit, light source, and sky compass.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 16,
+      "name": "Mongolian Ger",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Fierce winds",
+          "s": "Circular wind-resistant form",
+          "e": "Circular plan distributes wind loads evenly — no corners to catch wind"
+        },
+        {
+          "c": "Extreme cold",
+          "s": "Seasonal adjustable felt insulation",
+          "e": "Multiple felt layers added in winter, removed in summer: Li et al. (2019) field measurement confirms felt thermal conductivity ≤0.077 W/mK (equivalent to expanded polystyrene), but notes the ger's low thermal inertia produces large diurnal indoor swings — the adjustable layering system compensates for what single-layer construction cannot"
+        },
+        {
+          "c": "Winter/summer regulation",
+          "s": "Toono crown dual function",
+          "e": "Crown toono acts as chimney flue in winter and opens fully for stack-effect ventilation in summer; Ganbat et al. (2020) experimental comparison shows gers with enhanced envelope insulation achieve indoor operative temperatures up to 5°C higher during cold nights than uninsulated reference gers"
+        }
+      ],
+      "original_narrative": "The ger is a cosmological diagram: the toono represents the sky eye; the central post is the world axis. North is sacred/elder space, west is male/livestock, east is female/domestic. The ger's portability enabled the Mongol Empire to govern a continent from moveable capital cities. Contemporary research identifies the ger's coal combustion for heating as a major driver of Ulaanbaatar's severe winter air pollution — the adaptive performance that sustained nomadic life creates critical health challenges in its fixed urban context.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 17,
+      "name": "Dogon Cliff Settlement",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme afternoon heat",
+          "s": "Geological cliff shading",
+          "e": "Bandiagara escarpment provides permanent shade from scorching afternoon sun"
+        },
+        {
+          "c": "Intense solar radiation",
+          "s": "Rock thermal mass",
+          "e": "Surrounding sandstone acts as massive thermal sink"
+        },
+        {
+          "c": "Hot Harmattan wind",
+          "s": "Adobe wall protection",
+          "e": "Thick laterite-painted adobe walls resist hot dry wind penetration"
+        },
+        {
+          "c": "Extreme heat",
+          "s": "Adobe thermal flywheel",
+          "e": "Thick laterite-adobe walls (40–60cm) maintain interior temperature within ±3°C of overnight minimum even as outdoor temperature climbs 25–30°C during the day — the escarpment's thermal mass amplified at building scale"
+        }
+      ],
+      "original_narrative": "The Dogon settled the near-vertical face of the Bandiagara escarpment as a survival decision: the cliff was a defense against the waves of slave raiding that devastated the West African interior from the 14th to 19th centuries. The thermal logic arrived as a consequence — the escarpment's sandstone mass absorbs and moderates the brutal Sahel heat, and the cliff overhangs shade the settlement through the hottest afternoon hours. Village plans encode the Dogon creation myth: each settlement maps onto a lying human figure oriented east-west, with granaries as limbs and the toguna meeting house as head. The Tellem cliff caves above the living settlements are maintained as ancestral burial sites, making the escarpment simultaneously a dwelling, a cosmological diagram, and a cemetery.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 18,
+      "name": "Djenné Adobe Town",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme heat",
+          "s": "Banco thermal mass walls",
+          "e": "Mud walls 40–60cm thick absorb daytime heat and radiate it outward at night; banco (mud-straw composite) has thermal conductivity ~0.5 W/mK and high volumetric heat capacity — the wall acts as a phase-shift buffer, keeping interiors cool by day and preventing rapid overnight heat loss"
+        },
+        {
+          "c": "Monsoon erosion",
+          "s": "Toron scaffolding system",
+          "e": "Protruding timber torons are permanent scaffolding for annual community re-plastering"
+        },
+        {
+          "c": "Hot summer nights",
+          "s": "Roof terrace sleeping",
+          "e": "Residents sleep on roof terraces when walls radiate stored heat at night"
+        }
+      ],
+      "original_narrative": "The Great Mosque's annual re-plastering is a community ritual — hundreds of citizens climb the toron scaffolding together on a single day. A festival of social solidarity as much as maintenance. The city's survival is inseparable from this annual collective act of climate-responsive repair.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 19,
+      "name": "Moroccan Riad",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme summer heat",
+          "s": "Fountain evaporative cooling",
+          "e": "Central fountain lowers courtyard temperature by 3–6°C via evaporation; combined with vegetation, Perez et al. (2023) measurements in comparable Andalusian courtyard typologies show courtyards up to 12°C cooler than outdoor ambient in peak summer and up to 3.3°C warmer at night"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "Blank street walls",
+          "e": "Street-facing facades have zero glazing; all rooms open exclusively inward"
+        },
+        {
+          "c": "Solar penetration",
+          "s": "Asymmetric courtyard plan",
+          "e": "Deliberate asymmetry prevents sun reaching courtyard floor at any angle"
+        }
+      ],
+      "original_narrative": "The riad embodies the Quranic concept of paradise — the garden as foretaste of heaven. The blank street wall reflects Islamic domestic privacy: the house is a world turned entirely inward, its beauty reserved for the family alone. Social status expressed through interior refinement, invisible from the street.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 20,
+      "name": "Ahmedabad Pol Houses",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Intense solar radiation",
+          "s": "Self-shading lane morphology",
+          "e": "Narrow pol lanes remain in shade for most of the day"
+        },
+        {
+          "c": "Solar gain through facades",
+          "s": "Timber jali screens",
+          "e": "Carved timber jali lattice allows ventilation while blocking direct sun; Jain & Pandya (2022) show traditional sandstone jalis with 30–50% void ratio transmit only 30–45% of incident solar radiation, with air velocity through perforations measured at 0.5–1.0 m/s under natural wind conditions"
+        },
+        {
+          "c": "Urban heat",
+          "s": "Shared party wall thermal mass",
+          "e": "Shared walls distribute thermal mass load across the entire cluster"
+        }
+      ],
+      "original_narrative": "The pol is a complete neighbourhood unit — gated cluster with shared temple, well, and waste management. Each pol housed a single caste or trade community. Facade carvings were markers of craft identity: patterns varied by caste, making the street a readable social text. The pol system was urban self-governance predating the modern municipality.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 21,
+      "name": "Andean Stone Houses",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Sub-zero nights",
+          "s": "Stone diurnal cycle regulation",
+          "e": "Stone masonry absorbs powerful daytime highland sun (solar irradiance at 3,500–4,000m is 15–20% higher than sea level due to reduced atmospheric attenuation); volcanic andesite thermal diffusivity ~0.7 mm²/s releases stored heat with a 6–8 hour lag, warming interiors through the coldest overnight hours"
+        },
+        {
+          "c": "Cold nights",
+          "s": "Ichu grass thatch insulation",
+          "e": "Ichu grass (Stipa ichu) thatch provides thermal resistance of ~0.3–0.5 m²K/W per 10cm depth; at typical roof thicknesses of 30–50cm, total R-value ~1.0–2.5 m²K/W, meaningful where nighttime temperatures fall 20°C below daytime peaks"
+        },
+        {
+          "c": "Cold pre-dawn",
+          "s": "East-facing orientation",
+          "e": "Building clusters face east to warm quickly after the coldest pre-dawn hours"
+        },
+        {
+          "c": "Sub-zero nights",
+          "s": "Andenes cold-air drainage",
+          "e": "Agricultural terraces (andenes) are engineered to drain cold air downslope on still nights, keeping the inhabited plateau edge 2–4°C warmer than the valley floor — frost protection encoded in landscape form"
+        }
+      ],
+      "original_narrative": "Andean stone construction embeds climate knowledge accumulated across three thousand years of high-altitude settlement. The Inca did not invent the thermal logic of the pirca — dry-stone masonry walls used as solar collector by day, radiator by night — but systematised it as imperial infrastructure. The terraced landscape (andenes) was simultaneously agricultural engineering, microclimate modification, and flood control: cold air drainage down terraced slopes was a designed condition. Stone selection was thermal as much as structural — dark volcanic andesite on south-facing walls for maximum solar absorption, pale granite on north-facing faces to limit heat loss. East-facing cluster orientation to capture the first light after the coldest pre-dawn hours is a bioclimatic strategy encoded in Andean settlement patterns long before any formalised climate science.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 22,
+      "name": "Cappadocian Cave Dwellings",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme seasonal variation",
+          "s": "Tuff earth thermal regulation",
+          "e": "Volcanic tuff maintains stable 12–15°C year-round, regardless of outdoor extremes"
+        },
+        {
+          "c": "High solar radiation",
+          "s": "Fully embedded form",
+          "e": "Zero external surface area to solar gain; entire structure buried in rock"
+        },
+        {
+          "c": "Cold winter winds",
+          "s": "Minimal openings",
+          "e": "Small windows only; rock insulates from wind and prevents convective heat loss"
+        }
+      ],
+      "original_narrative": "Cappadocia's caves span Hittite, early Christian, and Ottoman contexts. Underground cities descending 18 stories were built for communal defense. The tuff landscape became a canvas for religious expression: thousands of cave churches survive at Göreme. Material is both architecture and geology.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 23,
+      "name": "Norwegian Laftehus Farmstead",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Wet Atlantic cold",
+          "s": "Log wall airtightness",
+          "e": "Round logs with saddle notches and moss-caulked joints achieve low air infiltration; comparable Norwegian log construction measured at 0.5–1.5 ACH50 in field tests — approaching passive house standards through traditional craft alone"
+        },
+        {
+          "c": "Rain penetration",
+          "s": "Living turf roof",
+          "e": "Living turf roof absorbs rainfall and releases it via evapotranspiration; comparable Scandinavian sod roofs reduce peak runoff by 60–80% versus impermeable roofing, while evapotranspiration provides measurable cooling of the roof surface in summer"
+        },
+        {
+          "c": "Strong SW winds",
+          "s": "U-shaped farm windbreak",
+          "e": "Outbuildings arranged as protective U-shape shelter main dwelling"
+        },
+        {
+          "c": "Low solar radiation",
+          "s": "South-facing main facade",
+          "e": "Norwegian farmsteads orient the main residential facade south or south-east; combined with the U-shaped outbuilding windbreak, this creates a protected sun-trap courtyard that measurably extends outdoor habitation season"
+        }
+      ],
+      "original_narrative": "The Norwegian gård was a legal entity before it was an architectural one: the farm name (gårdsnavnet) was the heritable title defining family identity across generations, and the buildings were evidence of that claim. Laftehus log construction required dugnad — reciprocal community labour that built and maintained rural settlements across Scandinavia. The stabbur, a raised log storehouse mounted on stone pillars to deter rodents and moisture, is the most climate-precise element: its elevated, ventilated position maintains the cool stable temperature needed for long-term food storage through both summer and winter, encoding a passive refrigeration logic that the main dwelling could not provide.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 24,
+      "name": "Musgum Earthen Shells",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme heat",
+          "s": "Clay thermal mass shell",
+          "e": "Thick clay catenary walls keep interior 8–10°C cooler than outside through thermal mass; the catenary form (identical to a hanging-chain curve) distributes compressive loads optimally, allowing walls to taper from thick at base to thin at apex — structurally efficient and thermally responsive simultaneously"
+        },
+        {
+          "c": "Monsoon rainfall",
+          "s": "Ribbed exterior channels",
+          "e": "Raised external ribs channel rainwater to ground rapidly without pooling"
+        },
+        {
+          "c": "Heat accumulation",
+          "s": "Apex stack-effect ventilation",
+          "e": "Small hole at apex creates stack effect drawing hot air upward and out; the high internal volume under the dome allows warm air to stratify above the occupied zone — the principle is identical to a thermal chimney"
+        }
+      ],
+      "original_narrative": "The Musgum developed the catenary shell — mathematically identical to a hanging chain — without formal geometry. The ribs were interpreted by Western architects as aesthetic, but are structural buttresses. A case study in vernacular structural intuition: optimal engineering form through generations of material practice.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 25,
+      "name": "Fujian Tulou",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Heat + cold stress",
+          "s": "Rammed earth thermal mass",
+          "e": "1.5–2m thick rammed earth wall delays heat transfer 10–12 hours; Li et al. (2012) field energy survey of Nanjing Tulou buildings confirms better indoor thermal environment than surrounding non-mass construction, with thick walls and large summer ventilation rates identified as primary performance drivers"
+        },
+        {
+          "c": "High humidity",
+          "s": "Cross-ventilation through central courtyard",
+          "e": "All openings face courtyard and sky; air continuously flushed through structure"
+        },
+        {
+          "c": "Monsoon rainfall",
+          "s": "Steep pitched roof + courtyard drainage",
+          "e": "Steep roof sheds monsoon rain; central courtyard manages runoff via drainage system"
+        },
+        {
+          "c": "Solar gain",
+          "s": "Roof overhang + corridor shade",
+          "e": "Perimeter corridor and wide overhangs shade the inward timber facade"
+        }
+      ],
+      "original_narrative": "The tulou was a fortified clan compound housing 700–800 people of a single surname for mutual defense against bandits and territorial raids. The circular form provides equal defensive sightlines. The central courtyard contains communal wells, ancestral halls, and granaries. UNESCO World Heritage site and symbol of Hakka ethnic identity.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 26,
+      "name": "Nalukettu",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Heat + humidity",
+          "s": "Stack-effect courtyard",
+          "e": "Central open nadumuttam draws hot air upward; cool air in through shaded verandas"
+        },
+        {
+          "c": "3000mm monsoon",
+          "s": "Steep 45° tiled roof + deep overhangs",
+          "e": "Steep tiled gable + massive overhangs drain rain rapidly; protect walls"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "Perforated timber jali screens",
+          "e": "Lattice allows ventilation while blocking direct solar penetration"
+        },
+        {
+          "c": "High perceived heat",
+          "s": "Courtyard water + vegetation",
+          "e": "Courtyard pond and dense shrubs lower perceived temperature via evapotranspiration"
+        }
+      ],
+      "original_narrative": "The Nalukettu is a cosmological diagram — the nadumuttam aligns with cardinal directions and sacred geometry. Room sequence (public veranda → semi-public hall → private rooms) encodes Nair caste social hierarchy. The house is simultaneously a climate machine and a ritual space.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 27,
+      "name": "Impluvium Hut",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme heat",
+          "s": "Double thatched compluvium roof",
+          "e": "Two-layer thatch (1.7m eave / 6.75m ridge) creates deep shade with ventilated air gap"
+        },
+        {
+          "c": "Heavy rainfall",
+          "s": "Central basin for rainwater collection",
+          "e": "Compluvium channels rain into central basin — water storage and microclimate modifier"
+        },
+        {
+          "c": "High solar radiation",
+          "s": "40cm tamped earth wall mass",
+          "e": "Earth walls absorb heat; moisture absorption regulates interior humidity"
+        },
+        {
+          "c": "Cross-ventilation",
+          "s": "Multi-directional courtyard entrances",
+          "e": "Multiple entrances from different directions enable cross-ventilation"
+        }
+      ],
+      "original_narrative": "The circular compound is the basic spatial unit of Casamance social organisation — each hut houses one family member; the shared courtyard is communal kitchen and social space. The compound grows with the family: new huts added as children marry. The dwelling is literally grown by the family it houses.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 28,
+      "name": "Traditional Thai House",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Monsoon flooding",
+          "s": "Stilt elevation",
+          "e": "Floor elevated above maximum flood level; water passes beneath harmlessly"
+        },
+        {
+          "c": "Heat + humidity",
+          "s": "Cross-ventilation via spacing",
+          "e": "Gaps between clustered houses and parallel windows enable full cross-ventilation: Tantasavasdi et al. (2001) show optimal ventilation requires window openings of 40–60% of wall area and inter-building gaps of at least 0.5× building width to avoid wind shadow effects"
+        },
+        {
+          "c": "Torrential rainfall",
+          "s": "Concave gable + additional eave",
+          "e": "2–3m high concave gable with extra eave sheds rain from all angles"
+        },
+        {
+          "c": "Ground moisture",
+          "s": "Ground thermal mass",
+          "e": "Ground acts as thermal buffer below the elevated floor"
+        }
+      ],
+      "original_narrative": "The Thai house cluster is structured around kinship — each module added as a child marries. The open terrace between houses is the social heart: eating, sleeping, and ceremonies. Houses orient toward the river/canal, reflecting the centrality of water in lowland Thai agricultural culture.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 29,
+      "name": "Shophouse",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Constant heat + humidity",
+          "s": "Air well stack ventilation",
+          "e": "Internal narrow air well (typically 0.9–1.5m wide) creates strong stack effect: 3–5°C temperature differential between ground and roof drives upward air movement of 0.3–0.8 m/s — sufficient for perceptible comfort improvement without mechanical assistance"
+        },
+        {
+          "c": "Solar gain",
+          "s": "Five-foot way covered arcade",
+          "e": "Mandatory arcade buffers facade from direct sun and monsoon rain"
+        },
+        {
+          "c": "Ventilation/privacy",
+          "s": "Moveable timber louvre screens",
+          "e": "Adjustable louvres calibrate ventilation and privacy independently"
+        }
+      ],
+      "original_narrative": "The shophouse is a hybrid of colonial encounter — Chinese domestic courtyard type adapted to British street regulations (five-foot way mandate). In Penang, facade styles record waves of migration: Hokkien, Peranakan, Art Deco, British. George Town's shophouse streetscape is UNESCO-listed.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 30,
+      "name": "33rd Lane (Geoffrey Bawa)",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Urban heat + solar gain",
+          "s": "Multiple inward courtyards",
+          "e": "No rooms face the hot street; all face inward courtyards as lightwell and ventilation chimney — Perera & Pernice (2022) measure outdoor transitional spaces in Sri Lankan modernist houses reducing indoor operative temperatures by 2–3°C versus direct-exposure rooms in comparable tropical urban conditions"
+        },
+        {
+          "c": "Persistent heat",
+          "s": "Fully open glazing-free windows",
+          "e": "Completely glassless — open timber lattice windows allow maximum airflow year-round"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "Layered deep overhangs + pergola + vegetation",
+          "e": "Multiple shade layers (overhang, veranda, pergola, plants) block direct sun"
+        }
+      ],
+      "original_narrative": "Bawa's 33rd Lane is a manifesto for tropical modernism — deliberately rejecting air conditioning and embracing traditional Sri Lankan spatial strategies within a modern language. The house evolved over decades as Bawa connected four adjacent properties — a palimpsest of accumulation rather than a designed object.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 31,
+      "name": "Ena de Silva House",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Persistent heat",
+          "s": "1 main + 5 subsidiary courtyards",
+          "e": "Every room ventilated from at least two sides via distributed courtyard network"
+        },
+        {
+          "c": "Solar radiation",
+          "s": "Deep overhangs + veranda + vegetation",
+          "e": "Verandas, overhangs, pergolas, and dense plants prevent direct solar reach to any wall"
+        },
+        {
+          "c": "Humidity",
+          "s": "Central reflective pool",
+          "e": "Large pool provides evaporative cooling and bounces diffuse light into rooms"
+        }
+      ],
+      "original_narrative": "Designed for batik artist Ena de Silva, the house dissolves the boundary between inside and outside. Later controversially disassembled and rebuilt at a new location, raising fundamental questions about what constitutes the essence of architecture. A manifesto and a provocation simultaneously.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 32,
+      "name": "Bedok Court",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Constant heat + humidity",
+          "s": "Stacked private veranda courts",
+          "e": "Each unit has a 4.5×4.5m private forecourt providing outdoor space and ventilation"
+        },
+        {
+          "c": "Limited ventilation",
+          "s": "E-W orientation + semi-open facade",
+          "e": "East-west massing captures prevailing wind; semi-open facade allows through-ventilation"
+        },
+        {
+          "c": "Facade solar gain",
+          "s": "Geometric self-shading",
+          "e": "Stacked forecourts and gallery overhangs shade the floor below"
+        }
+      ],
+      "original_narrative": "Bedok Court challenged the assumption that public housing must be anonymous towers. The private forecourt became a site of personalisation: residents planted their own gardens. At 300 persons/hectare it proved courtyard principles achievable at high density.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 33,
+      "name": "Space Block",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Extreme density + heat",
+          "s": "50% porosity wind corridors",
+          "e": "Clustered layout with 50% void creates continuous wind channels through the block"
+        },
+        {
+          "c": "Wind capture",
+          "s": "E-W orientation for SE breezes",
+          "e": "Long axis E-W to face prevailing south-east breezes at up to 5.5 m/s"
+        },
+        {
+          "c": "Solar gain + privacy",
+          "s": "External slits + internal full-height openings",
+          "e": "Narrow external slits block direct sun; full-height interior openings maximise ventilation"
+        }
+      ],
+      "original_narrative": "The Space Block translated the Vietnamese tube house's air-well logic to collective scale. The 50% porosity principle came from studying traditional shophouses. Criticisms of concrete heating, lack of vegetation, and maintenance now directly feed the next generation of tropical dense housing design.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 34,
+      "name": "Kepenek",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Solar and wind exposure",
+          "mechanism": "Reduce exposure",
+          "strategyFamily": "Wearable climate shelter",
+          "s": "Self-supporting felt mantle",
+          "e": "Creates a shaded, wind-buffered microclimate around the body"
+        },
+        {
+          "c": "Cold nights",
+          "mechanism": "Insulate",
+          "strategyFamily": "Felted textile envelope",
+          "s": "Dense wool layer",
+          "e": "Traps still air and reduces convective heat loss during rest"
+        },
+        {
+          "c": "Mobile work",
+          "mechanism": "Carry shelter",
+          "strategyFamily": "Body-scale portable refuge",
+          "s": "Garment doubles as clothing and temporary enclosure",
+          "e": "Provides protection without separate building infrastructure"
+        },
+        {
+          "c": "Rain and snow",
+          "mechanism": "Shed moisture",
+          "strategyFamily": "Compressed wool surface",
+          "s": "Felt surface resists wetting and dries in air",
+          "e": "Maintains protection under intermittent exposure"
+        }
+      ],
+      "original_narrative": "The kepenek is a wearable felt shelter used by shepherds in Turkish and Kurdish pastoral landscapes. It sits between garment, portable architecture, and emergency refuge: thick felt buffers wind, cold, rain, and solar exposure, while its stiff form can stand around the body during rest. Its value is operational mobility—the shelter travels with the occupant rather than waiting at a fixed site.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 35,
+      "name": "Khasi Knup",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Monsoon rainfall",
+          "mechanism": "Shed water",
+          "strategyFamily": "Wearable rain shelter",
+          "s": "Curved bamboo-and-leaf back cover",
+          "e": "Directs rain away from body and carried loads"
+        },
+        {
+          "c": "Outdoor agricultural labour",
+          "mechanism": "Free hands",
+          "strategyFamily": "Body-scale operational shelter",
+          "s": "Back-mounted form rather than hand-held umbrella",
+          "e": "Allows work to continue during rain and sun"
+        },
+        {
+          "c": "Solar exposure",
+          "mechanism": "Shade",
+          "strategyFamily": "Portable body canopy",
+          "s": "Broad overhanging shell",
+          "e": "Reduces direct radiation on head, neck, and upper back"
+        },
+        {
+          "c": "Local material availability",
+          "mechanism": "Use renewable fibres",
+          "strategyFamily": "Low-resource craft system",
+          "s": "Bamboo, palm, or leaf construction",
+          "e": "Creates repairable climate protection from local materials"
+        }
+      ],
+      "original_narrative": "The Khasi knup is a body-scale shelter from the monsoon landscapes of Meghalaya. Its broad, curved form covers the head, back, and carried loads while leaving the hands free for agricultural work. Made from bamboo and leaves, it is a lightweight climatic interface that converts rainfall and solar exposure into a manageable occupational condition.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 36,
+      "name": "Black Hair Tent",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot dry days",
+          "mechanism": "Shade / ventilate",
+          "strategyFamily": "Breathable textile shelter",
+          "s": "Loose goat-hair weave and open sides",
+          "e": "Provides shade while allowing convective heat removal"
+        },
+        {
+          "c": "Rain events",
+          "mechanism": "Material response",
+          "strategyFamily": "Hygroscopic membrane",
+          "s": "Goat-hair fibres swell when wet",
+          "e": "Tightens the weave and improves water shedding"
+        },
+        {
+          "c": "Pastoral mobility",
+          "mechanism": "Reduce permanence",
+          "strategyFamily": "Portable shelter",
+          "s": "Modular textile panels and poles",
+          "e": "Allows settlement to follow seasonal grazing and water availability"
+        },
+        {
+          "c": "Dust and wind",
+          "mechanism": "Orient / screen",
+          "strategyFamily": "Operable enclosure",
+          "s": "Fabric sides adjusted by wind direction",
+          "e": "Balances ventilation with protection from wind-driven exposure"
+        }
+      ],
+      "original_narrative": "The black hair tent is a mobile textile architecture adapted to arid and semi-arid pastoral life. Goat hair behaves dynamically: in dry heat the woven fabric remains breathable, while under rain the fibres swell and tighten, improving water resistance. The tent therefore performs through material responsiveness, low thermal mass, ventilation, shade, and rapid assembly rather than permanence.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 37,
+      "name": "Mashrabiya",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Solar gain at openings",
+          "mechanism": "Shade",
+          "strategyFamily": "Perforated screen",
+          "s": "Deep projecting timber lattice",
+          "e": "Reduces direct sun on glass, wall surfaces, and occupants near the façade"
+        },
+        {
+          "c": "Glare",
+          "mechanism": "Diffuse light",
+          "strategyFamily": "Porous daylight filter",
+          "s": "Small repeated apertures",
+          "e": "Breaks high-contrast sunlight into softer interior illumination"
+        },
+        {
+          "c": "Need for ventilation",
+          "mechanism": "Ventilate",
+          "strategyFamily": "Breathable façade layer",
+          "s": "Screened operable opening",
+          "e": "Allows air exchange while reducing exposure and maintaining privacy"
+        },
+        {
+          "c": "Urban social exposure",
+          "mechanism": "Mediate boundary",
+          "strategyFamily": "Privacy-preserving threshold",
+          "s": "One-way visual filtering from interior to street",
+          "e": "Supports adaptive use of openings in dense urban fabric"
+        }
+      ],
+      "original_narrative": "The mashrabiya is a dense climatic and social interface rather than a simple decorative screen. Its projecting wooden lattice shades the opening, breaks down glare, permits air movement, and preserves privacy. Because it modulates radiation, view, airflow, and social boundary at once, it is a strong example of a strategy family where environmental and cultural performance are inseparable.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 38,
+      "name": "Jali Screen",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "High solar radiation",
+          "mechanism": "Shade",
+          "strategyFamily": "Perforated screen",
+          "s": "Deep carved stone lattice",
+          "e": "Self-shading apertures reduce direct solar penetration"
+        },
+        {
+          "c": "Visual glare",
+          "mechanism": "Diffuse light",
+          "strategyFamily": "Daylight-filtering façade",
+          "s": "Repetitive small openings",
+          "e": "Softens daylight and reduces contrast inside"
+        },
+        {
+          "c": "Hot still air",
+          "mechanism": "Ventilate",
+          "strategyFamily": "Porous boundary",
+          "s": "Permeable screen at window or courtyard edge",
+          "e": "Maintains airflow while reducing radiant exposure"
+        },
+        {
+          "c": "Privacy and exposure",
+          "mechanism": "Mediate boundary",
+          "strategyFamily": "Social-climatic threshold",
+          "s": "Filtered visibility through patterned stone",
+          "e": "Allows occupants to use openings without full visual exposure"
+        }
+      ],
+      "original_narrative": "Jali screens use carved stone perforations to transform intense sun into filtered light and ventilation. Their depth and aperture geometry create self-shading edges, reduce glare, and maintain privacy while allowing air to pass. As a stone screen, the jali also adds thermal mass at the opening rather than relying on lightweight shading alone.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 39,
+      "name": "Shōji Screen",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Glare",
+          "s": "Diffuse paper membrane",
+          "e": "Washi paper scatters direct light into soft diffuse interior illumination with transmittance ~90%; Inoue et al. (2014) heat insulation tests show taiko-shoji (double-layer shoji with air gap) significantly reduces heat loss in winter compared to single-layer, validating the Japanese practice of seasonal double-layering"
+        },
+        {
+          "c": "Privacy",
+          "s": "Translucent boundary",
+          "e": "The screen maintains enclosure while preserving daylight and perceptual connection"
+        },
+        {
+          "c": "Seasonal use",
+          "s": "Sliding modular partition",
+          "e": "Rooms can be opened, closed, or reconfigured according to time, use, and weather"
+        }
+      ],
+      "original_narrative": "Shōji are not insulation — Japanese architecture accepts cold and negotiates with it rather than excluding it. The screen calibrates atmosphere: light quality, privacy depth, room definition, and airflow resistance are all adjusted by sliding and stacking panels. Washi paper's transmittance close to 90% while completely diffusing direct sunlight produces the soft interior illumination that is a defining quality of Japanese domestic space — diffused light without glare makes tatami rooms usable through the full arc of the day. The modular bay system (ken) underlying shōji dimensioning is simultaneously a structural grid, a spatial planning module, and a furniture standard: three systems unified by one measure.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 40,
+      "name": "Capiz Shell Window",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Glare and solar exposure",
+          "s": "Capiz-shell translucent panels",
+          "e": "Thin shell panes (1–2mm Placuna placenta) diffuse daylight with ~40–60% visible light transmittance while partially blocking infrared; measured interior illuminance in capiz-screened rooms of 150–400 lux under tropical overcast sky — adequate for domestic tasks without glare"
+        },
+        {
+          "c": "Tropical rainfall",
+          "s": "Operable timber window system",
+          "e": "Large panels can be adjusted for rain protection and ventilation"
+        },
+        {
+          "c": "Privacy",
+          "s": "Light-filtering façade layer",
+          "e": "The shell membrane admits light but blurs direct views into domestic interiors"
+        }
+      ],
+      "original_narrative": "The capiz shell window is an artefact of the Philippine colonial encounter: a pre-Hispanic technique of using thinly-sliced Placuna placenta shells as translucent infill, adopted and systematised in the bahay na bato (stone house) that emerged from Spanish colonial urbanism in the 17th–19th centuries. The shell's wavelength-selective transmittance — passing visible light while partially attenuating infrared — was discovered empirically centuries before it could be explained optically. The shells are harvested from shallow coastal beds, polished and sliced to 1–2mm, and set in wooden grid frames: a craft requiring specialised knowledge of both marine ecology and woodworking, concentrated in specific coastal communities.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 41,
+      "name": "Engawa",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Solar exposure",
+          "s": "Deep shaded timber threshold",
+          "e": "The overhanging roof edge and raised timber strip shade the room perimeter: Izard & Ait-Ameur (2007) thermal comfort measurements in traditional Japanese houses find the engawa reduces solar radiation by ~70 W/m² at the perimeter — meaningful protection that also functions as a buffer zone against rain and cold infiltration"
+        },
+        {
+          "c": "Rain",
+          "s": "Intermediate dry zone",
+          "e": "Engawa separates interior rooms from rain-exposed garden edges"
+        },
+        {
+          "c": "Seasonal use",
+          "s": "Operable interior-exterior boundary",
+          "e": "Screens and sliding doors allow the threshold to shift between interior, semi-outdoor, and outdoor use"
+        }
+      ],
+      "original_narrative": "The engawa is a climatic and social threshold: neither fully inside nor outside. It mediates garden, room, light, rain, and everyday sitting practices.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 42,
+      "name": "Thinnai",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot sun",
+          "s": "Raised shaded platform",
+          "e": "The platform sits under the roof edge creating a cooler resting zone; shaded threshold spaces in Tamil Nadu show mean radiant temperature 8–12°C lower than adjacent unshaded street surfaces during midday, with wind speed slightly elevated by the Venturi effect between building and overhang"
+        },
+        {
+          "c": "Social heat adaptation",
+          "s": "Semi-public sitting threshold",
+          "e": "Daily activities shift to a shaded edge where airflow and social exchange are maintained"
+        },
+        {
+          "c": "Rain",
+          "s": "Covered façade strip",
+          "e": "The threshold protects entry and visitors during rain while keeping the dwelling permeable"
+        },
+        {
+          "c": "Heat stress",
+          "s": "Social redistribution of shade",
+          "e": "The thinnai makes shade a shared public resource: the overhang covers not only the occupant but the visitor and passerby, embedding a logic of thermal commons into domestic architecture at the street edge"
+        }
+      ],
+      "original_narrative": "The thinnai is a social-climatic interface in Tamil houses: a shaded platform for resting, receiving visitors, and occupying the street edge without full exposure.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 43,
+      "name": "Bologna Porticoes",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Summer solar exposure",
+          "s": "Continuous covered walkway",
+          "e": "Porticoes shade pedestrian routes and reduce radiant exposure at street level; Antonini et al. (2020) people-flow study in Bologna city centre confirms direct correlation between portico shade and pedestrian dwell-time, and Possega et al. (2026) WRF climate simulations show Bologna's UHI intensity worsening under future high-emission scenarios — foregrounding the portico's structural relevance beyond heritage"
+        },
+        {
+          "c": "Rain",
+          "s": "Roofed public threshold",
+          "e": "The arcade maintains walkability and public life during wet weather"
+        },
+        {
+          "c": "Dense circulation",
+          "s": "Urban-scale semi-outdoor network",
+          "e": "A continuous shaded circulation system extends domestic thresholds into the public realm"
+        }
+      ],
+      "original_narrative": "Bologna's porticoes form a city-scale threshold system. They are legally, socially, and climatically embedded: private buildings produce a continuous public environmental infrastructure. Recent WRF climate modelling (Possega et al. 2026) shows Bologna's UHI strengthening under high-emission scenarios, with extreme thermal discomfort days nearly doubling over the last decade — making the portico's historical cooling function newly urgent for climate adaptation.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 44,
+      "name": "Lhasa Storey Building",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Cold winter",
+          "s": "South-facing courtyard and gallery",
+          "e": "Courtyard and gallery oriented south-facing capture winter solar radiation: at Lhasa's latitude (29.7°N), a south-facing masonry gallery receives ~4,500–5,000 Wh/m²/day on clear winter days — among the highest passive solar resource densities on earth due to altitude-enhanced irradiance"
+        },
+        {
+          "c": "High-altitude radiation",
+          "s": "Seasonal shaded gallery",
+          "e": "Gallery limits summer overheating while admitting lower winter sun"
+        },
+        {
+          "c": "Cold nights",
+          "s": "Stone wall heat storage",
+          "e": "Stone walls absorb daytime solar heat and release it slowly after sunset"
+        }
+      ],
+      "original_narrative": "The Lhasa storey house navigates an extreme thermal range: winter temperatures reach −16°C while high-altitude summer solar radiation can heat south-facing stone surfaces above 50°C. A seasonal logic of occupation mediates this: winter draws life inward and down, into sun-trap courtyards and south-facing galleries; summer drives it up, onto flat roof terraces for sleeping, cooking, and drying. The white lime plaster exterior reflects summer radiation and is renewed annually at Losar (Tibetan New Year), maintaining albedo. Larsen & Sinding-Larsen's Lhasa Atlas (2001) documents how the repetition of this house type across the old city creates a coherent urban thermal environment: the aggregate of individual solar strategies becomes a collective microclimate.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 45,
+      "name": "Henan Troglodyte Courtyard",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot summer",
+          "s": "Sunken earth courtyard",
+          "e": "Excavated loess walls provide self-shading and earth-coupled thermal mass; earth-coupled construction of this type stabilises indoor temperature within a narrow band comparable to the Sassi di Matera and Cappadocian cave typologies — Cardinale et al. (2013) measurements across Mediterranean cave dwellings show seasonal indoor temperature maintained at 12–18°C year-round without mechanical systems"
+        },
+        {
+          "c": "Cold winter",
+          "s": "Ground thermal storage",
+          "e": "Surrounding earth buffers external temperature swings and reduces wind exposure"
+        },
+        {
+          "c": "Strong winds",
+          "s": "Below-grade courtyard form",
+          "e": "The courtyard floor is shielded from prevailing wind by surrounding ground mass"
+        }
+      ],
+      "original_narrative": "The Henan yaodong courtyard is produced by excavation rather than construction. It converts the ground into wall, roof, thermal buffer, and wind protection, making the courtyard an inhabitable void within the loess plateau.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 46,
+      "name": "Antakya Courtyard House",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot summer afternoons",
+          "mechanism": "Shade",
+          "strategyFamily": "Inward courtyard",
+          "s": "Narrow courtyard with shaded walls and galleries",
+          "e": "Reduces radiant exposure while maintaining outdoor habitability"
+        },
+        {
+          "c": "Diurnal heat storage",
+          "mechanism": "Buffer",
+          "strategyFamily": "Masonry thermal mass",
+          "s": "Stone walls around courtyard rooms",
+          "e": "Delays heat transmission and stabilizes indoor temperatures"
+        },
+        {
+          "c": "Need for air movement",
+          "mechanism": "Ventilate",
+          "strategyFamily": "Courtyard stack and cross-flow",
+          "s": "Openings toward courtyard and upper air escape",
+          "e": "Promotes air exchange without full street exposure"
+        },
+        {
+          "c": "Seasonal living",
+          "mechanism": "Relocate activity",
+          "strategyFamily": "Adaptive room use",
+          "s": "Occupants shift between shaded courtyard, rooms, and terraces",
+          "e": "Uses behavioural adaptation as part of the climatic system"
+        }
+      ],
+      "original_narrative": "The Antakya courtyard house is a hot-summer Mediterranean dwelling organized around shaded interior openness. The courtyard is not an empty void; it is a thermal and social regulator that admits air and light while buffering the street. Masonry mass, vegetation, water, shaded galleries, and seasonal room use combine to shift daily life toward the coolest zones of the house.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 47,
+      "name": "Pingyao Long Courtyard",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Cold winter",
+          "mechanism": "Collect sun",
+          "strategyFamily": "Solar courtyard",
+          "s": "South-oriented rooms and elongated courtyard geometry",
+          "e": "Improves winter solar access and reduces exposed façade area"
+        },
+        {
+          "c": "Hot summer",
+          "mechanism": "Shade",
+          "strategyFamily": "Long courtyard",
+          "s": "Narrow proportions and inward roof edges",
+          "e": "Limits direct solar exposure on walls and courtyard surfaces"
+        },
+        {
+          "c": "Wind exposure",
+          "mechanism": "Buffer",
+          "strategyFamily": "Enclosed compound",
+          "s": "High perimeter walls and inward openings",
+          "e": "Reduces convective heat loss and dust intrusion"
+        },
+        {
+          "c": "Household organization",
+          "mechanism": "Zone seasonally",
+          "strategyFamily": "Adaptive courtyard dwelling",
+          "s": "Rooms arranged by orientation and family hierarchy",
+          "e": "Allows seasonal migration within the house according to comfort"
+        }
+      ],
+      "original_narrative": "The Pingyao long courtyard uses elongated inward space to manage a continental climate with cold winters, hot summers, wind, and solar exposure. The linear courtyard organizes family life while controlling orientation, enclosure, and seasonal sunlight. Roofs, walls, and courtyard proportions create protected outdoor space and allow rooms to benefit from winter sun while reducing summer exposure.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 48,
+      "name": "Chentsa Wind-Protected Farming House",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Strong winter wind",
+          "mechanism": "reduce exposure",
+          "strategyFamily": "wind-protected courtyard",
+          "s": "High rammed-earth enclosure",
+          "e": "Reduces wind speed and protects household/agricultural activity"
+        },
+        {
+          "c": "Cold winter",
+          "mechanism": "store heat",
+          "strategyFamily": "thermal mass courtyard",
+          "s": "Thick earth perimeter walls",
+          "e": "Stores daytime solar heat and reduces thermal fluctuation"
+        }
+      ],
+      "original_narrative": "A highland farming courtyard where rammed-earth enclosure converts an exposed windy site into a protected domestic and productive microclimate.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 49,
+      "name": "Hotan Pergola Courtyard",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot arid summers",
+          "mechanism": "Shade",
+          "strategyFamily": "Vegetated pergola",
+          "s": "Vine-covered courtyard canopy",
+          "e": "Reduces direct radiation on courtyard floor and walls"
+        },
+        {
+          "c": "Dry air",
+          "mechanism": "Evaporate / transpire",
+          "strategyFamily": "Living shade layer",
+          "s": "Irrigated vegetation above occupied zone",
+          "e": "Improves perceived coolness through shade and plant transpiration"
+        },
+        {
+          "c": "Seasonal variability",
+          "mechanism": "Adapt seasonally",
+          "strategyFamily": "Deciduous canopy",
+          "s": "Leaves shade in summer, bare structure admits winter sun",
+          "e": "Provides seasonal solar control without mechanical adjustment"
+        },
+        {
+          "c": "Dust and exposure",
+          "mechanism": "Buffer",
+          "strategyFamily": "Inward courtyard",
+          "s": "Protected interior outdoor space",
+          "e": "Creates a social and climatic refuge from exposed streets"
+        }
+      ],
+      "original_narrative": "The Hotan pergola courtyard responds to arid continental heat by turning vegetation and shade into an architectural layer. Grapevines and light structures shade the courtyard during the hot season while allowing seasonal change. The strategy creates a habitable intermediate climate between exposed desert air and enclosed rooms.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 50,
+      "name": "Córdoba Patio",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Summer solar load",
+          "mechanism": "Shade",
+          "strategyFamily": "Courtyard shading system",
+          "s": "Tall surrounding walls, arcades, and planting",
+          "e": "Reduces direct solar exposure on occupants and surfaces"
+        },
+        {
+          "c": "Dry heat",
+          "mechanism": "Evaporate",
+          "strategyFamily": "Vegetated courtyard",
+          "s": "Potted plants, fountains, and moist surfaces",
+          "e": "Adds localized evaporative cooling and humidity moderation"
+        },
+        {
+          "c": "Urban density",
+          "mechanism": "Buffer",
+          "strategyFamily": "Interiorized outdoor room",
+          "s": "Courtyard set behind street façade",
+          "e": "Creates a protected microclimate inside dense urban fabric"
+        },
+        {
+          "c": "Seasonal use",
+          "mechanism": "Operate shade / water",
+          "strategyFamily": "Maintained microclimate",
+          "s": "Watering, plant care, and seasonal canopy use",
+          "e": "Turns architecture and daily maintenance into one adaptive system"
+        }
+      ],
+      "original_narrative": "The Córdoba patio is a dense urban courtyard strategy for hot, dry Mediterranean summers. It compresses outdoor space into a shaded, vegetated, often watered interior room. Plants, porous surfaces, water vessels, shade, and high surrounding walls lower radiant exposure and create a cooler social core within the building.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 51,
+      "name": "Casablanca Riad Courtyard",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot sun and glare",
+          "mechanism": "Shade",
+          "strategyFamily": "Inward courtyard",
+          "s": "Tall perimeter walls and shaded galleries",
+          "e": "Protects rooms and occupants from direct solar exposure"
+        },
+        {
+          "c": "Dry urban heat",
+          "mechanism": "Evaporate",
+          "strategyFamily": "Garden-water courtyard",
+          "s": "Planting and water at the centre",
+          "e": "Adds localized cooling and improves perceived freshness"
+        },
+        {
+          "c": "Privacy in dense fabric",
+          "mechanism": "Mediate boundary",
+          "strategyFamily": "Introverted dwelling",
+          "s": "Blank exterior and active interior garden",
+          "e": "Allows openings and outdoor life without street exposure"
+        },
+        {
+          "c": "Night cooling potential",
+          "mechanism": "Ventilate",
+          "strategyFamily": "Courtyard air exchange",
+          "s": "Open courtyard coupled with surrounding rooms",
+          "e": "Enables heat release and air movement when outdoor conditions allow"
+        }
+      ],
+      "original_narrative": "The riad courtyard mediates hot sun, privacy, and urban density through inward orientation. Its central garden and water elements create a shaded, evaporative core, while surrounding rooms are protected from the street and organized around cooler interior air. The strategy works through enclosure, vegetation, water, and controlled openings rather than exposed façades.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 52,
+      "name": "Madonie Masseria",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot dry summer",
+          "mechanism": "buffer",
+          "strategyFamily": "thermal mass courtyard",
+          "s": "Thick limestone and gypsum walls",
+          "e": "Delays heat transfer and stabilizes adjacent spaces"
+        },
+        {
+          "c": "Agricultural use",
+          "mechanism": "enable seasonal use",
+          "strategyFamily": "productive courtyard",
+          "s": "Courtyard links storage, dwelling, livestock and work",
+          "e": "Supports work and social life while moderating exposure"
+        }
+      ],
+      "original_narrative": "The masseria frames adaptation through rural productivity: the courtyard is a work yard, storage organiser, social space, and thermal buffer.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 53,
+      "name": "Polish Ogącanie",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Winter heat loss",
+          "mechanism": "insulate",
+          "strategyFamily": "seasonal envelope",
+          "s": "Temporary straw or reed insulation on exposed façades",
+          "e": "Reduces conductive heat loss during the heating season"
+        },
+        {
+          "c": "Material circularity",
+          "mechanism": "reuse",
+          "strategyFamily": "biogenic insulation",
+          "s": "Organic layer removed after winter and reused agriculturally",
+          "e": "Links thermal adaptation to seasonal resource cycles"
+        }
+      ],
+      "original_narrative": "Ogącanie reframes insulation as a seasonal practice rather than a fixed product: low-tech, reversible, and tied to agricultural material cycles.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 54,
+      "name": "Dammuso",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot dry summers",
+          "mechanism": "Buffer",
+          "strategyFamily": "Thermal mass envelope",
+          "s": "Thick lava-stone walls",
+          "e": "Damps daytime heat gain and stabilizes indoor temperature"
+        },
+        {
+          "c": "Strong wind and salt exposure",
+          "mechanism": "Reduce exposure",
+          "strategyFamily": "Compact low-profile form",
+          "s": "Small openings and robust masonry envelope",
+          "e": "Limits infiltration, dust, and wind-driven heat exchange"
+        },
+        {
+          "c": "High solar radiation",
+          "mechanism": "Reflect",
+          "strategyFamily": "Reflective roof surface",
+          "s": "White domed roof",
+          "e": "Reduces solar absorption and lowers roof-surface overheating"
+        },
+        {
+          "c": "Water scarcity",
+          "mechanism": "Collect / store",
+          "strategyFamily": "Roof-to-cistern system",
+          "s": "Domed roof channels rainfall into cisterns",
+          "e": "Converts rare rainfall into a reliable domestic reserve"
+        }
+      ],
+      "original_narrative": "The dammuso of Pantelleria translates an exposed volcanic island climate into a compact stone dwelling. Thick lava-stone walls buffer heat, wind, and salt-laden air; domed white roofs reflect radiation and guide rainwater toward cisterns; and small openings reduce solar and wind exposure. The type works as an environmental storage device: it stores coolness, stores water, and reduces exchange with a hot, dry, windy exterior.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 55,
+      "name": "Santorini Whitewashed Townhouse",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Intense solar exposure",
+          "mechanism": "Reflect",
+          "strategyFamily": "High-albedo surface",
+          "s": "Limewashed walls and roofs",
+          "e": "Reduces absorbed shortwave radiation and surface temperature"
+        },
+        {
+          "c": "Hot dry afternoons",
+          "mechanism": "Buffer",
+          "strategyFamily": "Thermal mass dwelling",
+          "s": "Volcanic masonry and excavated rooms",
+          "e": "Delays heat transfer into occupied spaces"
+        },
+        {
+          "c": "Outdoor pedestrian heat",
+          "mechanism": "Shade",
+          "strategyFamily": "Self-shading urban fabric",
+          "s": "Narrow stepped lanes and compact building spacing",
+          "e": "Cuts direct solar exposure in movement spaces"
+        },
+        {
+          "c": "Water and material constraints",
+          "mechanism": "Reduce demand",
+          "strategyFamily": "Local material system",
+          "s": "Mineral surfaces, compact volumes, and limited openings",
+          "e": "Maintains habitable interiors with minimal active infrastructure"
+        }
+      ],
+      "original_narrative": "Santorini’s whitewashed houses and cave-like rooms combine reflectance, mass, compactness, and settlement morphology. The white lime finish reduces solar absorption; thick volcanic masonry and excavated interiors moderate heat; and narrow shaded passages reduce pedestrian exposure. The climatic performance is therefore not only the colour white, but the coupling of surface albedo with mass, shade, and dense urban form.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 56,
+      "name": "Cairo Salsabil Courtyard Cooling",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot dry air",
+          "mechanism": "Evaporate",
+          "strategyFamily": "Evaporative cooling device",
+          "s": "Water film over carved salsabil slab",
+          "e": "Cools incoming air through phase change and increases perceived freshness"
+        },
+        {
+          "c": "Solar exposure",
+          "mechanism": "Shade",
+          "strategyFamily": "Courtyard microclimate",
+          "s": "Water device placed in shaded interior or courtyard zone",
+          "e": "Prevents direct solar heating of water and occupants"
+        },
+        {
+          "c": "Thermal peaks",
+          "mechanism": "Buffer",
+          "strategyFamily": "Mass-coupled cooling",
+          "s": "Stone/masonry surfaces around cooled air path",
+          "e": "Adds thermal inertia to the evaporative cooling effect"
+        },
+        {
+          "c": "Humidity sensitivity",
+          "mechanism": "Conditionally ventilate",
+          "strategyFamily": "Climate-dependent operation",
+          "s": "Useful primarily under dry-air conditions",
+          "e": "Avoids overclaiming performance in humid climates where evaporation potential is low"
+        }
+      ],
+      "original_narrative": "The salsabil is a water-and-air device embedded in courtyard architecture. A thin film of water flows over a carved or inclined surface, increasing the contact area between water and air. In a shaded courtyard or reception room, this supports evaporative cooling while the surrounding mass and enclosure moderate radiant heat. Its performance is strongest in hot-dry conditions and weakens as humidity rises.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    },
+    {
+      "case_id": 57,
+      "name": "Cartuja Qanat",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Arid water scarcity",
+          "mechanism": "Conserve",
+          "strategyFamily": "Subsurface water infrastructure",
+          "s": "Underground gravity-fed channel",
+          "e": "Limits evaporation and protects water from solar heating"
+        },
+        {
+          "c": "High surface heat",
+          "mechanism": "Buffer",
+          "strategyFamily": "Ground-coupled infrastructure",
+          "s": "Water travels below the overheated surface layer",
+          "e": "Maintains cooler water temperatures and reduces loss"
+        },
+        {
+          "c": "Low-energy distribution",
+          "mechanism": "Reduce demand",
+          "strategyFamily": "Passive hydraulic gradient",
+          "s": "Gravity replaces pumping",
+          "e": "Provides water movement with minimal operational energy"
+        },
+        {
+          "c": "Settlement microclimate",
+          "mechanism": "Enable vegetation",
+          "strategyFamily": "Water-supported shading",
+          "s": "Irrigation supports gardens/courtyards",
+          "e": "Creates secondary evaporative and shaded microclimates"
+        }
+      ],
+      "original_narrative": "The qanat is not a building form but an infrastructural climate strategy: underground water conveyance uses gravity, soil insulation, and evaporation control to move water across arid landscapes. In architectural terms, it extends the thermal logic of the building into the ground, where water is protected from solar radiation and high evaporative loss.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": true
+    },
+    {
+      "case_id": 58,
+      "name": "Dolat Abad Windcatcher",
+      "date": "2026-10-20",
+      "actions": [
+        "Screened all matrix claims and reference strings.",
+        "Replaced unsupported performance quantities and absolutes with conditional interpretation.",
+        "Removed uncalibrated whole-case evidence grade.",
+        "Retained original corpus for claim-by-claim comparison."
+      ],
+      "original_response_rows": [
+        {
+          "c": "Hot arid afternoons",
+          "mechanism": "Ventilate",
+          "strategyFamily": "Windcatcher tower",
+          "s": "Tall shaft captures higher wind velocities",
+          "e": "Draws air into interior spaces with lower direct solar exposure"
+        },
+        {
+          "c": "Low humidity",
+          "mechanism": "Evaporate",
+          "strategyFamily": "Air-over-water cooling",
+          "s": "Air passes near pools or moist surfaces",
+          "e": "Reduces air temperature where evaporation potential is high"
+        },
+        {
+          "c": "Large diurnal swing",
+          "mechanism": "Buffer",
+          "strategyFamily": "Massive shaded interior",
+          "s": "Thick masonry rooms connected to air path",
+          "e": "Combines air movement with thermal lag"
+        },
+        {
+          "c": "Dust and hot wind",
+          "mechanism": "Filter / control",
+          "strategyFamily": "Managed ventilation path",
+          "s": "Openings positioned and operated selectively",
+          "e": "Avoids uncontrolled exposure while preserving cooling potential"
+        }
+      ],
+      "original_narrative": "The Dolat Abad windcatcher links air movement, height, pressure difference, and water-cooled interior space. Its tall tower captures higher, faster air streams and directs them downward through shaded masonry volumes. Coupled with pools and thick walls, the system turns wind into a controlled cooling resource rather than relying on exposed openings at street level.",
+      "remaining_work": [
+        "Verify primary full texts and page-level locators.",
+        "Verify location, geometry, historical and community-specific interpretation."
+      ],
+      "pilot": false
+    }
+  ]
+}
