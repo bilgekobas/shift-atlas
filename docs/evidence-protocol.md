@@ -40,3 +40,7 @@ Cases **4, 5, 6, 7, 12, 34, 37, 38, 40, 42, 53 and 57** cover courtyards, mass/g
 The **43 pilot rows** expose outcomes, conditions and limitations. A qualitative trullo finding links to inspected measurements of a **comparable Fasano building**, not the mapped Alberobello point. Cartuja Qanat rows link to inspected **project design documentation**, not measured cooling performance. Other rows remain physical interpretations with missing claim-level locators. This pilots evidence representation; it does not certify twelve measured cases.
 
 Use the same Response ID in the partner template's Responses and Evidence tabs. Keep reference IDs/locators in Responses, and location relationship, outcome, value/unit, comparator, conditions, verification status and limitations in Evidence. Leave numerical fields blank when no supported value exists. Editors verify before publication; automatic publishing is not introduced.
+
+## Mechanism coding
+
+Published row mechanisms and strategy families are explicit editorial assignments. Original explicit labels are retained where appropriate; other rows use documented case/row mappings. No substring classifier assigns published mechanisms. These labels describe interpretations and do not add performance evidence.

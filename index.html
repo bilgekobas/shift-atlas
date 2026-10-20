@@ -1604,6 +1604,7 @@ function initMap(){
 
 
   markers_ready=true;
+  document.getElementById('map-loading').style.display='none';
   updateMarkers();
 }
 // Start init loop
@@ -2081,7 +2082,7 @@ function inferMatrixStrategyFamily(row, fallback){
 function claimEvidenceHTML(row){
   const e=row.evidence;
   if(!e)return '<small>Evidence not assessed</small>';
-  const fields=[['Claim ID',row.claimId],['Relation',e.site_relation],['Outcome',e.outcome],['Source IDs',(e.source_ids||[]).join(', ')||'No verified claim-level source'],['Locator',e.locator||'Pending'],['Conditions',e.conditions],['Limits',e.limitations]];
+  const fields=[['Claim ID',row.claimId],['Evidence location',e.site_relation.replace(/_/g,' ')],['Outcome',e.outcome],['Source IDs',(e.source_ids||[]).join(', ')||'No verified claim-level source'],['Locator',e.locator||'Pending'],['Conditions',e.conditions],['Limits',e.limitations]];
   return `<details class="claim-evidence"><summary>${imageText(e.type.replace(/_/g,' '))} · ${imageText(e.status.replace(/_/g,' '))}</summary>${fields.map(([k,v])=>`<div><strong>${k}:</strong> ${imageText(v)}</div>`).join('')}</details>`;
 }
 
@@ -2422,7 +2423,7 @@ updateMarkers();
   <div class="meta-content" id="meta-about">
     <div class="meta-h1">Atlas of Vernacular Architecture</div>
     <div class="meta-p">The atlas documents vernacular and low-energy architectural cases as climate-adaptation knowledge. It focuses on how built form, material systems, spatial organisation, and everyday practices respond to environmental pressures such as heat, cold, humidity, rainfall, radiation, wind, and seasonal variability.</div>
-    <div class="meta-p">Each case is treated as an analytical reading rather than a stylistic precedent. The case card combines location-specific climate data, future climate projections, a present-day future-climate analogue, and a response matrix that links environmental pressures to physical mechanisms, strategy families, local variants, and microclimatic effects. The metadata now distinguishes physical mechanisms from strategy families: mechanisms describe how a case works, while strategy families describe the transferable spatial or material logic.</div>
+    <div class="meta-p">Each case is treated as an analytical reading rather than a stylistic precedent. The case card combines a fixed 1991–2020 regional climate baseline, claim-level evidence records, and a response matrix that links environmental pressures to physical mechanisms, strategy families, local variants, and microclimatic effects. The metadata now distinguishes physical mechanisms from strategy families: mechanisms describe how a case works, while strategy families describe the transferable spatial or material logic.</div>
 
     <div class="meta-h2">What the atlas is for</div>
     <ul class="meta-list">
@@ -2433,7 +2434,7 @@ updateMarkers();
     </ul>
 
     <div class="meta-h2">How to read a case</div>
-    <div class="meta-p">Use the left panel for case identity: place, typology, strategy family, period, material, source, narrative context, and references. Use the climate panels to understand the environmental pressures today and under the future scenario. Use the response matrix to read the case as a set of architectural operations rather than as a catalogue object.</div>
+    <div class="meta-p">Use the left panel for case identity: place, typology, strategy family, period, material, source, narrative context, and references. Use the climate baseline to understand regional environmental context. Future projections and analogue rankings are withheld pending validation. Use the response matrix to read the case as a set of architectural operations rather than as a catalogue object.</div>
 
     <div class="meta-h2">How to use the interface</div>
     <div class="meta-p">Click a map marker to open a case. Use the filter bar to narrow the collection by climate zone, condition, mechanism, strategy family, scale, material, organisation, source, or transferability. The atlas is intended for comparison: no single case should be read as a universal solution without considering climate, social practice, construction culture, maintenance, and regulatory context.</div>

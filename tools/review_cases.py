@@ -116,21 +116,48 @@ CORRECTIONS = [
 ('Evaluation of heat insulation performance of the fitting combined taiko-shoji', 'Nakazono, M., Yoshiura, A., Mizunuma, M. & Koganei, M. (2012). Evaluation of heat insulation performance of the fitting combined Taiko-Shoji and wooden pair glass sash for traditional wooden house renovation. Journal of Environmental Engineering (Transactions of AIJ), 77(674), 241–249. https://doi.org/10.3130/aije.77.241', 'https://petit.lib.yamaguchi-u.ac.jp/19757', 'metadata_verified'),
 ('Analysis of urban thermal structures in different scenarios of hot weather', 'Possega, M., Brattich, E., Cintolesi, C., Ruggieri, P. & Di Sabatino, S. (2026). Analysis of urban thermal structures in different scenarios of hot weather: The Bologna case study. Urban Climate, 65, 102779. https://doi.org/10.1016/j.uclim.2026.102779', 'https://www.unibo.it/sitoweb/silvana.disabatino/publications', 'metadata_verified')]
 
-def infer(row):
-    s = (row['s'] + ' ' + row['e']).lower()
-    if any(x in s for x in ['collect rain', 'cistern', 'collect rainfall']): return 'Collect / store water', 'Water-harvesting system'
-    if any(x in s for x in ['evaporat', 'transpir']): return 'Evaporate', 'Water or vegetation cooling'
-    if any(x in s for x in ['ground contact', 'ground coupling', 'embedding', 'excavat']): return 'Earth-couple', 'Ground-coupled enclosure'
-    if any(x in s for x in ['reflectance', 'solar absorption', 'limewash']): return 'Reflect', 'Reflective surface'
-    if any(x in s for x in ['rain', 'runoff', 'wetting']): return 'Shed / manage water', 'Rain-protective enclosure'
-    if any(x in s for x in ['flood', 'wet ground']): return 'Elevate', 'Raised floor'
-    if any(x in s for x in ['resist heat', 'insulat', 'felt layers', 'thatch']): return 'Resist heat transfer', 'Layered envelope'
-    if any(x in s for x in ['store heat', 'store and release', 'delay heat', 'damp heat', 'thermal storage', 'masonry can', 'earth can store']): return 'Store / release heat', 'Thermal mass enclosure'
-    if any(x in s for x in ['airflow', 'air movement', 'ventilation', 'air paths', 'air exchange', 'air wells', 'air path']): return 'Ventilate', 'Managed air path'
-    if any(x in s for x in ['shade', 'shading', 'solar exposure', 'direct sun']): return 'Shade', 'Solar-control arrangement'
-    if any(x in s for x in ['light', 'translucent', 'daylight']): return 'Transmit / scatter light', 'Translucent boundary'
-    if any(x in s for x in ['wind exposure', 'wind shelter']): return 'Reduce wind exposure', 'Sheltered enclosure'
-    return 'Modify exposure / use', 'Adaptive spatial or operational arrangement'
+# Explicit editorial coding for rows that previously relied on text matching.
+# No substring classifier is used to assign a published physical mechanism.
+MANUAL = {
+1:'Collect sun~Solar orientation|Share internal gains~Integrated farm enclosure|Shade~Deep roof edge|Manage snow exposure~Snow-adapted roof',
+2:'Store / release heat~Composite wall|Calibrate solar access~Oriented openings|Reduce wind exposure~Compact street fabric',
+3:'Reduce wind exposure~Sheltered orientation|Resist heat transfer~Layered thatch roof|Share internal gains~Integrated farm enclosure',
+4:'Shade / evaporate~Vegetated water courtyard|Shade~Self-shading courtyard|Store / release heat~Thermal mass envelope',
+7:'Ventilate~Windcatcher air path|Earth-couple / evaporate~Coupled water and air system|Shade~Inward-facing enclosure',
+8:'Store / release heat~Adobe envelope|Shade~Stepped settlement|Collect sun~Solar orientation',
+9:'Shade~Vegetated canopy|Shade~Covered passage network|Reduce wind exposure~Continuous enclosure',
+10:'Ventilate / separate from ground~Raised floor|Shed rain~Deep roof edge|Elevate~Flood-adapted floor',
+11:'Shade / ventilate~Veranda|Ventilate~Vented roof|Elevate~Raised floor',
+12:'Ventilate~Courtyard air path|Shed rain~Pitched roof and eaves|Shade~Perforated screen',
+13:'Shed rain / shade~Extended roof|Exchange moisture~Hygroscopic material|Ventilate / elevate~Raised floor',
+14:'Resist heat transfer~Layered turf envelope|Earth-couple / shelter~Low ground-contact form|Buffer air exchange~Entrance passage',
+15:'Reduce exposed area~Compact enclosure|Resist heat transfer~Layered covering|Enable relocation~Portable dwelling variant|Reduce wind exposure~Sheltered siting',
+16:'Manage wind loads~Curved enclosure|Resist heat transfer~Layered felt envelope|Ventilate~Operable crown',
+17:'Shade~Cliff shelter|Store / release heat~Rock mass|Reduce wind exposure~Earthen enclosure|Store / release heat~Earthen envelope',
+18:'Store / release heat~Earthen envelope|Support maintenance~Permanent access members|Relocate activity~Seasonal roof occupation',
+19:'Shade / evaporate~Planted water courtyard|Mediate exposure~Inward-facing enclosure|Shade~Calibrated courtyard geometry',
+20:'Shade~Narrow street fabric|Shade / permit airflow~Perforated screen|Reduce exposed area~Shared party walls',
+21:'Store / release heat~Stone envelope|Resist heat transfer~Grass thatch roof|Collect sun~Solar orientation|Manage drainage / exposure~Terraced landscape',
+22:'Earth-couple~Rock-cut dwelling|Reduce exposed area~Ground-embedded enclosure|Reduce wind exposure~Protected openings',
+23:'Resist air leakage~Sealed log joints|Retain / delay runoff~Vegetated roof|Reduce wind exposure~Sheltered farm layout|Collect sun~Solar orientation',
+24:'Store / release heat~Earthen shell|Support maintenance / manage runoff~Ribbed shell|Ventilate~High-level opening',
+25:'Store / release heat~Rammed-earth envelope|Ventilate~Courtyard openings|Shed / drain water~Roof and courtyard drainage|Shade~Gallery and roof edge',
+26:'Ventilate~Courtyard air path|Shed rain~Pitched roof and eaves|Shade~Perforated screen|Shade / evaporate~Planted water courtyard',
+27:'Shade / resist heat transfer~Layered thatch roof|Collect rainwater~Inward-draining roof|Store heat / exchange moisture~Earthen envelope|Ventilate~Multiple courtyard openings',
+28:'Elevate~Flood-adapted floor|Ventilate~Spaced buildings and openings|Shed rain / shade~Extended roof|Separate from wet ground~Raised floor',
+29:'Ventilate~Air well|Shade / shelter from rain~Covered arcade|Adjust enclosure~Operable louvres',
+30:'Shade / ventilate~Courtyard system|Ventilate~Operable openings|Shade~Layered solar control',
+31:'Ventilate~Distributed courtyards|Shade~Veranda and vegetation|Evaporate / modify radiation~Water element',
+32:'Buffer exposure~Semi-outdoor forecourt|Ventilate~Open facade|Shade~Projecting courts and galleries',
+33:'Ventilate~Porous block|Capture wind~Oriented openings|Shade / ventilate~Calibrated openings',
+39:'Transmit / scatter light~Translucent screen|Mediate views~Translucent boundary|Adjust enclosure~Sliding partition',
+40:'Transmit / scatter light~Shell-infill screen|Adjust enclosure~Operable window|Mediate views~Translucent boundary',
+41:'Shade~Roofed threshold|Shelter from rain~Intermediate enclosure|Adjust enclosure~Sliding threshold',
+42:'Shade~Roofed platform|Relocate activity~Semi-public threshold|Shelter from rain~Covered entry|Share shade~Accessible threshold',
+43:'Shade~Portico network|Shelter from rain~Roofed walkway|Enable sheltered movement~Continuous threshold network',
+44:'Collect sun~Solar courtyard and gallery|Shade~Seasonal gallery|Store / release heat~Masonry envelope',
+45:'Earth-couple / shade~Sunken courtyard|Earth-couple~Ground-embedded enclosure|Reduce wind exposure~Below-grade courtyard',
+57:'Shade~Shading and vegetation|Exchange heat~Water-based hybrid cooling|Supply / manage energy~Photovoltaic and hybrid systems|Support collective adaptation~Public-space governance'}
 
 def main():
     prior_path = ROOT / 'data/reference-audit.json'
@@ -171,7 +198,11 @@ def main():
             # Remove unverified quantitative geometry from the strategy label.
             row['s'] = re.sub(r'\b\d+(?:[.,–×°−-]\d+)*\s*(?:%|cm|mm|m|°)?\s*(?:\+\s*)?', '', row['s']).strip()
             row['s'] = re.sub(r'\s+', ' ', row['s']).replace('Superinsulation', 'Insulation').replace('superinsulation', 'insulation')
-            row['mechanism'], row['strategyFamily'] = infer(row)
+            if c['id'] in MANUAL:
+                row['mechanism'], row['strategyFamily'] = MANUAL[c['id']].split('|')[i].split('~')
+            else:
+                row['mechanism'] = original['re'][i]['mechanism']
+                row['strategyFamily'] = original['re'][i]['strategyFamily']
             row['claimId'] = f'SHIFT-{c["id"]:03d}-R{i+1:02d}'
             row['evidence'] = {
                 'type': 'mechanism_inference', 'status': 'qualitative_interpretation',

@@ -11,6 +11,9 @@ assert.equal(new Set(cases.map(c=>c.id)).size,58);
 assert.equal(cases.reduce((n,c)=>n+c.re.length,0),199);
 assert.equal(cases.filter(c=>c.evidencePilot).length,12);
 assert.equal(cases.filter(c=>c.evidencePilot).reduce((n,c)=>n+c.re.length,0),43);
+assert.equal(cases.find(c=>c.id===5).re[0].mechanism,'Buffer');
+assert.equal(cases.find(c=>c.id===5).re[3].mechanism,'Reduce dependency');
+assert.equal(cases.find(c=>c.id===7).re[0].mechanism,'Ventilate');
 const ids=new Set(refs.references.map(r=>r.id)),claims=new Set();
 for(const c of cases){
  assert(!c.tax?.evidence,'Retired grade remains');

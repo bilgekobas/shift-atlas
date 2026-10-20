@@ -41,8 +41,8 @@
         "c": "Winter cold",
         "s": "Passive solar gain",
         "e": "Solar access may reduce heating demand, depending on orientation, glazing, shading and occupancy.",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar orientation",
         "claimId": "SHIFT-001-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -63,8 +63,8 @@
         "c": "Winter cold",
         "s": "Livestock thermal buffer",
         "e": "Animal heat can contribute to the building heat balance; separation, ventilation, hygiene and fire safety remain necessary.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Share internal gains",
+        "strategyFamily": "Integrated farm enclosure",
         "claimId": "SHIFT-001-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -86,7 +86,7 @@
         "s": "Solar shading",
         "e": "Eaves can intercept high-angle sun; effectiveness depends on orientation and geometry.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Deep roof edge",
         "claimId": "SHIFT-001-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -107,8 +107,8 @@
         "c": "Heavy snowfall",
         "s": "Structural shedding",
         "e": "Roof form affects snow accumulation and loading; safe performance requires local structural assessment.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Manage snow exposure",
+        "strategyFamily": "Snow-adapted roof",
         "claimId": "SHIFT-001-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -290,8 +290,8 @@
         "c": "Cold winters",
         "s": "Composite thermal mass wall",
         "e": "Infill and timber jointly affect heat and moisture transfer; insulation and airtightness depend on the actual wall assembly.",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Composite wall",
         "claimId": "SHIFT-002-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -312,8 +312,8 @@
         "c": "Limited solar access",
         "s": "Calibrated window sizing",
         "e": "Opening area and orientation affect solar gain, daylight and heat loss.",
-        "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "mechanism": "Calibrate solar access",
+        "strategyFamily": "Oriented openings",
         "claimId": "SHIFT-002-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -334,8 +334,8 @@
         "c": "Dense settlement",
         "s": "Compact street morphology",
         "e": "Enclosure can shelter streets from wind, while also reducing ventilation and winter solar access.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Reduce wind exposure",
+        "strategyFamily": "Compact street fabric",
         "claimId": "SHIFT-002-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -513,7 +513,7 @@
         "s": "Aerodynamic gable orientation",
         "e": "Orientation and surrounding shelter can reduce wind exposure, subject to site conditions.",
         "mechanism": "Reduce wind exposure",
-        "strategyFamily": "Sheltered enclosure",
+        "strategyFamily": "Sheltered orientation",
         "claimId": "SHIFT-003-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -535,7 +535,7 @@
         "s": "Thatched roof insulation",
         "e": "Thatch can resist heat transfer when its thickness, moisture condition and construction are suitable.",
         "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "strategyFamily": "Layered thatch roof",
         "claimId": "SHIFT-003-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -556,8 +556,8 @@
         "c": "Shared thermal provision",
         "s": "Livestock-hall integration",
         "e": "Shared enclosure can retain internal gains; air quality and hygiene constrain livestock integration.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Share internal gains",
+        "strategyFamily": "Integrated farm enclosure",
         "claimId": "SHIFT-003-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -722,8 +722,8 @@
         "c": "Extreme summer heat",
         "s": "Evaporative courtyard cooling",
         "e": "Shade, vegetation and water may modify courtyard air and radiant conditions; their separate contributions require measurement.",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Shade / evaporate",
+        "strategyFamily": "Vegetated water courtyard",
         "claimId": "SHIFT-004-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -745,7 +745,7 @@
         "s": "Self-shading courtyard",
         "e": "Courtyard geometry can reduce direct solar exposure; reflected radiation and seasonal sun access also matter.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Self-shading courtyard",
         "claimId": "SHIFT-004-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -767,7 +767,7 @@
         "s": "Extreme thermal mass",
         "e": "Masonry can delay heat transfer; benefit depends on night-time heat rejection, internal gains and operation.",
         "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "strategyFamily": "Thermal mass envelope",
         "claimId": "SHIFT-004-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -971,8 +971,8 @@
     "re": [
       {
         "c": "Hot summer days",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "Buffer",
+        "strategyFamily": "Thermal mass envelope",
         "s": "dry-stone limestone walls",
         "e": "A monitored, unoccupied trullo in Selva di Fasano showed indoor temperature buffering. The authors also found winter conditions too cold without heating. This comparable building does not establish performance of every trullo.",
         "claimId": "SHIFT-005-R01",
@@ -995,8 +995,8 @@
       },
       {
         "c": "High solar radiation",
-        "mechanism": "Reflect",
-        "strategyFamily": "Reflective surface",
+        "mechanism": "Reflect / shade",
+        "strategyFamily": "Reflective mineral surface",
         "s": "Whitewashed exterior and conical roof geometry",
         "e": "Limewashed surfaces can reduce solar absorption where maintained; exposed stone roof portions need separate assessment.",
         "claimId": "SHIFT-005-R02",
@@ -1017,8 +1017,8 @@
       },
       {
         "c": "Diurnal temperature swing",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Thermal lag dwelling",
         "s": "Large stone mass around a small interior volume",
         "e": "Stored heat must be discharged to a cooler sink if buffering is to persist over successive hot days.",
         "claimId": "SHIFT-005-R03",
@@ -1039,8 +1039,8 @@
       },
       {
         "c": "Timber scarcity",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Reduce dependency",
+        "strategyFamily": "Local material substitution",
         "s": "Corbelled stone roof without timber structure",
         "e": "Corbelled stone construction can reduce structural dependence on timber, with local craft and structural constraints.",
         "claimId": "SHIFT-005-R04",
@@ -1061,8 +1061,8 @@
       },
       {
         "c": "Seasonal water scarcity",
-        "mechanism": "Collect / store water",
-        "strategyFamily": "Water-harvesting system",
+        "mechanism": "Collect / conserve",
+        "strategyFamily": "Roof-to-cistern system",
         "s": "Sloped stone roof and underground storage",
         "e": "Roof collection and cisterns can store rainwater where present; yield and water quality require assessment.",
         "claimId": "SHIFT-005-R05",
@@ -1258,7 +1258,7 @@
       {
         "c": "Extreme seasonal variation",
         "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "strategyFamily": "Earth-embedded dwelling",
         "s": "Rock-cut rooms in tuff hillside",
         "e": "Ground contact and rock mass can damp temperature variation; depth, ventilation and geology determine the result.",
         "claimId": "SHIFT-006-R01",
@@ -1279,8 +1279,8 @@
       },
       {
         "c": "High solar radiation",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Reduce radiation",
+        "strategyFamily": "Ground-sheltered form",
         "s": "Semi-buried dwellings with limited exposed roof and wall area",
         "e": "Ground shelter can reduce directly exposed surfaces; openings and courtyards still receive solar radiation.",
         "claimId": "SHIFT-006-R02",
@@ -1323,8 +1323,8 @@
       },
       {
         "c": "Moisture and hygiene risk",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Ventilate / drain",
+        "strategyFamily": "Managed earth-embedded infrastructure",
         "s": "Courtyards, openings, and drainage paths require continuous maintenance",
         "e": "Drainage, ventilation and sanitation are necessary to manage damp and contamination risks.",
         "claimId": "SHIFT-006-R04",
@@ -1516,7 +1516,7 @@
         "s": "Wind-tower forced ventilation",
         "e": "Wind pressure and buoyancy can drive airflow through a tower and connected openings; performance depends on wind direction and flow resistance.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Windcatcher air path",
         "claimId": "SHIFT-007-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -1537,8 +1537,8 @@
         "c": "Very low humidity",
         "s": "Qanat evaporative pre-cooling",
         "e": "Ground contact and water may provide additional cooling where connected to the air path; the tower alone does not guarantee below-ambient air.",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Earth-couple / evaporate",
+        "strategyFamily": "Coupled water and air system",
         "claimId": "SHIFT-007-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -1560,7 +1560,7 @@
         "s": "Blank street walls",
         "e": "Inward planning and shaded openings can reduce solar exposure; façade configuration varies between buildings.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Inward-facing enclosure",
         "claimId": "SHIFT-007-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -1772,7 +1772,7 @@
         "s": "Adobe thermal mass inversion",
         "e": "Adobe can store and release heat, with performance dependent on wall assembly, solar access and daily temperature variation.",
         "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "strategyFamily": "Adobe envelope",
         "claimId": "SHIFT-008-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -1794,7 +1794,7 @@
         "s": "Stepped self-shading terraces",
         "e": "Stepped volumes can shade some surfaces and occupied areas, depending on solar angle.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Stepped settlement",
         "claimId": "SHIFT-008-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -1815,8 +1815,8 @@
         "c": "Cold winter",
         "s": "Passive solar orientation",
         "e": "Solar gain can contribute to heating where openings, orientation and storage are coordinated; auxiliary heat may still be necessary.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar orientation",
         "claimId": "SHIFT-008-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -1987,8 +1987,8 @@
         "c": "Extreme desert heat",
         "s": "Oasis microclimate engineering",
         "e": "Palm canopy provides shade; air-temperature effects depend on irrigation, vegetation and ventilation.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Shade",
+        "strategyFamily": "Vegetated canopy",
         "claimId": "SHIFT-009-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -2010,7 +2010,7 @@
         "s": "covered street network",
         "e": "Covered passages reduce direct solar exposure on pedestrian routes; coverage varies within the settlement.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Covered passage network",
         "claimId": "SHIFT-009-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -2031,8 +2031,8 @@
         "c": "Hot dust winds",
         "s": "Collective building enclosure",
         "e": "Continuous enclosure can provide wind shelter while requiring deliberate ventilation paths.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Reduce wind exposure",
+        "strategyFamily": "Continuous enclosure",
         "claimId": "SHIFT-009-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -2214,7 +2214,7 @@
         "c": "Constant humidity",
         "s": "Under-floor ventilation",
         "e": "Raised floors can permit air movement and separate occupied spaces from wet ground; this does not establish moisture or comfort performance by itself.",
-        "mechanism": "Elevate",
+        "mechanism": "Ventilate / separate from ground",
         "strategyFamily": "Raised floor",
         "claimId": "SHIFT-010-R01",
         "evidence": {
@@ -2236,8 +2236,8 @@
         "c": "Torrential rainfall",
         "s": "Deep overhangs + steep roof",
         "e": "Overhangs and roof drainage can reduce rain exposure, subject to wind direction and detailing.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed rain",
+        "strategyFamily": "Deep roof edge",
         "claimId": "SHIFT-010-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -2259,7 +2259,7 @@
         "s": "Stilt elevation",
         "e": "Elevation can reduce exposure to some floods; flood level, scour, debris and structural stability remain limits.",
         "mechanism": "Elevate",
-        "strategyFamily": "Raised floor",
+        "strategyFamily": "Flood-adapted floor",
         "claimId": "SHIFT-010-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -2433,8 +2433,8 @@
         "c": "Heat and humidity",
         "s": "Multi-directional veranda buffers",
         "e": "Shaded verandas can reduce radiant exposure and enable air movement where a pressure difference exists.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Shade / ventilate",
+        "strategyFamily": "Veranda",
         "claimId": "SHIFT-011-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -2456,7 +2456,7 @@
         "s": "Ridge stack-effect ventilation",
         "e": "Ridge openings can exhaust warm air where inlet area, buoyancy and wind conditions support flow.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Vented roof",
         "claimId": "SHIFT-011-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -2642,7 +2642,7 @@
         "s": "Stack-effect courtyard",
         "e": "Courtyard-connected openings can support ventilation; direction and rate depend on wind, buoyancy and opening configuration.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Courtyard air path",
         "claimId": "SHIFT-012-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -2663,8 +2663,8 @@
         "c": "Monsoon rainfall",
         "s": "Steep tiled roof + deep overhangs",
         "e": "Pitched roofs and overhangs can shed rain and protect openings; drainage and wind-driven rain detailing remain necessary.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed rain",
+        "strategyFamily": "Pitched roof and eaves",
         "claimId": "SHIFT-012-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -2686,7 +2686,7 @@
         "s": "Perforated timber screens",
         "e": "Screens can shade openings while allowing some air and daylight to pass; geometry controls the trade-off.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Perforated screen",
         "claimId": "SHIFT-012-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -2869,8 +2869,8 @@
         "c": "Heavy rainfall",
         "s": "Curved saddle roof",
         "e": "Large roof overhangs can shed rain and shade walls; aerodynamic or storm-resistance claims require structural evidence.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed rain / shade",
+        "strategyFamily": "Extended roof",
         "claimId": "SHIFT-013-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -2891,8 +2891,8 @@
         "c": "Moisture",
         "s": "Bamboo hygroscopic regulation",
         "e": "Bamboo exchanges moisture with surrounding air; room-scale humidity buffering depends on exposed material, coatings and ventilation.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Exchange moisture",
+        "strategyFamily": "Hygroscopic material",
         "claimId": "SHIFT-013-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -2913,7 +2913,7 @@
         "c": "Heat accumulation",
         "s": "Stilt under-floor ventilation",
         "e": "Raised floors may permit under-floor air movement and reduce contact with wet ground.",
-        "mechanism": "Elevate",
+        "mechanism": "Ventilate / elevate",
         "strategyFamily": "Raised floor",
         "claimId": "SHIFT-013-R03",
         "evidence": {
@@ -3075,7 +3075,7 @@
         "s": "Turf insulation",
         "e": "Turf and other roof or wall layers affect heat transfer; moisture, thickness and construction must be specified.",
         "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "strategyFamily": "Layered turf envelope",
         "claimId": "SHIFT-014-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -3096,8 +3096,8 @@
         "c": "Storm-force winds",
         "s": "Semi-buried low form",
         "e": "Low form and ground contact can reduce exposure, while drainage and ground moisture remain critical.",
-        "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "mechanism": "Earth-couple / shelter",
+        "strategyFamily": "Low ground-contact form",
         "claimId": "SHIFT-014-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -3118,8 +3118,8 @@
         "c": "Cold infiltration",
         "s": "Thermal airlock entrance",
         "e": "An enclosed entrance passage can buffer direct air exchange if doors and use support that function.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Buffer air exchange",
+        "strategyFamily": "Entrance passage",
         "claimId": "SHIFT-014-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -3282,8 +3282,8 @@
         "c": "Extreme cold",
         "s": "Minimum surface/volume ratio",
         "e": "Compact geometry can reduce exposed area for a given volume; no universal advantage over other forms is quantified here.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Reduce exposed area",
+        "strategyFamily": "Compact enclosure",
         "claimId": "SHIFT-015-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -3305,7 +3305,7 @@
         "s": "Layered reindeer-hide insulation",
         "e": "Covering layers can reduce heat transfer; hide, textile and turf variants must be distinguished.",
         "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "strategyFamily": "Layered covering",
         "claimId": "SHIFT-015-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -3326,8 +3326,8 @@
         "c": "Nomadic lifestyle",
         "s": "Portable birch pole frame",
         "e": "Some goahti variants are portable; permanent turf-covered structures require separate documentation.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Enable relocation",
+        "strategyFamily": "Portable dwelling variant",
         "claimId": "SHIFT-015-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -3349,7 +3349,7 @@
         "s": "Microsite wind shelter",
         "e": "Topography and vegetation may provide wind shelter; snow accumulation can also create loading and moisture risks.",
         "mechanism": "Reduce wind exposure",
-        "strategyFamily": "Sheltered enclosure",
+        "strategyFamily": "Sheltered siting",
         "claimId": "SHIFT-015-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -3518,8 +3518,8 @@
         "c": "Fierce winds",
         "s": "Circular wind-resistant form",
         "e": "Curved enclosure changes wind loading; resistance depends on anchoring, frame and cover construction.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Manage wind loads",
+        "strategyFamily": "Curved enclosure",
         "claimId": "SHIFT-016-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -3541,7 +3541,7 @@
         "s": "Seasonal adjustable felt insulation",
         "e": "Felt layers resist heat transfer; performance depends on density, moisture, thickness and air leakage.",
         "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "strategyFamily": "Layered felt envelope",
         "claimId": "SHIFT-016-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -3563,7 +3563,7 @@
         "s": "Toono crown dual function",
         "e": "The crown opening can support ventilation or smoke exhaust depending on configuration; heating and indoor air quality require separate assessment.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Operable crown",
         "claimId": "SHIFT-016-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -3730,7 +3730,7 @@
         "s": "Geological cliff shading",
         "e": "Cliff position can shade parts of a settlement at particular times; solar access varies by aspect and season.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Cliff shelter",
         "claimId": "SHIFT-017-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -3751,8 +3751,8 @@
         "c": "Intense solar radiation",
         "s": "Rock thermal mass",
         "e": "Rock mass can damp local temperature variation but does not guarantee cooling of occupied rooms.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Rock mass",
         "claimId": "SHIFT-017-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -3774,7 +3774,7 @@
         "s": "Adobe wall protection",
         "e": "Enclosed earthen walls can reduce direct wind exposure; joints and openings determine air leakage.",
         "mechanism": "Reduce wind exposure",
-        "strategyFamily": "Sheltered enclosure",
+        "strategyFamily": "Earthen enclosure",
         "claimId": "SHIFT-017-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -3796,7 +3796,7 @@
         "s": "Adobe thermal flywheel",
         "e": "Earthen walls can delay heat transfer; indoor temperatures require case-specific evidence.",
         "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "strategyFamily": "Earthen envelope",
         "claimId": "SHIFT-017-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -3952,7 +3952,7 @@
         "s": "Banco thermal mass walls",
         "e": "Earthen walls can store and release heat; the balance depends on material moisture, thickness and boundary conditions.",
         "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "strategyFamily": "Earthen envelope",
         "claimId": "SHIFT-018-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -3973,8 +3973,8 @@
         "c": "Monsoon erosion",
         "s": "Toron scaffolding system",
         "e": "Projecting timber members can support access for recurring maintenance, as documented for particular buildings.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Support maintenance",
+        "strategyFamily": "Permanent access members",
         "claimId": "SHIFT-018-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -3995,8 +3995,8 @@
         "c": "Hot summer nights",
         "s": "Roof terrace sleeping",
         "e": "Roof occupation may exploit cooler night conditions; use and safety require local documentation.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Relocate activity",
+        "strategyFamily": "Seasonal roof occupation",
         "claimId": "SHIFT-018-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -4171,8 +4171,8 @@
         "c": "Extreme summer heat",
         "s": "Fountain evaporative cooling",
         "e": "Shaded planting and water can modify radiant and air conditions; water use and humidity limit evaporative benefit.",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Shade / evaporate",
+        "strategyFamily": "Planted water courtyard",
         "claimId": "SHIFT-019-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -4193,8 +4193,8 @@
         "c": "Solar radiation",
         "s": "Blank street walls",
         "e": "Inward-facing rooms can reduce some street exposure; opening patterns vary.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Mediate exposure",
+        "strategyFamily": "Inward-facing enclosure",
         "claimId": "SHIFT-019-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -4216,7 +4216,7 @@
         "s": "Asymmetric courtyard plan",
         "e": "Courtyard proportions and orientation affect seasonal sun access; enclosure cannot exclude direct sun at all angles.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Calibrated courtyard geometry",
         "claimId": "SHIFT-019-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -4406,7 +4406,7 @@
         "s": "Self-shading lane morphology",
         "e": "Narrow lanes can reduce direct solar exposure, with seasonal and orientation-dependent effects.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Narrow street fabric",
         "claimId": "SHIFT-020-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -4427,8 +4427,8 @@
         "c": "Solar gain through facades",
         "s": "Timber jali screens",
         "e": "Timber lattices can shade openings and admit air; stone-screen results cannot be assigned to timber screens without qualification.",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Shade / permit airflow",
+        "strategyFamily": "Perforated screen",
         "claimId": "SHIFT-020-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -4449,8 +4449,8 @@
         "c": "Urban heat",
         "s": "Shared party wall thermal mass",
         "e": "Party walls reduce exposed envelope area; thermal storage depends on their material and thickness.",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Reduce exposed area",
+        "strategyFamily": "Shared party walls",
         "claimId": "SHIFT-020-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -4612,8 +4612,8 @@
         "c": "Sub-zero nights",
         "s": "Stone diurnal cycle regulation",
         "e": "Masonry can store solar heat and release it later; cold-night performance also depends on insulation and infiltration.",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Stone envelope",
         "claimId": "SHIFT-021-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -4635,7 +4635,7 @@
         "s": "Ichu grass thatch insulation",
         "e": "Grass thatch can resist heat transfer when its construction and moisture condition are suitable.",
         "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "strategyFamily": "Grass thatch roof",
         "claimId": "SHIFT-021-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -4656,8 +4656,8 @@
         "c": "Cold pre-dawn",
         "s": "East-facing orientation",
         "e": "Orientation changes the timing of solar gain; local slope, shading and seasonal occupation must be documented.",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar orientation",
         "claimId": "SHIFT-021-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -4678,8 +4678,8 @@
         "c": "Sub-zero nights",
         "s": "Andenes cold-air drainage",
         "e": "Terraces can modify drainage and local exposure; frost protection and cold-air movement need site-specific evidence.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Manage drainage / exposure",
+        "strategyFamily": "Terraced landscape",
         "claimId": "SHIFT-021-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -4825,7 +4825,7 @@
         "s": "Tuff earth thermal regulation",
         "e": "Ground coupling and rock mass can damp temperature fluctuations; indoor conditions vary with depth, occupancy and ventilation.",
         "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "strategyFamily": "Rock-cut dwelling",
         "claimId": "SHIFT-022-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -4846,8 +4846,8 @@
         "c": "High solar radiation",
         "s": "Fully embedded form",
         "e": "Embedding reduces exposed envelope area, while entrances and excavated façades still receive solar gain.",
-        "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "mechanism": "Reduce exposed area",
+        "strategyFamily": "Ground-embedded enclosure",
         "claimId": "SHIFT-022-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -4868,8 +4868,8 @@
         "c": "Cold winter winds",
         "s": "Minimal openings",
         "e": "Protected openings can limit wind exposure; adequate ventilation and moisture control remain necessary.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Reduce wind exposure",
+        "strategyFamily": "Protected openings",
         "claimId": "SHIFT-022-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -5030,8 +5030,8 @@
         "c": "Wet Atlantic cold",
         "s": "Log wall airtightness",
         "e": "Log joints and sealing affect infiltration; airtightness requires measurement of the actual building.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Resist air leakage",
+        "strategyFamily": "Sealed log joints",
         "claimId": "SHIFT-023-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -5052,8 +5052,8 @@
         "c": "Rain penetration",
         "s": "Living turf roof",
         "e": "Vegetated roofs can retain and delay rainfall runoff; performance depends on substrate, antecedent moisture and rainfall.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Retain / delay runoff",
+        "strategyFamily": "Vegetated roof",
         "claimId": "SHIFT-023-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -5074,8 +5074,8 @@
         "c": "Strong SW winds",
         "s": "U-shaped farm windbreak",
         "e": "Outbuildings may shelter occupied areas where layout and wind direction support it.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Reduce wind exposure",
+        "strategyFamily": "Sheltered farm layout",
         "claimId": "SHIFT-023-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -5096,8 +5096,8 @@
         "c": "Low solar radiation",
         "s": "South-facing main facade",
         "e": "Orientation and enclosure can improve solar access and wind shelter; the result is site-specific.",
-        "mechanism": "Reduce wind exposure",
-        "strategyFamily": "Sheltered enclosure",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar orientation",
         "claimId": "SHIFT-023-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -5258,8 +5258,8 @@
         "c": "Extreme heat",
         "s": "Clay thermal mass shell",
         "e": "Earthen shell mass can buffer temperature variation; structural efficiency and thermal performance require separate evaluation.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Earthen shell",
         "claimId": "SHIFT-024-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -5280,8 +5280,8 @@
         "c": "Monsoon rainfall",
         "s": "Ribbed exterior channels",
         "e": "External ribs support maintenance access and alter runoff paths; erosion and repair remain important.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Support maintenance / manage runoff",
+        "strategyFamily": "Ribbed shell",
         "claimId": "SHIFT-024-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -5303,7 +5303,7 @@
         "s": "Apex stack-effect ventilation",
         "e": "A high opening can enable warm-air exhaust where replacement air and driving pressure are available.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "High-level opening",
         "claimId": "SHIFT-024-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -5480,7 +5480,7 @@
         "s": "Rammed earth thermal mass",
         "e": "Thick earth walls can damp heat transfer; measured performance of one tulou is not a universal value for the type.",
         "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "strategyFamily": "Rammed-earth envelope",
         "claimId": "SHIFT-025-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -5502,7 +5502,7 @@
         "s": "Cross-ventilation through central courtyard",
         "e": "Courtyard-facing openings allow air exchange, but continuous cross-ventilation is not guaranteed.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Courtyard openings",
         "claimId": "SHIFT-025-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -5523,8 +5523,8 @@
         "c": "Monsoon rainfall",
         "s": "Steep pitched roof + courtyard drainage",
         "e": "Roof and courtyard drainage can manage rain where maintained and adequately sized.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed / drain water",
+        "strategyFamily": "Roof and courtyard drainage",
         "claimId": "SHIFT-025-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -5546,7 +5546,7 @@
         "s": "Roof overhang + corridor shade",
         "e": "Overhangs and galleries can shade inward façades, depending on orientation and solar angle.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Gallery and roof edge",
         "claimId": "SHIFT-025-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -5729,7 +5729,7 @@
         "s": "Stack-effect courtyard",
         "e": "Courtyard openings can support ventilation under suitable wind and buoyancy conditions.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Courtyard air path",
         "claimId": "SHIFT-026-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -5750,8 +5750,8 @@
         "c": "Monsoon rainfall",
         "s": "Steep tiled roof + deep overhangs",
         "e": "Pitched roofs and overhangs can shed rain and protect openings, subject to detailing.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed rain",
+        "strategyFamily": "Pitched roof and eaves",
         "claimId": "SHIFT-026-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -5773,7 +5773,7 @@
         "s": "Perforated timber jali screens",
         "e": "Screens can reduce direct sun while permitting some air and daylight to pass.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Perforated screen",
         "claimId": "SHIFT-026-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -5794,8 +5794,8 @@
         "c": "High perceived heat",
         "s": "Courtyard water + vegetation",
         "e": "Water and planting can modify local conditions; evaporative cooling potential decreases with humidity.",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Shade / evaporate",
+        "strategyFamily": "Planted water courtyard",
         "claimId": "SHIFT-026-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -5996,8 +5996,8 @@
         "c": "Extreme heat",
         "s": "Double thatched compluvium roof",
         "e": "Layered thatch and an air space can reduce heat transfer and provide shade; construction details require documentation.",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "Shade / resist heat transfer",
+        "strategyFamily": "Layered thatch roof",
         "claimId": "SHIFT-027-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -6018,8 +6018,8 @@
         "c": "Heavy rainfall",
         "s": "Central basin for rainwater collection",
         "e": "Inward-draining roof geometry can collect rainfall; storage capacity, overflow and water quality are constraints.",
-        "mechanism": "Collect / store water",
-        "strategyFamily": "Water-harvesting system",
+        "mechanism": "Collect rainwater",
+        "strategyFamily": "Inward-draining roof",
         "claimId": "SHIFT-027-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -6040,8 +6040,8 @@
         "c": "High solar radiation",
         "s": "tamped earth wall mass",
         "e": "Earth can store heat and exchange moisture; benefit depends on assembly and ventilation.",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Store heat / exchange moisture",
+        "strategyFamily": "Earthen envelope",
         "claimId": "SHIFT-027-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -6062,8 +6062,8 @@
         "c": "Cross-ventilation",
         "s": "Multi-directional courtyard entrances",
         "e": "Multiple openings can enable cross-flow where pressure differences exist.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Ventilate",
+        "strategyFamily": "Multiple courtyard openings",
         "claimId": "SHIFT-027-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -6225,7 +6225,7 @@
         "s": "Stilt elevation",
         "e": "Floor elevation can reduce exposure to some floods; design flood level and structural hazards must be established.",
         "mechanism": "Elevate",
-        "strategyFamily": "Raised floor",
+        "strategyFamily": "Flood-adapted floor",
         "claimId": "SHIFT-028-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -6247,7 +6247,7 @@
         "s": "Cross-ventilation via spacing",
         "e": "Building spacing and openings influence wind-driven ventilation; no universal opening ratio is prescribed here.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Spaced buildings and openings",
         "claimId": "SHIFT-028-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -6268,8 +6268,8 @@
         "c": "Torrential rainfall",
         "s": "Concave gable + additional eave",
         "e": "Roof form and overhangs can shed rain and shade occupied spaces, subject to wind-driven rain exposure.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed rain / shade",
+        "strategyFamily": "Extended roof",
         "claimId": "SHIFT-028-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -6290,7 +6290,7 @@
         "c": "Ground moisture",
         "s": "Ground thermal mass",
         "e": "Elevating the floor separates it from wet ground; direct thermal coupling to the ground is consequently limited.",
-        "mechanism": "Elevate",
+        "mechanism": "Separate from wet ground",
         "strategyFamily": "Raised floor",
         "claimId": "SHIFT-028-R04",
         "evidence": {
@@ -6460,7 +6460,7 @@
         "s": "Air well stack ventilation",
         "e": "Air wells provide an exchange path; airflow depends on geometry, temperature differences and wind pressure.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Air well",
         "claimId": "SHIFT-029-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -6481,8 +6481,8 @@
         "c": "Solar gain",
         "s": "Five-foot way covered arcade",
         "e": "Covered arcades can shade circulation and shelter entrances from rain.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shade / shelter from rain",
+        "strategyFamily": "Covered arcade",
         "claimId": "SHIFT-029-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -6503,8 +6503,8 @@
         "c": "Ventilation/privacy",
         "s": "Moveable timber louvre screens",
         "e": "Operable louvres permit adjustment of view, shade and airflow, with coupled trade-offs.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Adjust enclosure",
+        "strategyFamily": "Operable louvres",
         "claimId": "SHIFT-029-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -6675,8 +6675,8 @@
         "c": "Urban heat + solar gain",
         "s": "Multiple inward courtyards",
         "e": "Courtyards can provide sheltered daylight and ventilation paths; room performance requires case-specific assessment.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Shade / ventilate",
+        "strategyFamily": "Courtyard system",
         "claimId": "SHIFT-030-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -6698,7 +6698,7 @@
         "s": "Fully open glazing-free windows",
         "e": "Openable screens and openings can support airflow, depending on the actual enclosure and use.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Operable openings",
         "claimId": "SHIFT-030-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -6720,7 +6720,7 @@
         "s": "Layered deep overhangs + pergola + vegetation",
         "e": "Layered shading can reduce direct solar exposure; coverage changes with sun angle and maintenance.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Layered solar control",
         "claimId": "SHIFT-030-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -6902,7 +6902,7 @@
         "s": "ain + subsidiary courtyards",
         "e": "Distributed courtyards can provide multiple air paths; actual airflow depends on openings and pressure differences.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Distributed courtyards",
         "claimId": "SHIFT-031-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -6924,7 +6924,7 @@
         "s": "Deep overhangs + veranda + vegetation",
         "e": "Overhangs, verandas and vegetation can reduce direct solar exposure, with seasonal variation.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Veranda and vegetation",
         "claimId": "SHIFT-031-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -6945,8 +6945,8 @@
         "c": "Humidity",
         "s": "Central reflective pool",
         "e": "A pool may modify local humidity and radiation; cooling magnitude requires measurement and depends on air conditions.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Evaporate / modify radiation",
+        "strategyFamily": "Water element",
         "claimId": "SHIFT-031-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -7138,8 +7138,8 @@
         "c": "Constant heat + humidity",
         "s": "Stacked private veranda courts",
         "e": "Private forecourts provide semi-outdoor space and potential ventilation paths; dimensions and use should be verified from drawings.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Buffer exposure",
+        "strategyFamily": "Semi-outdoor forecourt",
         "claimId": "SHIFT-032-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -7160,8 +7160,8 @@
         "c": "Limited ventilation",
         "s": "E-W orientation + semi-open facade",
         "e": "Orientation and open façades affect wind exposure; local wind and surrounding buildings determine performance.",
-        "mechanism": "Reduce wind exposure",
-        "strategyFamily": "Sheltered enclosure",
+        "mechanism": "Ventilate",
+        "strategyFamily": "Open facade",
         "claimId": "SHIFT-032-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -7183,7 +7183,7 @@
         "s": "Geometric self-shading",
         "e": "Projecting courts and galleries can shade lower surfaces, depending on sun angle.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Projecting courts and galleries",
         "claimId": "SHIFT-032-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -7339,7 +7339,7 @@
         "s": "porosity wind corridors",
         "e": "Distributed voids can provide air paths; porosity alone does not establish ventilation rate or comfort.",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Porous block",
         "claimId": "SHIFT-033-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -7360,8 +7360,8 @@
         "c": "Wind capture",
         "s": "E-W orientation for SE breezes",
         "e": "Orientation affects exposure to prevailing winds; local obstructions and opening configuration remain important.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Capture wind",
+        "strategyFamily": "Oriented openings",
         "claimId": "SHIFT-033-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -7382,8 +7382,8 @@
         "c": "Solar gain + privacy",
         "s": "External slits + internal full-height openings",
         "e": "Opening geometry mediates solar gain, privacy and airflow; each requires separate evaluation.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Shade / ventilate",
+        "strategyFamily": "Calibrated openings",
         "claimId": "SHIFT-033-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -7530,8 +7530,8 @@
     "re": [
       {
         "c": "Solar and wind exposure",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Reduce exposure",
+        "strategyFamily": "Wearable climate shelter",
         "s": "Self-supporting felt mantle",
         "e": "The mantle can shade the body and reduce direct wind exposure, depending on posture and use.",
         "claimId": "SHIFT-034-R01",
@@ -7552,8 +7552,8 @@
       },
       {
         "c": "Cold nights",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Insulate",
+        "strategyFamily": "Felted textile envelope",
         "s": "Dense wool layer",
         "e": "Wool layers can resist heat transfer; wetting, compression and openings change performance.",
         "claimId": "SHIFT-034-R02",
@@ -7574,8 +7574,8 @@
       },
       {
         "c": "Mobile work",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Carry shelter",
+        "strategyFamily": "Body-scale portable refuge",
         "s": "Garment doubles as clothing and temporary enclosure",
         "e": "Carrying shelter permits protection to move with the worker; mobility and effort are part of its use.",
         "claimId": "SHIFT-034-R03",
@@ -7596,8 +7596,8 @@
       },
       {
         "c": "Rain and snow",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed moisture",
+        "strategyFamily": "Compressed wool surface",
         "s": "Felt surface resists wetting and dries in air",
         "e": "Felt can resist intermittent wetting; water resistance and drying require material and use documentation.",
         "claimId": "SHIFT-034-R04",
@@ -7759,8 +7759,8 @@
     "re": [
       {
         "c": "Monsoon rainfall",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shed water",
+        "strategyFamily": "Wearable rain shelter",
         "s": "Curved bamboo-and-leaf back cover",
         "e": "The curved cover can shed rain away from covered body areas; protection depends on fit, posture and wind.",
         "claimId": "SHIFT-035-R01",
@@ -7781,8 +7781,8 @@
       },
       {
         "c": "Outdoor agricultural labour",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Free hands",
+        "strategyFamily": "Body-scale operational shelter",
         "s": "Back-mounted form rather than hand-held umbrella",
         "e": "A back-mounted cover leaves the hands available for work; ergonomic performance requires user observation.",
         "claimId": "SHIFT-035-R02",
@@ -7804,7 +7804,7 @@
       {
         "c": "Solar exposure",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Portable body canopy",
         "s": "Broad overhanging shell",
         "e": "The cover can reduce direct solar exposure on covered body areas.",
         "claimId": "SHIFT-035-R03",
@@ -7825,8 +7825,8 @@
       },
       {
         "c": "Local material availability",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Use renewable fibres",
+        "strategyFamily": "Low-resource craft system",
         "s": "Bamboo, palm, or leaf construction",
         "e": "Local fibres can support repairable construction; durability, harvesting and labour must be documented.",
         "claimId": "SHIFT-035-R04",
@@ -7987,8 +7987,8 @@
     "re": [
       {
         "c": "Hot dry days",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Shade / ventilate",
+        "strategyFamily": "Breathable textile shelter",
         "s": "Loose goat-hair weave and open sides",
         "e": "Fabric and adjustable sides can provide shade and permit air movement.",
         "claimId": "SHIFT-036-R01",
@@ -8009,8 +8009,8 @@
       },
       {
         "c": "Rain events",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Material response",
+        "strategyFamily": "Hygroscopic membrane",
         "s": "Goat-hair fibres swell when wet",
         "e": "Moisture can alter fibre and weave behaviour; waterproofing depends on the actual fabric, tension and condition.",
         "claimId": "SHIFT-036-R02",
@@ -8031,8 +8031,8 @@
       },
       {
         "c": "Pastoral mobility",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Reduce permanence",
+        "strategyFamily": "Portable shelter",
         "s": "Modular textile panels and poles",
         "e": "Modular fabric and poles allow relocation; transport, assembly and livelihood requirements shape use.",
         "claimId": "SHIFT-036-R03",
@@ -8053,8 +8053,8 @@
       },
       {
         "c": "Dust and wind",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Orient / screen",
+        "strategyFamily": "Operable enclosure",
         "s": "Fabric sides adjusted by wind direction",
         "e": "Adjustable sides can mediate wind and dust exposure, with ventilation trade-offs.",
         "claimId": "SHIFT-036-R04",
@@ -8237,8 +8237,8 @@
     "re": [
       {
         "c": "Solar gain at openings",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Shade",
+        "strategyFamily": "Perforated screen",
         "s": "Deep projecting timber lattice",
         "e": "Lattice depth and aperture geometry can reduce direct solar penetration.",
         "claimId": "SHIFT-037-R01",
@@ -8259,8 +8259,8 @@
       },
       {
         "c": "Glare",
-        "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "mechanism": "Diffuse light",
+        "strategyFamily": "Porous daylight filter",
         "s": "Small repeated apertures",
         "e": "Apertures modify daylight distribution and contrast; glare reduction requires a specified viewing condition.",
         "claimId": "SHIFT-037-R02",
@@ -8282,7 +8282,7 @@
       {
         "c": "Need for ventilation",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Breathable façade layer",
         "s": "Screened operable opening",
         "e": "A permeable opening allows some airflow but adds resistance; net ventilation depends on the full air path.",
         "claimId": "SHIFT-037-R03",
@@ -8303,8 +8303,8 @@
       },
       {
         "c": "Urban social exposure",
-        "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "mechanism": "Mediate boundary",
+        "strategyFamily": "Privacy-preserving threshold",
         "s": "One-way visual filtering from interior to street",
         "e": "Filtered visibility can support privacy, depending on light levels, viewing angle and local use.",
         "claimId": "SHIFT-037-R04",
@@ -8516,7 +8516,7 @@
       {
         "c": "High solar radiation",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Perforated screen",
         "s": "Deep carved stone lattice",
         "e": "Deep apertures can intercept direct sun depending on orientation and solar angle.",
         "claimId": "SHIFT-038-R01",
@@ -8537,8 +8537,8 @@
       },
       {
         "c": "Visual glare",
-        "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "mechanism": "Diffuse light",
+        "strategyFamily": "Daylight-filtering façade",
         "s": "Repetitive small openings",
         "e": "The pattern modifies daylight distribution; glare performance depends on the room and view.",
         "claimId": "SHIFT-038-R02",
@@ -8560,7 +8560,7 @@
       {
         "c": "Hot still air",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Porous boundary",
         "s": "Permeable screen at window or courtyard edge",
         "e": "Air can pass through apertures where a driving pressure exists; perforation does not itself create ventilation.",
         "claimId": "SHIFT-038-R03",
@@ -8581,8 +8581,8 @@
       },
       {
         "c": "Privacy and exposure",
-        "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "mechanism": "Mediate boundary",
+        "strategyFamily": "Social-climatic threshold",
         "s": "Filtered visibility through patterned stone",
         "e": "Patterned openings can mediate views; privacy varies with geometry and lighting.",
         "claimId": "SHIFT-038-R04",
@@ -8757,7 +8757,7 @@
         "s": "Diffuse paper membrane",
         "e": "Paper can transmit and scatter daylight; transmittance depends on paper, ageing and construction.",
         "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "strategyFamily": "Translucent screen",
         "claimId": "SHIFT-039-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -8778,7 +8778,7 @@
         "c": "Privacy",
         "s": "Translucent boundary",
         "e": "Translucent infill can obscure direct views while admitting light.",
-        "mechanism": "Transmit / scatter light",
+        "mechanism": "Mediate views",
         "strategyFamily": "Translucent boundary",
         "claimId": "SHIFT-039-R02",
         "evidence": {
@@ -8800,8 +8800,8 @@
         "c": "Seasonal use",
         "s": "Sliding modular partition",
         "e": "Sliding panels permit spatial and seasonal adjustment; ventilation depends on whether an air path is actually opened.",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Adjust enclosure",
+        "strategyFamily": "Sliding partition",
         "claimId": "SHIFT-039-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -8976,7 +8976,7 @@
         "s": "Capiz-shell translucent panels",
         "e": "Shell infill can transmit and scatter daylight; visible and infrared properties require measured spectra for the actual shell assembly.",
         "mechanism": "Transmit / scatter light",
-        "strategyFamily": "Translucent boundary",
+        "strategyFamily": "Shell-infill screen",
         "claimId": "SHIFT-040-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -8997,8 +8997,8 @@
         "c": "Tropical rainfall",
         "s": "Operable timber window system",
         "e": "Operable timber panels can adjust exposure and air exchange, subject to rain and wind.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Adjust enclosure",
+        "strategyFamily": "Operable window",
         "claimId": "SHIFT-040-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -9019,7 +9019,7 @@
         "c": "Privacy",
         "s": "Light-filtering façade layer",
         "e": "Translucent shell infill can obscure views while admitting daylight; effectiveness depends on lighting and material.",
-        "mechanism": "Transmit / scatter light",
+        "mechanism": "Mediate views",
         "strategyFamily": "Translucent boundary",
         "claimId": "SHIFT-040-R03",
         "evidence": {
@@ -9189,7 +9189,7 @@
         "s": "Deep shaded timber threshold",
         "e": "A roofed threshold can shade adjacent rooms and occupation zones, depending on depth and solar angle.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Roofed threshold",
         "claimId": "SHIFT-041-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -9210,8 +9210,8 @@
         "c": "Rain",
         "s": "Intermediate dry zone",
         "e": "The intermediate zone can shelter openings from some rain; wind-driven rain remains a limit.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shelter from rain",
+        "strategyFamily": "Intermediate enclosure",
         "claimId": "SHIFT-041-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -9232,8 +9232,8 @@
         "c": "Seasonal use",
         "s": "Operable interior-exterior boundary",
         "e": "Sliding boundaries can adjust enclosure and occupation, depending on the documented house and season.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Adjust enclosure",
+        "strategyFamily": "Sliding threshold",
         "claimId": "SHIFT-041-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -9408,7 +9408,7 @@
         "s": "Raised shaded platform",
         "e": "A shaded platform can reduce direct solar and radiant exposure; air temperature, surface temperature and mean radiant temperature are distinct outcomes.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Roofed platform",
         "claimId": "SHIFT-042-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -9429,8 +9429,8 @@
         "c": "Social heat adaptation",
         "s": "Semi-public sitting threshold",
         "e": "A semi-public threshold can support relocation of activities to a sheltered edge, subject to access and social practice.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Relocate activity",
+        "strategyFamily": "Semi-public threshold",
         "claimId": "SHIFT-042-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -9451,8 +9451,8 @@
         "c": "Rain",
         "s": "Covered façade strip",
         "e": "The covered entry can shelter occupants and openings from some rainfall.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shelter from rain",
+        "strategyFamily": "Covered entry",
         "claimId": "SHIFT-042-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -9473,8 +9473,8 @@
         "c": "Heat stress",
         "s": "Social redistribution of shade",
         "e": "Shared shade can support public resting and interaction where access and use permit.",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Share shade",
+        "strategyFamily": "Accessible threshold",
         "claimId": "SHIFT-042-R04",
         "evidence": {
           "type": "mechanism_inference",
@@ -9644,7 +9644,7 @@
         "s": "Continuous covered walkway",
         "e": "Covered routes reduce direct solar exposure; their effect on thermal comfort and pedestrian behaviour needs local evidence.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Portico network",
         "claimId": "SHIFT-043-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -9665,8 +9665,8 @@
         "c": "Rain",
         "s": "Roofed public threshold",
         "e": "Roofed circulation can maintain shelter during rainfall, subject to drainage and wind exposure.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Shelter from rain",
+        "strategyFamily": "Roofed walkway",
         "claimId": "SHIFT-043-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -9687,8 +9687,8 @@
         "c": "Dense circulation",
         "s": "Urban-scale semi-outdoor network",
         "e": "Continuity can support sheltered movement through the city; accessibility and network gaps matter.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Enable sheltered movement",
+        "strategyFamily": "Continuous threshold network",
         "claimId": "SHIFT-043-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -9876,8 +9876,8 @@
         "c": "Cold winter",
         "s": "South-facing courtyard and gallery",
         "e": "South-facing openings can admit winter solar gains, subject to obstruction, geometry and use.",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar courtyard and gallery",
         "claimId": "SHIFT-044-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -9899,7 +9899,7 @@
         "s": "Seasonal shaded gallery",
         "e": "A gallery can shade summer sun while admitting lower-angle winter sun where orientation and geometry support it.",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Seasonal gallery",
         "claimId": "SHIFT-044-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -9920,8 +9920,8 @@
         "c": "Cold nights",
         "s": "Stone wall heat storage",
         "e": "Masonry can store solar heat and release it later; insulation and infiltration determine night-time heat loss.",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "Store / release heat",
+        "strategyFamily": "Masonry envelope",
         "claimId": "SHIFT-044-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -10116,8 +10116,8 @@
         "c": "Hot summer",
         "s": "Sunken earth courtyard",
         "e": "Excavation can provide self-shading and ground coupling; temperatures measured in Mediterranean caves are not measurements of this Henan case.",
-        "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "mechanism": "Earth-couple / shade",
+        "strategyFamily": "Sunken courtyard",
         "claimId": "SHIFT-045-R01",
         "evidence": {
           "type": "mechanism_inference",
@@ -10138,8 +10138,8 @@
         "c": "Cold winter",
         "s": "Ground thermal storage",
         "e": "Surrounding ground can damp external temperature variation; depth, moisture and ventilation matter.",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Earth-couple",
+        "strategyFamily": "Ground-embedded enclosure",
         "claimId": "SHIFT-045-R02",
         "evidence": {
           "type": "mechanism_inference",
@@ -10160,8 +10160,8 @@
         "c": "Strong winds",
         "s": "Below-grade courtyard form",
         "e": "A below-grade courtyard can reduce direct wind exposure while requiring drainage and ventilation.",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "Reduce wind exposure",
+        "strategyFamily": "Below-grade courtyard",
         "claimId": "SHIFT-045-R03",
         "evidence": {
           "type": "mechanism_inference",
@@ -10352,7 +10352,7 @@
       {
         "c": "Hot summer afternoons",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Inward courtyard",
         "s": "Narrow courtyard with shaded walls and galleries",
         "e": "Walls and galleries can reduce direct radiant exposure, depending on courtyard proportions and orientation.",
         "claimId": "SHIFT-046-R01",
@@ -10373,8 +10373,8 @@
       },
       {
         "c": "Diurnal heat storage",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Buffer",
+        "strategyFamily": "Masonry thermal mass",
         "s": "Stone walls around courtyard rooms",
         "e": "Masonry can delay heat transfer; effectiveness requires suitable heat-rejection conditions.",
         "claimId": "SHIFT-046-R02",
@@ -10396,7 +10396,7 @@
       {
         "c": "Need for air movement",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Courtyard stack and cross-flow",
         "s": "Openings toward courtyard and upper air escape",
         "e": "Courtyard-connected openings may support air exchange where wind or buoyancy supplies a driving pressure.",
         "claimId": "SHIFT-046-R03",
@@ -10417,8 +10417,8 @@
       },
       {
         "c": "Seasonal living",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Relocate activity",
+        "strategyFamily": "Adaptive room use",
         "s": "Occupants shift between shaded courtyard, rooms, and terraces",
         "e": "Relocating activities can change exposure; actual use requires observation or a traceable account.",
         "claimId": "SHIFT-046-R04",
@@ -10612,8 +10612,8 @@
     "re": [
       {
         "c": "Cold winter",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Collect sun",
+        "strategyFamily": "Solar courtyard",
         "s": "South-oriented rooms and elongated courtyard geometry",
         "e": "South-oriented rooms can receive winter solar gains where courtyard geometry and obstructions allow.",
         "claimId": "SHIFT-047-R01",
@@ -10635,7 +10635,7 @@
       {
         "c": "Hot summer",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Long courtyard",
         "s": "Narrow proportions and inward roof edges",
         "e": "Courtyard proportions and roof edges can shade surfaces during part of the day.",
         "claimId": "SHIFT-047-R02",
@@ -10656,8 +10656,8 @@
       },
       {
         "c": "Wind exposure",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Buffer",
+        "strategyFamily": "Enclosed compound",
         "s": "High perimeter walls and inward openings",
         "e": "Enclosure can reduce direct wind exposure, with possible ventilation and daylight trade-offs.",
         "claimId": "SHIFT-047-R03",
@@ -10678,8 +10678,8 @@
       },
       {
         "c": "Household organization",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Zone seasonally",
+        "strategyFamily": "Adaptive courtyard dwelling",
         "s": "Rooms arranged by orientation and family hierarchy",
         "e": "Rooms with different exposures permit seasonal use patterns where documented.",
         "claimId": "SHIFT-047-R04",
@@ -10799,8 +10799,8 @@
     "re": [
       {
         "c": "Strong winter wind",
-        "mechanism": "Shed / manage water",
-        "strategyFamily": "Rain-protective enclosure",
+        "mechanism": "reduce exposure",
+        "strategyFamily": "wind-protected courtyard",
         "s": "High rammed-earth enclosure",
         "e": "Enclosure can reduce wind exposure locally; the effect depends on height, porosity and surrounding terrain.",
         "claimId": "SHIFT-048-R01",
@@ -10821,8 +10821,8 @@
       },
       {
         "c": "Cold winter",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "store heat",
+        "strategyFamily": "thermal mass courtyard",
         "s": "Thick earth perimeter walls",
         "e": "Earth walls can store heat; winter benefit also requires solar access, insulation and control of air leakage.",
         "claimId": "SHIFT-048-R02",
@@ -10940,8 +10940,8 @@
     "re": [
       {
         "c": "Hot arid summers",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Shade",
+        "strategyFamily": "Vegetated pergola",
         "s": "Vine-covered courtyard canopy",
         "e": "A vine canopy can intercept solar radiation when leaf cover is sufficient.",
         "claimId": "SHIFT-049-R01",
@@ -10962,8 +10962,8 @@
       },
       {
         "c": "Dry air",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Evaporate / transpire",
+        "strategyFamily": "Living shade layer",
         "s": "Irrigated vegetation above occupied zone",
         "e": "Plant transpiration can modify local air conditions where irrigation and atmospheric demand permit.",
         "claimId": "SHIFT-049-R02",
@@ -10984,8 +10984,8 @@
       },
       {
         "c": "Seasonal variability",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Adapt seasonally",
+        "strategyFamily": "Deciduous canopy",
         "s": "Leaves shade in summer, bare structure admits winter sun",
         "e": "Deciduous vegetation can change shading seasonally; timing depends on species, health and climate.",
         "claimId": "SHIFT-049-R03",
@@ -11006,8 +11006,8 @@
       },
       {
         "c": "Dust and exposure",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Buffer",
+        "strategyFamily": "Inward courtyard",
         "s": "Protected interior outdoor space",
         "e": "Enclosure can provide some shelter from street exposure while requiring ventilation and dust management.",
         "claimId": "SHIFT-049-R04",
@@ -11130,7 +11130,7 @@
       {
         "c": "Summer solar load",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Courtyard shading system",
         "s": "Tall surrounding walls, arcades, and planting",
         "e": "Walls, arcades and plants can intercept direct sun; shade varies by hour and season.",
         "claimId": "SHIFT-050-R01",
@@ -11152,7 +11152,7 @@
       {
         "c": "Dry heat",
         "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "strategyFamily": "Vegetated courtyard",
         "s": "Potted plants, fountains, and moist surfaces",
         "e": "Water and vegetation may produce local evaporative effects; magnitude depends on water supply, humidity and air movement.",
         "claimId": "SHIFT-050-R02",
@@ -11173,8 +11173,8 @@
       },
       {
         "c": "Urban density",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Buffer",
+        "strategyFamily": "Interiorized outdoor room",
         "s": "Courtyard set behind street façade",
         "e": "An inward courtyard can provide sheltered outdoor space; enclosure may also retain heat.",
         "claimId": "SHIFT-050-R03",
@@ -11195,8 +11195,8 @@
       },
       {
         "c": "Seasonal use",
-        "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "mechanism": "Operate shade / water",
+        "strategyFamily": "Maintained microclimate",
         "s": "Watering, plant care, and seasonal canopy use",
         "e": "Watering, shade operation and maintenance shape environmental performance and resource use.",
         "claimId": "SHIFT-050-R04",
@@ -11320,7 +11320,7 @@
       {
         "c": "Hot sun and glare",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Inward courtyard",
         "s": "Tall perimeter walls and shaded galleries",
         "e": "Walls and galleries can intercept sun and mediate glare, depending on geometry.",
         "claimId": "SHIFT-051-R01",
@@ -11342,7 +11342,7 @@
       {
         "c": "Dry urban heat",
         "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "strategyFamily": "Garden-water courtyard",
         "s": "Planting and water at the centre",
         "e": "Planting and water may modify local conditions; Casablanca cannot be assumed to have the same evaporative potential as an inland arid site.",
         "claimId": "SHIFT-051-R02",
@@ -11363,8 +11363,8 @@
       },
       {
         "c": "Privacy in dense fabric",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Mediate boundary",
+        "strategyFamily": "Introverted dwelling",
         "s": "Blank exterior and active interior garden",
         "e": "Inward openings can mediate privacy and exposure; actual use and access vary.",
         "claimId": "SHIFT-051-R03",
@@ -11386,7 +11386,7 @@
       {
         "c": "Night cooling potential",
         "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "strategyFamily": "Courtyard air exchange",
         "s": "Open courtyard coupled with surrounding rooms",
         "e": "Night-time air exchange can remove heat only when outdoor conditions and airflow are favourable.",
         "claimId": "SHIFT-051-R04",
@@ -11507,8 +11507,8 @@
     "re": [
       {
         "c": "Hot dry summer",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "buffer",
+        "strategyFamily": "thermal mass courtyard",
         "s": "Thick limestone and gypsum walls",
         "e": "Massive walls can delay heat transfer; material properties, thickness and night cooling need documentation.",
         "claimId": "SHIFT-052-R01",
@@ -11529,8 +11529,8 @@
       },
       {
         "c": "Agricultural use",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "enable seasonal use",
+        "strategyFamily": "productive courtyard",
         "s": "Courtyard links storage, dwelling, livestock and work",
         "e": "The courtyard can organise domestic and agricultural activity in sheltered space; actual seasonal use needs local evidence.",
         "claimId": "SHIFT-052-R02",
@@ -11650,8 +11650,8 @@
     "re": [
       {
         "c": "Winter heat loss",
-        "mechanism": "Resist heat transfer",
-        "strategyFamily": "Layered envelope",
+        "mechanism": "insulate",
+        "strategyFamily": "seasonal envelope",
         "s": "Temporary straw or reed insulation on exposed façades",
         "e": "A temporary dry organic layer can add thermal resistance; thickness, moisture, fire and pest risks require assessment.",
         "claimId": "SHIFT-053-R01",
@@ -11672,8 +11672,8 @@
       },
       {
         "c": "Material circularity",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "reuse",
+        "strategyFamily": "biogenic insulation",
         "s": "Organic layer removed after winter and reused agriculturally",
         "e": "Seasonal removal may permit reuse; actual material handling and reuse routes require documentation.",
         "claimId": "SHIFT-053-R02",
@@ -11794,8 +11794,8 @@
     "re": [
       {
         "c": "Hot dry summers",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Buffer",
+        "strategyFamily": "Thermal mass envelope",
         "s": "Thick lava-stone walls",
         "e": "Stone mass can delay heat transfer; sustained cooling depends on heat rejection and internal gains.",
         "claimId": "SHIFT-054-R01",
@@ -11816,8 +11816,8 @@
       },
       {
         "c": "Strong wind and salt exposure",
-        "mechanism": "Ventilate",
-        "strategyFamily": "Managed air path",
+        "mechanism": "Reduce exposure",
+        "strategyFamily": "Compact low-profile form",
         "s": "Small openings and robust masonry envelope",
         "e": "Compact enclosure and controlled openings can reduce direct wind exposure; ventilation remains necessary.",
         "claimId": "SHIFT-054-R02",
@@ -11839,7 +11839,7 @@
       {
         "c": "High solar radiation",
         "mechanism": "Reflect",
-        "strategyFamily": "Reflective surface",
+        "strategyFamily": "Reflective roof surface",
         "s": "White domed roof",
         "e": "A maintained light roof finish can reduce solar absorption.",
         "claimId": "SHIFT-054-R03",
@@ -11860,8 +11860,8 @@
       },
       {
         "c": "Water scarcity",
-        "mechanism": "Collect / store water",
-        "strategyFamily": "Water-harvesting system",
+        "mechanism": "Collect / store",
+        "strategyFamily": "Roof-to-cistern system",
         "s": "Domed roof channels rainfall into cisterns",
         "e": "Roof drainage can collect rainwater where connected to suitable storage; reliability depends on rainfall, demand and water quality.",
         "claimId": "SHIFT-054-R04",
@@ -11986,7 +11986,7 @@
       {
         "c": "Intense solar exposure",
         "mechanism": "Reflect",
-        "strategyFamily": "Reflective surface",
+        "strategyFamily": "High-albedo surface",
         "s": "Limewashed walls and roofs",
         "e": "Limewash can reduce solar absorption; reflectance, ageing and pedestrian radiation trade-offs need assessment.",
         "claimId": "SHIFT-055-R01",
@@ -12007,8 +12007,8 @@
       },
       {
         "c": "Hot dry afternoons",
-        "mechanism": "Earth-couple",
-        "strategyFamily": "Ground-coupled enclosure",
+        "mechanism": "Buffer",
+        "strategyFamily": "Thermal mass dwelling",
         "s": "Volcanic masonry and excavated rooms",
         "e": "Mass and ground contact can delay temperature changes; indoor outcomes depend on construction and operation.",
         "claimId": "SHIFT-055-R02",
@@ -12030,7 +12030,7 @@
       {
         "c": "Outdoor pedestrian heat",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Self-shading urban fabric",
         "s": "Narrow stepped lanes and compact building spacing",
         "e": "Narrow passages can shade occupants during part of the day; orientation and season determine coverage.",
         "claimId": "SHIFT-055-R03",
@@ -12051,8 +12051,8 @@
       },
       {
         "c": "Water and material constraints",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Reduce demand",
+        "strategyFamily": "Local material system",
         "s": "Mineral surfaces, compact volumes, and limited openings",
         "e": "Compact construction can reduce exposed area; resource demand and indoor conditions require separate evidence.",
         "claimId": "SHIFT-055-R04",
@@ -12176,7 +12176,7 @@
       {
         "c": "Hot dry air",
         "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "strategyFamily": "Evaporative cooling device",
         "s": "Water film over carved salsabil slab",
         "e": "A water film can support evaporative heat exchange where air is unsaturated and water-air contact is sufficient.",
         "claimId": "SHIFT-056-R01",
@@ -12198,7 +12198,7 @@
       {
         "c": "Solar exposure",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Courtyard microclimate",
         "s": "Water device placed in shaded interior or courtyard zone",
         "e": "Shading can reduce solar heating of water, surfaces and occupants.",
         "claimId": "SHIFT-056-R02",
@@ -12219,8 +12219,8 @@
       },
       {
         "c": "Thermal peaks",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Buffer",
+        "strategyFamily": "Mass-coupled cooling",
         "s": "Stone/masonry surfaces around cooled air path",
         "e": "Surrounding masonry can store heat; mass does not itself remove heat from the system.",
         "claimId": "SHIFT-056-R03",
@@ -12241,8 +12241,8 @@
       },
       {
         "c": "Humidity sensitivity",
-        "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "mechanism": "Conditionally ventilate",
+        "strategyFamily": "Climate-dependent operation",
         "s": "Useful primarily under dry-air conditions",
         "e": "Evaporation potential decreases as air approaches saturation; water, hygiene and maintenance constrain use.",
         "claimId": "SHIFT-056-R04",
@@ -12364,7 +12364,7 @@
       {
         "c": "Arid water scarcity",
         "mechanism": "Shade",
-        "strategyFamily": "Solar-control arrangement",
+        "strategyFamily": "Shading and vegetation",
         "s": "Shade and vegetation",
         "e": "Shading and vegetation form part of the contemporary public-space adaptation project.",
         "claimId": "SHIFT-057-R01",
@@ -12387,8 +12387,8 @@
       },
       {
         "c": "High surface heat",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Exchange heat",
+        "strategyFamily": "Water-based hybrid cooling",
         "s": "Water-based cooling systems",
         "e": "The project combines water cycles and cooling technologies; it is not a purely gravity-fed historic water channel.",
         "claimId": "SHIFT-057-R02",
@@ -12411,8 +12411,8 @@
       },
       {
         "c": "Low-energy distribution",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Supply / manage energy",
+        "strategyFamily": "Photovoltaic and hybrid systems",
         "s": "Hybrid energy and operation",
         "e": "Photovoltaics and hybrid systems are part of the documented design; auxiliary energy and operation must be included.",
         "claimId": "SHIFT-057-R03",
@@ -12435,8 +12435,8 @@
       },
       {
         "c": "Settlement microclimate",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Support collective adaptation",
+        "strategyFamily": "Public-space governance",
         "s": "Public-space use and governance",
         "e": "The public-space demonstrator includes participation and governance; comfort and use require evaluation.",
         "claimId": "SHIFT-057-R04",
@@ -12570,8 +12570,8 @@
     "re": [
       {
         "c": "Hot arid afternoons",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Ventilate",
+        "strategyFamily": "Windcatcher tower",
         "s": "Tall shaft captures higher wind velocities",
         "e": "A tower can use wind pressure and buoyancy to move air through connected spaces.",
         "claimId": "SHIFT-058-R01",
@@ -12593,7 +12593,7 @@
       {
         "c": "Low humidity",
         "mechanism": "Evaporate",
-        "strategyFamily": "Water or vegetation cooling",
+        "strategyFamily": "Air-over-water cooling",
         "s": "Air passes near pools or moist surfaces",
         "e": "Water contact may add evaporative cooling under suitable air conditions; verify the actual air path.",
         "claimId": "SHIFT-058-R02",
@@ -12614,8 +12614,8 @@
       },
       {
         "c": "Large diurnal swing",
-        "mechanism": "Store / release heat",
-        "strategyFamily": "Thermal mass enclosure",
+        "mechanism": "Buffer",
+        "strategyFamily": "Massive shaded interior",
         "s": "Thick masonry rooms connected to air path",
         "e": "Masonry can delay heat transfer and interact with ventilation, subject to night cooling and use.",
         "claimId": "SHIFT-058-R03",
@@ -12636,8 +12636,8 @@
       },
       {
         "c": "Dust and hot wind",
-        "mechanism": "Modify exposure / use",
-        "strategyFamily": "Adaptive spatial or operational arrangement",
+        "mechanism": "Filter / control",
+        "strategyFamily": "Managed ventilation path",
         "s": "Openings positioned and operated selectively",
         "e": "Selective operation may mediate hot wind and dust; filtration and maintenance require documentation.",
         "claimId": "SHIFT-058-R04",
