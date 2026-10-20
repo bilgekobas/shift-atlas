@@ -1,5 +1,7 @@
 """Regenerate browser data and review tables without accepting search candidates."""
 import json
+import hashlib
+import re
 from collections import Counter
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +16,10 @@ def main():
         c['refs'] = [r['citation'] for r in c['referenceRecords']]
     (ROOT/'data/cases-reviewed.json').write_text(json.dumps(cases, ensure_ascii=False, indent=2))
     (ROOT/'data/cases-reviewed.js').write_text('// Generated from cases-reviewed.json by tools/finalize_review.py.\nwindow.ATLAS_CASES='+json.dumps(cases, ensure_ascii=False, separators=(',',':'))+';\n')
+    version=hashlib.sha256((ROOT/'data/cases-reviewed.js').read_bytes()).hexdigest()[:12]
+    index=ROOT/'index.html'
+    html=re.sub(r'src="data/cases-reviewed\.js(?:\?v=[^"]*)?"',f'src="data/cases-reviewed.js?v={version}"',index.read_text())
+    index.write_text(html)
     p = ROOT/'docs/research-audit.md'
     h=p.read_text().split('\n## Case dispositions')[0]
     h+='\n## Case dispositions\n\n| ID | Case | Responses | Evidence pilot | Remaining verification |\n|---|---|---:|---|---|\n'

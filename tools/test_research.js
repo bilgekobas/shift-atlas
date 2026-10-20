@@ -44,6 +44,8 @@ for(const c of cases){
  assert(d.prec.every(v=>v>=0));assert(d.sr.every(v=>v>=0));
 }
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const version=require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'data/cases-reviewed.js'))).digest('hex').slice(0,12);
+assert(html.includes('data/cases-reviewed.js?v='+version),'Browser dataset version must match its content');
 for(const m of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g))if(m[1].trim())new vm.Script(m[1]);
 assert(!html.includes('17.8+0.31')&&!html.includes('function fetchFutureClimate'));
 assert(html.includes('claimEvidenceHTML(r)')&&html.includes('1991–2020 · NASA POWER'));
