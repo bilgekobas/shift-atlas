@@ -230,7 +230,7 @@ def main():
     # Pilot-specific conditions, outcomes and source relationships.
     conditions = {
 4:('Courtyard air and radiant conditions','Orientation, height-to-width ratio, water, vegetation, seasonal operation.','Separate shade, evaporation and heat storage; Mediterranean evidence is not universal.'),
-5:('Indoor temperature buffering','Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.','Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.'),
+5:('Thermal, solar, construction and water-management mechanisms','Verify the actual assembly, surface finish, night cooling, roof and water-storage arrangement for each mechanism.','No universal effect size or verified arrangement is established for the mapped Alberobello point.'),
 6:('Ground-coupled temperature and moisture','Depth, geology, outdoor exposure, drainage, ventilation and occupancy.','Healthy conditions cannot be inferred from stable temperature alone.'),
 7:('Airflow and coupled cooling','Tower geometry, wind direction, pressure differences and connected openings or water.','Separate wind-driven ventilation from evaporation and ground coupling.'),
 12:('Ventilation and rain protection','Courtyard and inlet geometry, wind, humidity, overhangs and drainage.','Courtyard form does not demonstrate sufficient airflow or dehumidification.'),
@@ -255,6 +255,8 @@ def main():
     trullo['re'][0]['evidence'].update(type='measured', status='full_text_reviewed', source_ids=[src['id']],
         site_relation='comparable_building_same_regional_type', locator='Sections 2, 4 and 7; monitoring March–November 2013',
         comparator='Indoor versus outdoor conditions in the monitored building; no matched control.',
+        conditions='Unoccupied trullo in Selva di Fasano monitored March–November 2013; numerical simulations extend conditions.',
+        limitations='Comparable building, not the mapped Alberobello point. No matched control isolates the effect of masonry mass.',
         outcome='Indoor temperature variation; seasonal heating limitation')
     qanat = next(c for c in cases if c['id'] == 57)
     qref = {'id':'REF-cartuja-uia-2022','original_citation':None,

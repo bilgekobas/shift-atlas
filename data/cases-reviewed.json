@@ -988,8 +988,8 @@
           "value": null,
           "unit": null,
           "comparator": "Indoor versus outdoor conditions in the monitored building; no matched control.",
-          "conditions": "Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.",
-          "limitations": "Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.",
+          "conditions": "Unoccupied trullo in Selva di Fasano monitored March–November 2013; numerical simulations extend conditions.",
+          "limitations": "Comparable building, not the mapped Alberobello point. No matched control isolates the effect of masonry mass.",
           "reviewed_at": "2026-10-20"
         }
       },
@@ -1006,12 +1006,12 @@
           "site_relation": "regional_type_or_case_interpretation",
           "source_ids": [],
           "locator": null,
-          "outcome": "Indoor temperature buffering",
+          "outcome": "Thermal, solar, construction and water-management mechanisms",
           "value": null,
           "unit": null,
           "comparator": null,
-          "conditions": "Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.",
-          "limitations": "Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.",
+          "conditions": "Verify the actual assembly, surface finish, night cooling, roof and water-storage arrangement for each mechanism.",
+          "limitations": "No universal effect size or verified arrangement is established for the mapped Alberobello point.",
           "reviewed_at": "2026-10-20"
         }
       },
@@ -1028,12 +1028,12 @@
           "site_relation": "regional_type_or_case_interpretation",
           "source_ids": [],
           "locator": null,
-          "outcome": "Indoor temperature buffering",
+          "outcome": "Thermal, solar, construction and water-management mechanisms",
           "value": null,
           "unit": null,
           "comparator": null,
-          "conditions": "Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.",
-          "limitations": "Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.",
+          "conditions": "Verify the actual assembly, surface finish, night cooling, roof and water-storage arrangement for each mechanism.",
+          "limitations": "No universal effect size or verified arrangement is established for the mapped Alberobello point.",
           "reviewed_at": "2026-10-20"
         }
       },
@@ -1050,12 +1050,12 @@
           "site_relation": "regional_type_or_case_interpretation",
           "source_ids": [],
           "locator": null,
-          "outcome": "Indoor temperature buffering",
+          "outcome": "Thermal, solar, construction and water-management mechanisms",
           "value": null,
           "unit": null,
           "comparator": null,
-          "conditions": "Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.",
-          "limitations": "Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.",
+          "conditions": "Verify the actual assembly, surface finish, night cooling, roof and water-storage arrangement for each mechanism.",
+          "limitations": "No universal effect size or verified arrangement is established for the mapped Alberobello point.",
           "reviewed_at": "2026-10-20"
         }
       },
@@ -1072,12 +1072,12 @@
           "site_relation": "regional_type_or_case_interpretation",
           "source_ids": [],
           "locator": null,
-          "outcome": "Indoor temperature buffering",
+          "outcome": "Thermal, solar, construction and water-management mechanisms",
           "value": null,
           "unit": null,
           "comparator": null,
-          "conditions": "Unoccupied Fasano trullo monitored March–November 2013; simulations extend conditions.",
-          "limitations": "Comparable trullo, not the mapped Alberobello building; no isolated mechanism effect size.",
+          "conditions": "Verify the actual assembly, surface finish, night cooling, roof and water-storage arrangement for each mechanism.",
+          "limitations": "No universal effect size or verified arrangement is established for the mapped Alberobello point.",
           "reviewed_at": "2026-10-20"
         }
       }
