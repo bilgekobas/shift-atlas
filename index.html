@@ -1116,8 +1116,6 @@ html,body{height:100%;overflow:hidden;background:var(--off);font-family:'DM Sans
 .modal-body.atlas-case-reader .cs-k{font-size:8px!important;color:#777!important;letter-spacing:.12em!important;}
 .modal-body.atlas-case-reader .cs-v{font-size:15px!important;line-height:1.15!important;}
 .modal-body.atlas-case-reader .cs-note,.modal-body.atlas-case-reader .cs-delta{font-size:11px!important;line-height:1.25!important;}
-.future-warming-option{font:10px 'DM Mono',monospace;padding:4px 9px;cursor:pointer;border:1px solid #aaa;border-radius:2px;background:#fff;color:#242424;}
-.future-warming-option:focus-visible{outline:2px solid #555;outline-offset:2px;}
 /* Group the climate visualisations and future analogue as one reading unit */
 .climate-data-wrap{border:1px solid var(--reader-line);background:#fff;margin:0 0 14px;overflow:hidden;}
 .climate-data-title{border-bottom:1px solid var(--reader-line);}
@@ -2443,7 +2441,7 @@ async function openPanel(c){
             </div>
             <div class="clim-stats" id="fut-stats"></div>
           </div>
-          <p class="research-note" style="font-size:10px;line-height:1.5;margin:8px 0 0">Original future-climate display restored. Monthly changes are provisional climate-zone assumptions, not validated location-specific CMIP6 projections. Solar radiation is held at the baseline; future absolute humidity assumes constant relative humidity. <a href="docs/data-method.md" target="_blank" rel="noopener">Methods and limitations</a>.</p>
+          <p class="research-note" style="grid-column:1 / -1;font-size:10px;line-height:1.5;margin:8px 0 0">Original future-climate display restored. Monthly changes are provisional climate-zone assumptions, not validated location-specific CMIP6 projections. Solar radiation is held at the baseline; future absolute humidity assumes constant relative humidity. <a href="docs/data-method.md" target="_blank" rel="noopener">Methods and limitations</a>.</p>
         </div>
 
         <div id="analogue-inline" aria-live="polite"></div>
