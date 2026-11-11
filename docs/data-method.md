@@ -37,7 +37,7 @@ Each location records request URL, period, units, native resolution, provider/AP
 
 The outdoor comparison with an indoor adaptive-comfort band is removed. Monthly regional weather cannot establish indoor operative temperature, comfort hours, physiological heat stress or a building strategy's effectiveness.
 
-The five zone-level future offsets, CMIP6 ensemble attribution and analogue scores are withdrawn. Future outputs require traceable models, scenarios, reference/target periods, location extraction, ensemble spread, bias treatment and uncertainty. Analogue matching additionally requires explicit features, candidate coverage, missing-data policy, covariance treatment, seasonal alignment and sensitivity/validation checks. Neither projections nor rankings are currently published.
+The original five zone-level offset tables and candidate-city analogue feature are visible again as a clearly marked **provisional historical prototype**, not as validated projections or rankings. A future scientific release requires traceable models, scenarios, reference/target periods, location extraction, ensemble spread, bias treatment and uncertainty. Analogue matching additionally requires explicit features, candidate coverage, missing-data policy, covariance treatment, seasonal alignment and sensitivity/validation checks. These validity conditions are not met by the restored prototype.
 
 ## Restored original future-climate prototype (provisional)
 
