@@ -39,6 +39,10 @@ The outdoor comparison with an indoor adaptive-comfort band is removed. Monthly 
 
 The five zone-level future offsets, CMIP6 ensemble attribution and analogue scores are withdrawn. Future outputs require traceable models, scenarios, reference/target periods, location extraction, ensemble spread, bias treatment and uncertainty. Analogue matching additionally requires explicit features, candidate coverage, missing-data policy, covariance treatment, seasonal alignment and sensitivity/validation checks. Neither projections nor rankings are currently published.
 
+## Future-climate sensitivity panel
+
+The case reader includes a transparent, non-predictive sensitivity comparison. It adds an exactly uniform +2 °C or +4 °C to each monthly 1991–2020 NASA POWER mean daily maximum and minimum temperature, leaving the baseline visible as dashed lines. These user-selected increments are **not** a CMIP6 model result, emissions scenario, time-specific projection, location-specific prediction, or ensemble uncertainty interval. They cannot establish future indoor climate, climate risks, or adaptation performance. No future precipitation, absolute humidity, seasonality or extreme-event change is inferred. The original zone-based offset tables and unvalidated analogue scoring remain withdrawn. The future panel is retained as an exploratory visualization until a traceable location-specific scenario pipeline is implemented.
+
 ## Primary methodological sources
 
 - NASA POWER meteorology: https://power.larc.nasa.gov/docs/methodology/meteorology/
