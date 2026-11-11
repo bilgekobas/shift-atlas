@@ -1116,6 +1116,8 @@ html,body{height:100%;overflow:hidden;background:var(--off);font-family:'DM Sans
 .modal-body.atlas-case-reader .cs-k{font-size:8px!important;color:#777!important;letter-spacing:.12em!important;}
 .modal-body.atlas-case-reader .cs-v{font-size:15px!important;line-height:1.15!important;}
 .modal-body.atlas-case-reader .cs-note,.modal-body.atlas-case-reader .cs-delta{font-size:11px!important;line-height:1.25!important;}
+.future-warming-option{font:10px 'DM Mono',monospace;padding:4px 9px;cursor:pointer;border:1px solid #aaa;border-radius:2px;background:#fff;color:#242424;}
+.future-warming-option:focus-visible{outline:2px solid #555;outline-offset:2px;}
 /* Group the climate visualisations and future analogue as one reading unit */
 .climate-data-wrap{border:1px solid var(--reader-line);background:#fff;margin:0 0 14px;overflow:hidden;}
 .climate-data-title{border-bottom:1px solid var(--reader-line);}
@@ -1939,6 +1941,40 @@ async function buildGallery(c,color){
 
 
 
+// A transparent, user-selectable sensitivity comparison, NOT a future projection.
+// Future scenario/ensemble deltas remain withheld until validated and traceable.
+let futureWarmingBaseline=null;
+let futureWarmingIncrement=2;
+function setFutureWarming(increment){
+  if(increment!==2&&increment!==4)return;
+  futureWarmingIncrement=increment;
+  document.querySelectorAll('.future-warming-option').forEach(button=>{
+    const active=Number(button.dataset.warming)===increment;
+    button.setAttribute('aria-pressed',String(active));
+    button.style.background=active?'#242424':'#fff';
+    button.style.color=active?'#fff':'#242424';
+    button.style.borderColor=active?'#242424':'#aaa';
+  });
+  if(futureWarmingBaseline)renderFutureSensitivityChart(futureWarmingBaseline,increment);
+}
+function renderFutureSensitivityChart(base,increment){
+  const canvas=document.getElementById('future-chart');
+  if(!canvas||!base||!Array.isArray(base.tmax)||!Array.isArray(base.tmin))return;
+  if(currentFutureChart){currentFutureChart.destroy();currentFutureChart=null;}
+  const adjust=arr=>arr.map(v=>Number.isFinite(v)?+(v+increment).toFixed(1):null);
+  currentFutureChart=new Chart(canvas,{
+    type:'line',
+    data:{labels:MONTHS,datasets:[
+      {label:'Adjusted daily max °C',data:adjust(base.tmax),borderColor:'#D95F3B',backgroundColor:'#D95F3B',pointRadius:2,tension:.3,borderWidth:2},
+      {label:'Adjusted daily min °C',data:adjust(base.tmin),borderColor:'#4A6FA5',backgroundColor:'#4A6FA5',pointRadius:2,tension:.3,borderWidth:2},
+      {label:'Baseline daily max °C',data:base.tmax,borderColor:'rgba(217,95,59,.55)',pointRadius:0,borderDash:[4,4],tension:.3,borderWidth:1.5},
+      {label:'Baseline daily min °C',data:base.tmin,borderColor:'rgba(74,111,165,.55)',pointRadius:0,borderDash:[4,4],tension:.3,borderWidth:1.5}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+(ctx.parsed.y==null?'—':ctx.parsed.y.toFixed(1)+' °C')}}},
+      scales:{y:{title:{display:true,text:'Temperature (°C)'},grid:{color:'rgba(0,0,0,.05)'}},x:{grid:{display:false}}}}
+  });
+}
 // Future projections and analogue scoring are withheld until a traceable,
 // location-specific ensemble and independently validated analogue method exist.
 
@@ -2161,12 +2197,23 @@ async function openPanel(c){
             </div>
             <div class="clim-stats" id="cur-stats"></div>
           </div>
-          <div class="research-note">
-            <div class="clim-col-header"><div class="clim-col-title">Climate interpretation</div></div>
-            <p>These monthly regional data describe environmental context. They do not measure this building’s indoor conditions, comfort or heat stress.</p>
-            <p>Future projections and climate analogues are temporarily withheld while their data provenance and method are validated.</p>
-            <p>Map coordinates may represent a regional type. Grid elevation, local terrain, urban form and occupation can differ from the documented example.</p>
-            <a href="docs/data-method.md" target="_blank" rel="noopener">Read climate methods and limitations</a>
+          <div>
+            <div class="clim-col-header"><div class="clim-col-title">Future climate · sensitivity</div><div class="clim-col-sub">Illustrative warming increment · not a projection</div></div>
+            <div id="fut-chips" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:8px;min-height:24px">
+              <span style="font-size:10px;color:var(--muted)">Add to baseline:</span>
+              <button type="button" class="future-warming-option" data-warming="2" onclick="setFutureWarming(2)" aria-pressed="true">+2 °C</button>
+              <button type="button" class="future-warming-option" data-warming="4" onclick="setFutureWarming(4)" aria-pressed="false">+4 °C</button>
+            </div>
+            <div class="chart-frame">
+              <canvas id="future-chart" aria-label="Illustrative monthly temperatures after a uniform warming increment"></canvas>
+              <div id="future-loading" class="chart-loading" style="font-size:9px">Loading baseline…</div>
+            </div>
+            <div class="climate-legend" aria-label="Illustrative warming chart legend">
+              <span class="legend-item" style="color:#D95F3B"><span class="legend-line"></span>Adjusted daily max °C</span>
+              <span class="legend-item" style="color:#4A6FA5"><span class="legend-line"></span>Adjusted daily min °C</span>
+              <span class="legend-item" style="color:#777"><span class="legend-line dashed"></span>1991–2020 baseline</span>
+            </div>
+            <p style="font-size:10px;line-height:1.5;color:var(--muted);margin:8px 0 0">A uniform +2/+4 °C shift is an exploratory sensitivity test, not a forecast for this site, period or emissions scenario. Changes to seasonality, rainfall, humidity and extremes are not estimated. <a href="docs/data-method.md" target="_blank" rel="noopener">Methods and limitations</a>.</p>
           </div>
         </div>
 
@@ -2197,6 +2244,7 @@ async function openPanel(c){
     if(right) right.scrollTop=0;
   });
 
+  futureWarmingBaseline=null;
   const climData=await fetchClimateData(c.coords[0],c.coords[1]);
   if(activeCaseId!==c.id)return;
   const loading=document.getElementById('chart-loading');
@@ -2207,7 +2255,15 @@ async function openPanel(c){
     if(stats)stats.innerHTML=climateStatsHTML(climData);
     const chips=document.getElementById('cur-chips');
     if(chips)chips.innerHTML='<span class="stress-chip muted">Regional context · building performance not measured</span>';
-  }else if(loading)loading.textContent='1991–2020 snapshot unavailable for this location';
+    futureWarmingBaseline=climData;
+    setFutureWarming(futureWarmingIncrement);
+    const futureLoading=document.getElementById('future-loading');
+    if(futureLoading)futureLoading.style.display='none';
+  }else{
+    if(loading)loading.textContent='1991–2020 snapshot unavailable for this location';
+    const futureLoading=document.getElementById('future-loading');
+    if(futureLoading)futureLoading.textContent='Baseline unavailable; sensitivity comparison cannot be calculated';
+  }
 }
 
 // Gallery switch helper
