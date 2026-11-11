@@ -1941,42 +1941,269 @@ async function buildGallery(c,color){
 
 
 
-// A transparent, user-selectable sensitivity comparison, NOT a future projection.
-// Future scenario/ensemble deltas remain withheld until validated and traceable.
-let futureWarmingBaseline=null;
-let futureWarmingIncrement=2;
-function setFutureWarming(increment){
-  if(increment!==2&&increment!==4)return;
-  futureWarmingIncrement=increment;
-  document.querySelectorAll('.future-warming-option').forEach(button=>{
-    const active=Number(button.dataset.warming)===increment;
-    button.setAttribute('aria-pressed',String(active));
-    button.style.background=active?'#242424':'#fff';
-    button.style.color=active?'#fff':'#242424';
-    button.style.borderColor=active?'#242424':'#aaa';
-  });
-  if(futureWarmingBaseline)renderFutureSensitivityChart(futureWarmingBaseline,increment);
+function fetchFutureClimate(lat, lon, climateZone){
+  // Archival climate-zone assumptions: NOT traceable or validated CMIP6 projections.
+  const DELTAS={"temperate":{"dTmax":[3.8,3.9,4.1,4.0,3.8,4.2,4.5,4.4,4.0,3.7,3.6,3.7],"dTmin":[3.5,3.6,3.7,3.6,3.4,3.8,4.1,4.0,3.6,3.4,3.3,3.4],"dPrec":[10,8,5,0,-5,-15,-20,-18,-8,5,8,10]},"mediterranean":{"dTmax":[3.2,3.4,3.8,4.2,4.8,5.2,5.5,5.3,4.6,3.9,3.3,3.1],"dTmin":[2.8,3.0,3.4,3.8,4.2,4.6,4.9,4.7,4.0,3.5,2.9,2.7],"dPrec":[5,3,-5,-10,-20,-30,-35,-32,-20,-10,0,5]},"arid":{"dTmax":[4.0,4.2,4.5,4.8,5.1,5.3,5.5,5.4,5.0,4.6,4.2,4.0],"dTmin":[3.5,3.7,4.0,4.3,4.6,4.8,5.0,4.9,4.5,4.1,3.7,3.5],"dPrec":[-5,-5,-8,-10,-8,5,10,8,3,-5,-8,-5]},"tropical":{"dTmax":[2.6,2.7,2.8,2.8,2.7,2.6,2.5,2.6,2.7,2.7,2.6,2.6],"dTmin":[2.3,2.4,2.5,2.5,2.4,2.3,2.2,2.3,2.4,2.4,2.3,2.3],"dPrec":[8,10,8,5,3,-5,-8,-5,3,8,10,8]},"cold":{"dTmax":[5.2,5.4,5.0,4.6,4.2,4.0,3.9,4.0,4.2,4.5,5.0,5.3],"dTmin":[5.5,5.7,5.2,4.7,4.3,4.1,4.0,4.1,4.3,4.6,5.1,5.6],"dPrec":[15,12,10,8,5,3,3,3,5,8,12,15]}};
+  return Promise.resolve(DELTAS[climateZone] || DELTAS['temperate']);
 }
-function renderFutureSensitivityChart(base,increment){
-  const canvas=document.getElementById('future-chart');
-  if(!canvas||!base||!Array.isArray(base.tmax)||!Array.isArray(base.tmin))return;
+
+function applyFutureDeltas(baseData, deltas){
+  // Apply CMIP6 deltas to observed baseline to get future monthly values
+  if(!baseData || !deltas) return null;
+  return {
+    tmax: baseData.tmax.map((v,i) => v!=null ? +(v + deltas.dTmax[i]).toFixed(1) : null),
+    tmin: baseData.tmin.map((v,i) => v!=null ? +(v + deltas.dTmin[i]).toFixed(1) : null),
+    prec: baseData.prec.map((v,i) => v!=null ? +Math.max(0, v * (1 + deltas.dPrec[i]/100)).toFixed(0) : null),
+    ah:   baseData.ah  ? baseData.ah.map((v,i)  => {
+      // Recompute AH at future temperature
+      if(v==null) return null;
+      const dT = (deltas.dTmax[i] + deltas.dTmin[i]) / 2;
+      const T_fut = (baseData.tmax[i]+baseData.tmin[i])/2 + dT;
+      const T_base= (baseData.tmax[i]+baseData.tmin[i])/2;
+      // Scale AH by vapour pressure ratio at future vs base temp (same RH assumed)
+      const eBase = 6.112 * Math.exp(17.67*T_base/(T_base+243.5));
+      const eFut  = 6.112 * Math.exp(17.67*T_fut /(T_fut +243.5));
+      return +(v * eFut / eBase).toFixed(1);
+    }) : null,
+    sr: baseData.sr || null
+  };
+}
+
+
+// ── CLIMATE ANALOGUE MATCHING ──────────────────────────────────────────────
+// Prototype method for SHIFT Atlas:
+// 1) Build the case future climate vector from projected monthly Tmax, Tmin, precipitation and AH.
+// 2) Fetch/cache present-day ERA5/Open-Meteo monthly climate for a candidate-city library.
+// 3) Compare with sigma-standardised seasonal features, following the logic of climate-analogue mapping
+//    used by Fitzpatrick & Dunn (2019): lower sigma dissimilarity = stronger analogue; >4σ = poor/novel.
+// Note: this is a prototype city library, not yet a full global gridded analogue surface.
+const ANALOGUE_CANDIDATE_CITIES=[
+  {city:'Munich',country:'Germany',lat:48.137,lon:11.575},{city:'Hamburg',country:'Germany',lat:53.551,lon:9.993},{city:'Berlin',country:'Germany',lat:52.52,lon:13.405},{city:'Freiburg',country:'Germany',lat:47.999,lon:7.842},{city:'Vienna',country:'Austria',lat:48.208,lon:16.373},{city:'Zurich',country:'Switzerland',lat:47.376,lon:8.541},{city:'Geneva',country:'Switzerland',lat:46.204,lon:6.143},{city:'Amsterdam',country:'Netherlands',lat:52.367,lon:4.904},{city:'Rotterdam',country:'Netherlands',lat:51.924,lon:4.477},{city:'Copenhagen',country:'Denmark',lat:55.676,lon:12.568},{city:'Oslo',country:'Norway',lat:59.913,lon:10.752},{city:'Bergen',country:'Norway',lat:60.392,lon:5.322},{city:'Stockholm',country:'Sweden',lat:59.329,lon:18.068},{city:'Helsinki',country:'Finland',lat:60.169,lon:24.938},{city:'Reykjavik',country:'Iceland',lat:64.146,lon:-21.942},{city:'Dublin',country:'Ireland',lat:53.35,lon:-6.26},{city:'London',country:'United Kingdom',lat:51.507,lon:-0.128},{city:'Edinburgh',country:'United Kingdom',lat:55.953,lon:-3.188},{city:'Paris',country:'France',lat:48.857,lon:2.352},{city:'Lyon',country:'France',lat:45.764,lon:4.835},{city:'Marseille',country:'France',lat:43.296,lon:5.369},{city:'Toulouse',country:'France',lat:43.604,lon:1.444},{city:'Bordeaux',country:'France',lat:44.837,lon:-0.579},{city:'Barcelona',country:'Spain',lat:41.387,lon:2.168},{city:'Madrid',country:'Spain',lat:40.416,lon:-3.704},{city:'Seville',country:'Spain',lat:37.389,lon:-5.984},{city:'Valencia',country:'Spain',lat:39.469,lon:-0.376},{city:'Lisbon',country:'Portugal',lat:38.722,lon:-9.139},{city:'Porto',country:'Portugal',lat:41.157,lon:-8.629},{city:'Milan',country:'Italy',lat:45.464,lon:9.19},{city:'Rome',country:'Italy',lat:41.902,lon:12.496},{city:'Naples',country:'Italy',lat:40.851,lon:14.268},{city:'Palermo',country:'Italy',lat:38.115,lon:13.361},{city:'Athens',country:'Greece',lat:37.984,lon:23.728},{city:'Thessaloniki',country:'Greece',lat:40.64,lon:22.944},{city:'Istanbul',country:'Turkey',lat:41.008,lon:28.978},{city:'Izmir',country:'Turkey',lat:38.423,lon:27.142},{city:'Ankara',country:'Turkey',lat:39.933,lon:32.86},{city:'Marrakech',country:'Morocco',lat:31.629,lon:-7.981},{city:'Casablanca',country:'Morocco',lat:33.573,lon:-7.589},{city:'Tunis',country:'Tunisia',lat:36.806,lon:10.181},{city:'Cairo',country:'Egypt',lat:30.044,lon:31.236},{city:'Khartoum',country:'Sudan',lat:15.5,lon:32.56},{city:'Dakar',country:'Senegal',lat:14.692,lon:-17.447},{city:'Lagos',country:'Nigeria',lat:6.524,lon:3.379},{city:'Nairobi',country:'Kenya',lat:-1.286,lon:36.817},{city:'Cape Town',country:'South Africa',lat:-33.925,lon:18.424},{city:'Johannesburg',country:'South Africa',lat:-26.204,lon:28.047},{city:'Dubai',country:'UAE',lat:25.204,lon:55.27},{city:'Riyadh',country:'Saudi Arabia',lat:24.713,lon:46.675},{city:'Baghdad',country:'Iraq',lat:33.315,lon:44.366},{city:'Tehran',country:'Iran',lat:35.689,lon:51.389},{city:'Yazd',country:'Iran',lat:31.898,lon:54.357},{city:'Tashkent',country:'Uzbekistan',lat:41.299,lon:69.24},{city:'Almaty',country:'Kazakhstan',lat:43.238,lon:76.945},{city:'Ulaanbaatar',country:'Mongolia',lat:47.886,lon:106.905},{city:'Beijing',country:'China',lat:39.904,lon:116.407},{city:'Shanghai',country:'China',lat:31.23,lon:121.474},{city:'Guangzhou',country:'China',lat:23.129,lon:113.264},{city:'Hong Kong',country:'China',lat:22.319,lon:114.169},{city:'Taipei',country:'Taiwan',lat:25.033,lon:121.565},{city:'Tokyo',country:'Japan',lat:35.676,lon:139.65},{city:'Seoul',country:'South Korea',lat:37.566,lon:126.978},{city:'Bangkok',country:'Thailand',lat:13.756,lon:100.501},{city:'Hanoi',country:'Vietnam',lat:21.028,lon:105.854},{city:'Ho Chi Minh City',country:'Vietnam',lat:10.823,lon:106.63},{city:'Singapore',country:'Singapore',lat:1.352,lon:103.819},{city:'Jakarta',country:'Indonesia',lat:-6.208,lon:106.845},{city:'Manila',country:'Philippines',lat:14.599,lon:120.984},{city:'Kuala Lumpur',country:'Malaysia',lat:3.139,lon:101.687},{city:'New Delhi',country:'India',lat:28.613,lon:77.209},{city:'Ahmedabad',country:'India',lat:23.022,lon:72.571},{city:'Mumbai',country:'India',lat:19.076,lon:72.878},{city:'Chennai',country:'India',lat:13.083,lon:80.27},{city:'Kolkata',country:'India',lat:22.572,lon:88.363},{city:'Dhaka',country:'Bangladesh',lat:23.81,lon:90.412},{city:'Karachi',country:'Pakistan',lat:24.861,lon:67.001},{city:'Lahore',country:'Pakistan',lat:31.52,lon:74.358},{city:'New York',country:'USA',lat:40.712,lon:-74.006},{city:'Boston',country:'USA',lat:42.36,lon:-71.059},{city:'Washington DC',country:'USA',lat:38.907,lon:-77.037},{city:'Miami',country:'USA',lat:25.761,lon:-80.192},{city:'Chicago',country:'USA',lat:41.878,lon:-87.629},{city:'Houston',country:'USA',lat:29.76,lon:-95.369},{city:'Phoenix',country:'USA',lat:33.448,lon:-112.074},{city:'Las Vegas',country:'USA',lat:36.17,lon:-115.14},{city:'Los Angeles',country:'USA',lat:34.052,lon:-118.244},{city:'San Francisco',country:'USA',lat:37.774,lon:-122.419},{city:'Seattle',country:'USA',lat:47.606,lon:-122.332},{city:'Vancouver',country:'Canada',lat:49.282,lon:-123.12},{city:'Toronto',country:'Canada',lat:43.653,lon:-79.383},{city:'Montreal',country:'Canada',lat:45.501,lon:-73.567},{city:'Mexico City',country:'Mexico',lat:19.432,lon:-99.133},{city:'Havana',country:'Cuba',lat:23.113,lon:-82.366},{city:'Bogota',country:'Colombia',lat:4.711,lon:-74.072},{city:'Lima',country:'Peru',lat:-12.046,lon:-77.043},{city:'Santiago',country:'Chile',lat:-33.448,lon:-70.669},{city:'Buenos Aires',country:'Argentina',lat:-34.603,lon:-58.381},{city:'Sao Paulo',country:'Brazil',lat:-23.555,lon:-46.639},{city:'Rio de Janeiro',country:'Brazil',lat:-22.906,lon:-43.172},{city:'Sydney',country:'Australia',lat:-33.868,lon:151.209},{city:'Melbourne',country:'Australia',lat:-37.813,lon:144.963},{city:'Brisbane',country:'Australia',lat:-27.469,lon:153.025},{city:'Perth',country:'Australia',lat:-31.952,lon:115.861},{city:'Auckland',country:'New Zealand',lat:-36.848,lon:174.763}
+];
+
+const analogueClimateCache=new Map();
+
+function seasonalAnalogueVector(d){
+  if(!d||!d.tmax||!d.tmin||!d.prec)return null;
+  const seasons=[[11,0,1],[2,3,4],[5,6,7],[8,9,10]]; // DJF, MAM, JJA, SON
+  const vec=[];
+  for(const idxs of seasons){
+    const tx=idxs.map(i=>d.tmax[i]).filter(v=>v!=null);
+    const tn=idxs.map(i=>d.tmin[i]).filter(v=>v!=null);
+    const pr=idxs.map(i=>d.prec[i]).filter(v=>v!=null);
+    const ah=(d.ah||[]).length?idxs.map(i=>d.ah[i]).filter(v=>v!=null):[];
+    if(tx.length<2||tn.length<2||pr.length<2)return null;
+    vec.push(tx.reduce((a,b)=>a+b,0)/tx.length);
+    vec.push(tn.reduce((a,b)=>a+b,0)/tn.length);
+    vec.push(Math.log1p(pr.reduce((a,b)=>a+b,0))); // seasonal total precip, log transformed
+    vec.push(ah.length?ah.reduce((a,b)=>a+b,0)/ah.length:0);
+  }
+  return vec;
+}
+
+function vectorStats(vectors){
+  const n=vectors.length, m=vectors[0].length;
+  const mean=new Array(m).fill(0), sd=new Array(m).fill(0);
+  for(const v of vectors)for(let i=0;i<m;i++)mean[i]+=v[i]/n;
+  for(const v of vectors)for(let i=0;i<m;i++)sd[i]+=(v[i]-mean[i])**2;
+  for(let i=0;i<m;i++)sd[i]=Math.sqrt(sd[i]/Math.max(1,n-1))||1;
+  return {mean,sd};
+}
+
+function sigmaDistance(a,b,sd){
+  let s=0,n=0;
+  for(let i=0;i<a.length;i++){
+    if(a[i]==null||b[i]==null)continue;
+    const z=(a[i]-b[i])/(sd[i]||1);
+    s+=z*z;n++;
+  }
+  return n?Math.sqrt(s/n):Infinity;
+}
+
+async function getCandidateClimate(city){
+  const key=`${city.city}|${city.country}`;
+  if(analogueClimateCache.has(key))return analogueClimateCache.get(key);
+  const clim=await fetchClimateData(city.lat,city.lon);
+  if(clim){
+    const out={...city,climate:clim,vector:seasonalAnalogueVector(clim)};
+    analogueClimateCache.set(key,out);
+    return out;
+  }
+  return null;
+}
+
+async function mapLimit(items,limit,fn){
+  const out=new Array(items.length);let idx=0;
+  async function worker(){
+    while(idx<items.length){
+      const i=idx++;
+      try{out[i]=await fn(items[i]);}catch(e){out[i]=null;}
+    }
+  }
+  await Promise.all(new Array(limit).fill(0).map(worker));
+  return out;
+}
+
+async function getClimateAnalogueBySimilarity(futureData, caseCoords){
+  const target=seasonalAnalogueVector(futureData);
+  if(!target)return null;
+  const loaded=(await mapLimit(ANALOGUE_CANDIDATE_CITIES,8,getCandidateClimate)).filter(c=>c&&c.vector);
+  if(loaded.length<10)return null;
+  const stats=vectorStats(loaded.map(c=>c.vector).concat([target]));
+  const ranked=loaded.map(c=>{
+    const sigma=sigmaDistance(target,c.vector,stats.sd);
+    const similarity=Math.max(0,Math.round(100*(1-Math.min(sigma,4)/4)));
+    const distKm=caseCoords?haversineKm(caseCoords[0],caseCoords[1],c.lat,c.lon):null;
+    return {...c,sigma,similarity,distKm};
+  }).sort((a,b)=>a.sigma-b.sigma).slice(0,5);
+  const best=ranked[0];
+  if(!best)return null;
+  let quality='poor', label='weak / possibly novel';
+  if(best.sigma<=2){quality='good';label='representative analogue';}
+  else if(best.sigma<=3){quality='fair';label='approximate analogue';}
+  return {best,ranked,quality,label,method:'Seasonal Tmax/Tmin/log precipitation/AH sigma distance'};
+}
+
+function haversineKm(lat1,lon1,lat2,lon2){
+  const R=6371,dl=Math.PI/180;
+  const dLat=(lat2-lat1)*dl, dLon=(lon2-lon1)*dl;
+  const a=Math.sin(dLat/2)**2+Math.cos(lat1*dl)*Math.cos(lat2*dl)*Math.sin(dLon/2)**2;
+  return R*2*Math.asin(Math.sqrt(a));
+}
+
+function renderFutureChart(canvasId, futureData, baseData, color){
+  const ctx=document.getElementById(canvasId);
+  if(!ctx)return;
   if(currentFutureChart){currentFutureChart.destroy();currentFutureChart=null;}
-  const adjust=arr=>arr.map(v=>Number.isFinite(v)?+(v+increment).toFixed(1):null);
-  currentFutureChart=new Chart(canvas,{
-    type:'line',
-    data:{labels:MONTHS,datasets:[
-      {label:'Adjusted daily max °C',data:adjust(base.tmax),borderColor:'#D95F3B',backgroundColor:'#D95F3B',pointRadius:2,tension:.3,borderWidth:2},
-      {label:'Adjusted daily min °C',data:adjust(base.tmin),borderColor:'#4A6FA5',backgroundColor:'#4A6FA5',pointRadius:2,tension:.3,borderWidth:2},
-      {label:'Baseline daily max °C',data:base.tmax,borderColor:'rgba(217,95,59,.55)',pointRadius:0,borderDash:[4,4],tension:.3,borderWidth:1.5},
-      {label:'Baseline daily min °C',data:base.tmin,borderColor:'rgba(74,111,165,.55)',pointRadius:0,borderDash:[4,4],tension:.3,borderWidth:1.5}
-    ]},
-    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+(ctx.parsed.y==null?'—':ctx.parsed.y.toFixed(1)+' °C')}}},
-      scales:{y:{title:{display:true,text:'Temperature (°C)'},grid:{color:'rgba(0,0,0,.05)'}},x:{grid:{display:false}}}}
+  const c=color||'#1A7A8A';
+  // Adaptive comfort limits using future temperatures
+  const tmean=futureData.tmax.map((tx,i)=>tx!=null&&futureData.tmin[i]!=null?(tx+futureData.tmin[i])/2:null);
+  const trun=tmean.map((_,i)=>{
+    const vals=[tmean[(i+10)%12],tmean[(i+11)%12],tmean[i]].filter(v=>v!=null);
+    return vals.length?+(vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(1):20;
+  });
+  const comfLo=trun.map(t=>+Math.max(15,17.8+0.31*t-3.5).toFixed(1));
+  const comfHi=trun.map(t=>+Math.min(32,17.8+0.31*t+3.5).toFixed(1));
+  const hasAH=futureData.ah&&futureData.ah.some(v=>v!=null);
+  currentFutureChart=new Chart(ctx,{
+    data:{
+      labels:MONTHS,
+      datasets:[
+        // Baseline ghost lines (faint)
+        {type:'line',label:'_baseTmax',data:baseData.tmax,
+         borderColor:'rgba(217,95,59,0.25)',borderWidth:1.5,pointRadius:0,
+         borderDash:[3,3],fill:false,tension:0.35,yAxisID:'yt',order:4},
+        {type:'line',label:'_baseTmin',data:baseData.tmin,
+         borderColor:'rgba(74,111,165,0.25)',borderWidth:1.5,pointRadius:0,
+         borderDash:[3,3],fill:false,tension:0.35,yAxisID:'yt',order:4},
+        // Future lines
+        {type:'line',label:'Temp max °C',data:futureData.tmax,
+         borderColor:'#D95F3B',borderWidth:2,pointRadius:3,pointBackgroundColor:'#D95F3B',
+         fill:'+1',backgroundColor:'rgba(200,70,30,0.10)',tension:0.35,yAxisID:'yt',order:2},
+        {type:'line',label:'Temp min °C',data:futureData.tmin,
+         borderColor:'#4A6FA5',borderWidth:2,pointRadius:3,pointBackgroundColor:'#4A6FA5',
+         fill:false,tension:0.35,yAxisID:'yt',order:2},
+        {type:'bar',label:'Precip mm',data:futureData.prec,
+         backgroundColor:'rgba(140,160,185,0.55)',borderColor:'rgba(100,120,150,0.7)',borderWidth:1,yAxisID:'yp',order:3},
+        ...(hasAH?[{type:'line',label:'Abs. humidity g/m³',data:futureData.ah,
+         borderColor:'#2D8A6B',borderWidth:1.5,pointRadius:2,borderDash:[4,3],
+         fill:false,tension:0.4,yAxisID:'yah',order:1}]:[])
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'rgba(17,17,17,0.92)',
+          titleFont:{family:'DM Mono',size:11},bodyFont:{family:'DM Sans',size:12},padding:10,
+          callbacks:{
+            label:ctx=>{
+              if(ctx.dataset.label.startsWith('_'))return null;
+              const u=ctx.dataset.yAxisID==='yp'?' mm':ctx.dataset.yAxisID==='yah'?' g/m³':' °C';
+              // Show delta vs baseline
+              let delta='';
+              if(ctx.dataset.label==='Temp max °C'&&baseData.tmax[ctx.dataIndex]!=null){
+                const d=(ctx.parsed.y-baseData.tmax[ctx.dataIndex]).toFixed(1);
+                delta=` (${d>0?'+':''}${d} vs baseline)`;
+              }
+              if(ctx.dataset.label==='Temp min °C'&&baseData.tmin[ctx.dataIndex]!=null){
+                const d=(ctx.parsed.y-baseData.tmin[ctx.dataIndex]).toFixed(1);
+                delta=` (${d>0?'+':''}${d} vs baseline)`;
+              }
+              return '  '+ctx.dataset.label+': '+(ctx.parsed.y!=null?ctx.parsed.y+''+u:'—')+delta;
+            },
+            filter:ctx=>!ctx.dataset.label.startsWith('_')
+          }
+        }
+      },
+      scales:{
+        yt:{type:'linear',position:'left',min:-30,max:50,
+          grid:{color:'rgba(0,0,0,0.05)'},
+          ticks:{font:{family:'DM Mono',size:9},color:'#999',stepSize:10},
+          title:{display:true,text:'°C',font:{family:'DM Mono',size:9},color:'#999'}},
+        yp:{type:'linear',position:'right',min:0,max:400,
+          grid:{display:false},
+          ticks:{font:{family:'DM Mono',size:9},color:'#999'},
+          title:{display:true,text:'mm',font:{family:'DM Mono',size:9},color:'#999'}},
+        yah:{type:'linear',position:'right',min:0,max:30,display:hasAH,
+          grid:{display:false},
+          ticks:{font:{family:'DM Mono',size:9},color:'#2D8A6B'},
+          title:{display:hasAH,text:'g/m³',font:{family:'DM Mono',size:9},color:'#2D8A6B'}},
+        x:{grid:{display:false},ticks:{font:{family:'DM Mono',size:9},color:'#999'}}
+      }
+    }
   });
 }
-// Future projections and analogue scoring are withheld until a traceable,
-// location-specific ensemble and independently validated analogue method exist.
+
+function futureInsights(futureData, baseData){
+  if(!futureData)return null;
+  const tmeanF=futureData.tmax.map((tx,i)=>tx!=null&&futureData.tmin[i]!=null?(tx+futureData.tmin[i])/2:null);
+  const trun=tmeanF.map((_,i)=>{
+    const v=[tmeanF[(i+10)%12],tmeanF[(i+11)%12],tmeanF[i]].filter(x=>x!=null);
+    return v.length?v.reduce((a,b)=>a+b,0)/v.length:20;
+  });
+  const adaptHi=trun.map(t=>Math.min(32,17.8+0.31*t+3.5));
+  const adaptLo=trun.map(t=>Math.max(15,17.8+0.31*t-3.5));
+  const tmeanF2=futureData.tmax.map((tx,i)=>tx!=null&&futureData.tmin[i]!=null?(tx+futureData.tmin[i])/2:null);
+  const hotF=tmeanF2.filter((v,i)=>v!=null&&v>adaptHi[i]).length;
+  const coldF=tmeanF2.filter((v,i)=>v!=null&&v<adaptLo[i]).length;
+  const wetF=futureData.prec?futureData.prec.filter(v=>v!=null&&v>100).length:0;
+  const humF=futureData.ah?futureData.ah.filter(v=>v!=null&&v>12).length:0;
+  const radF=futureData.sr?futureData.sr.filter(v=>v!=null&&v>5).length:0;
+  // Deltas
+  const dTmax=futureData.tmax.map((v,i)=>v!=null&&baseData.tmax[i]!=null?+(v-baseData.tmax[i]).toFixed(1):null).filter(Boolean);
+  const dTmin=futureData.tmin.map((v,i)=>v!=null&&baseData.tmin[i]!=null?+(v-baseData.tmin[i]).toFixed(1):null).filter(Boolean);
+  const dPrec=futureData.prec.map((v,i)=>v!=null&&baseData.prec[i]!=null?+(v-baseData.prec[i]).toFixed(0):null).filter(Boolean);
+  const avgDT=dTmax.length?+(dTmax.reduce((a,b)=>a+b,0)/dTmax.length).toFixed(1):null;
+  const avgDTn=dTmin.length?+(dTmin.reduce((a,b)=>a+b,0)/dTmin.length).toFixed(1):null;
+  const totalDPrec=dPrec.length?dPrec.reduce((a,b)=>a+b,0):null;
+  const annualPrec=futureData.prec.reduce((a,b)=>a+(b||0),0).toFixed(0);
+  const maxPrec=Math.max(...futureData.prec.filter(Boolean)).toFixed(0);
+  const annualSR=futureData.sr?futureData.sr.reduce((a,b)=>a+(b||0),0).toFixed(0):null;
+  const meanAH=futureData.ah?+(futureData.ah.filter(Boolean).reduce((a,b)=>a+b,0)/12).toFixed(1):null;
+  // Zone-level description (brief)
+  const meanTmax=futureData.tmax.filter(Boolean).reduce((a,b)=>a+b,0)/12;
+  const totalP=futureData.prec.reduce((a,b)=>a+(b||0),0);
+  let analogue='';
+  if(meanTmax>28&&totalP>1500)analogue='Similar to current tropical humid zones';
+  else if(meanTmax>28&&totalP<800)analogue='Shifting toward hot semi-arid conditions';
+  else if(meanTmax>22&&totalP>800)analogue='Similar to current warm temperate zones';
+  else if(meanTmax>15&&totalP>600)analogue='Similar to current cool temperate zones';
+  else analogue='Remaining sub-polar / continental';
+  // Chips
+  const chips=[];
+  if(hotF>0)chips.push({label:`${hotF} months above adaptive comfort`,color:'#FFF0EC',border:'#F5C0B0',text:'#AA3010'});
+  if(coldF>0)chips.push({label:`${coldF} months below adaptive comfort`,color:'#EEF3FA',border:'#B0C8F0',text:'#1A3880'});
+  if(wetF>0)chips.push({label:`${wetF} wet months`,color:'#EEF5FF',border:'#B0CCF0',text:'#1A4070'});
+  if(humF>0)chips.push({label:`${humF} humid months`,color:'#F0FAF5',border:'#B0DEC8',text:'#0A5030'});
+  if(radF>0)chips.push({label:`${radF} high-radiation months`,color:'#FFFBEE',border:'#F0D880',text:'#7A5800'});
+  return {hotF,coldF,wetF,humF,radF,avgDT,avgDTn,totalDPrec,annualPrec,maxPrec,annualSR,meanAH,analogue,chips};
+}
+
+
+// Archival future panel recovered; see limitations in docs/data-method.md.
 
 function cleanTextValue(v){
   if(v===undefined||v===null||v==='')return '—';
@@ -2198,24 +2425,28 @@ async function openPanel(c){
             <div class="clim-stats" id="cur-stats"></div>
           </div>
           <div>
-            <div class="clim-col-header"><div class="clim-col-title">Future climate · sensitivity</div><div class="clim-col-sub">Illustrative warming increment · not a projection</div></div>
-            <div id="fut-chips" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:8px;min-height:24px">
-              <span style="font-size:10px;color:var(--muted)">Add to baseline:</span>
-              <button type="button" class="future-warming-option" data-warming="2" onclick="setFutureWarming(2)" aria-pressed="true">+2 °C</button>
-              <button type="button" class="future-warming-option" data-warming="4" onclick="setFutureWarming(4)" aria-pressed="false">+4 °C</button>
+            <div class="clim-col-header"><div class="clim-col-title">Future Climate</div><div class="clim-col-sub">2071–2100 · legacy SSP5-8.5 illustration (unverified)</div></div>
+            <div id="fut-chips" style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;min-height:24px">
+              <div style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);line-height:24px">Loading…</div>
             </div>
             <div class="chart-frame">
-              <canvas id="future-chart" aria-label="Illustrative monthly temperatures after a uniform warming increment"></canvas>
-              <div id="future-loading" class="chart-loading" style="font-size:9px">Loading baseline…</div>
+              <canvas id="future-chart"></canvas>
+              <div id="future-loading" class="chart-loading" style="font-size:9px;display:none"></div>
             </div>
-            <div class="climate-legend" aria-label="Illustrative warming chart legend">
-              <span class="legend-item" style="color:#D95F3B"><span class="legend-line"></span>Adjusted daily max °C</span>
-              <span class="legend-item" style="color:#4A6FA5"><span class="legend-line"></span>Adjusted daily min °C</span>
-              <span class="legend-item" style="color:#777"><span class="legend-line dashed"></span>1991–2020 baseline</span>
+            <div class="climate-legend" aria-label="Future climate chart legend">
+              <span class="legend-item" style="color:#D95F3B"><span class="legend-line"></span>Future max °C</span>
+              <span class="legend-item" style="color:#4A6FA5"><span class="legend-line"></span>Future min °C</span>
+              
+              <span class="legend-item"><span class="legend-bar"></span>Precip. mm</span>
+              <span class="legend-item" style="color:#777"><span class="legend-line dashed"></span>Baseline temp.</span>
+              <span class="legend-item" style="color:#2D8A6B"><span class="legend-line dashed"></span>AH g/m³</span>
             </div>
-            <p style="font-size:10px;line-height:1.5;color:var(--muted);margin:8px 0 0">A uniform +2/+4 °C shift is an exploratory sensitivity test, not a forecast for this site, period or emissions scenario. Changes to seasonality, rainfall, humidity and extremes are not estimated. <a href="docs/data-method.md" target="_blank" rel="noopener">Methods and limitations</a>.</p>
+            <div class="clim-stats" id="fut-stats"></div>
           </div>
+          <p class="research-note" style="font-size:10px;line-height:1.5;margin:8px 0 0">Original future-climate display restored. Monthly changes are provisional climate-zone assumptions, not validated location-specific CMIP6 projections. Solar radiation is held at the baseline; future absolute humidity assumes constant relative humidity. <a href="docs/data-method.md" target="_blank" rel="noopener">Methods and limitations</a>.</p>
         </div>
+
+        <div id="analogue-inline" aria-live="polite"></div>
 
         <div class="matrix-wrap">
           <div class="matrix-title">Climate Response Matrix</div>
@@ -2244,7 +2475,6 @@ async function openPanel(c){
     if(right) right.scrollTop=0;
   });
 
-  futureWarmingBaseline=null;
   const climData=await fetchClimateData(c.coords[0],c.coords[1]);
   if(activeCaseId!==c.id)return;
   const loading=document.getElementById('chart-loading');
@@ -2255,14 +2485,72 @@ async function openPanel(c){
     if(stats)stats.innerHTML=climateStatsHTML(climData);
     const chips=document.getElementById('cur-chips');
     if(chips)chips.innerHTML='<span class="stress-chip muted">Regional context · building performance not measured</span>';
-    futureWarmingBaseline=climData;
-    setFutureWarming(futureWarmingIncrement);
-    const futureLoading=document.getElementById('future-loading');
-    if(futureLoading)futureLoading.style.display='none';
-  }else{
-    if(loading)loading.textContent='1991–2020 snapshot unavailable for this location';
-    const futureLoading=document.getElementById('future-loading');
-    if(futureLoading)futureLoading.textContent='Baseline unavailable; sensitivity comparison cannot be calculated';
+  }else if(loading)loading.textContent='1991–2020 snapshot unavailable for this location';
+  const futureDeltas=climData?await fetchFutureClimate(c.coords[0],c.coords[1],c.climate):null;
+  const futureData=climData&&futureDeltas?applyFutureDeltas(climData,futureDeltas):null;
+  if(activeCaseId!==c.id)return;
+  // ── Future climate ────────────────────────────────────────────────────────
+  const futLoad=document.getElementById('future-loading');
+  if(futureData&&climData){
+    if(futLoad)futLoad.style.display='none';
+    renderFutureChart('future-chart',futureData,climData,color);
+    const fi=futureInsights(futureData,climData);
+    if(fi){
+      const futChipEl=document.getElementById('fut-chips');
+      if(futChipEl)futChipEl.innerHTML=fi.chips.filter(ch=>!ch.label.includes('adaptive comfort')).map(ch=>stressChipHtml(ch.label)).join('')||'<span class="stress-chip muted">No detected stress months</span>';
+      scheduleClimateChipEqualize();
+      const futStatsEl=document.getElementById('fut-stats');
+      const dT=fi.avgDT!=null?(fi.avgDT>0?'+':'')+fi.avgDT:'?';
+      const dTn=fi.avgDTn!=null?(fi.avgDTn>0?'+':'')+fi.avgDTn:'?';
+      const annualPrec=(climData.prec||[]).reduce((a,b)=>a+(b||0),0).toFixed(0);
+      const annualSR=climData.sr?(climData.sr||[]).reduce((a,b)=>a+(b||0),0).toFixed(0):null;
+      const meanAH=climData.ah?+((climData.ah||[]).filter(Boolean).reduce((a,b)=>a+b,0)/12).toFixed(1):null;
+      const baseSRNum=annualSR?Math.round(+annualSR):null;
+      const futSRNum=fi.annualSR?Math.round(+fi.annualSR):null;
+      const srDelta=baseSRNum&&futSRNum?(futSRNum>baseSRNum?'+'+(futSRNum-baseSRNum):''+(futSRNum-baseSRNum))+' kWh/m²':null;
+      const ahDelta=meanAH&&fi.meanAH?(fi.meanAH>meanAH?'+'+(fi.meanAH-meanAH).toFixed(1):''+(fi.meanAH-meanAH).toFixed(1))+' g/m³':null;
+      const baseAdaptHi=climData.tmax.map((tx,i)=>{if(tx==null||climData.tmin[i]==null)return 32;const tm=(tx+climData.tmin[i])/2;return 17.8+0.31*tm+3.5;});
+      const baseTmean=climData.tmax.map((tx,i)=>(tx!=null&&climData.tmin[i]!=null)?(tx+climData.tmin[i])/2:null);
+      const baseHotC=baseTmean.filter((v,i)=>v!=null&&v>baseAdaptHi[i]).length;
+      const hotDelta=fi.hotF-baseHotC;
+      const futMinMax=(()=>{const a=(futureData.tmax||[]).filter(Boolean);const b=(futureData.tmin||[]).filter(Boolean);return a.length&&b.length?(b.reduce((x,y)=>x+y,0)/b.length).toFixed(1)+' – '+(a.reduce((x,y)=>x+y,0)/a.length).toFixed(1)+' °C':'—';})();
+      if(futStatsEl)futStatsEl.innerHTML=[
+        {k:'Mean Min–Max',v:futMinMax,d:dTn+' / '+dT+' °C vs baseline'},
+        {k:'Warming',v:dTn+' / '+dT+' °C',d:'Illustrative min / max changes'},
+        {k:'Annual Precip.',v:fi.annualPrec+' mm',d:(fi.totalDPrec!=null?(fi.totalDPrec>0?'+':'')+fi.totalDPrec+' mm vs baseline':'—')},
+        {k:'Wettest Month',v:fi.maxPrec+' mm',d:'—'},
+        {k:'Annual Solar',v:fi.annualSR?fi.annualSR+' kWh/m²':'—',d:srDelta||'—'},
+        {k:'Mean Abs. Humidity',v:fi.meanAH?fi.meanAH+' g/m³':'—',d:ahDelta||'—'},
+      ].map(s=>`<div class="cs"><div class="cs-k">${s.k}</div><div class="cs-v">${s.v}</div><div class="cs-delta">${s.d}</div></div>`).join('');
+      // Climate analogue by similarity, not nearest reference city
+      const sarEl=document.getElementById('analogue-inline');
+      if(sarEl){
+        const zoneNote=fi.analogue?` · ${fi.analogue}`:'';
+        sarEl.innerHTML=`<div class="analogue-box-title">Future Climate Analogue · exploratory</div><div class="analogue-main" style="color:var(--muted)">Calculating candidate-city climate similarity…</div>`;
+        getClimateAnalogueBySimilarity(futureData,c.coords).then(match=>{
+          if(activeCaseId!==c.id||!sarEl.isConnected)return;
+          if(!match){
+            sarEl.innerHTML=`<div class="analogue-box-title">Future Climate Analogue · exploratory</div><div class="analogue-warning">No robust candidate-city match could be calculated. Check network access to Open-Meteo or expand the candidate library.${zoneNote}</div>`;
+            return;
+          }
+          const b=match.best;
+          const cand=match.ranked.slice(1,4).map((r,i)=>`<span class="analogue-candidate">${i+2}. ${r.city}, ${r.country} · ${r.similarity}/100 similarity</span>`).join('');
+          sarEl.innerHTML=`
+            <div class="analogue-box-title">Future Climate Analogue · exploratory</div>
+            <div class="analogue-main">
+              <strong>${b.city}, ${b.country}</strong>
+              <span> · ${b.similarity}/100 similarity${zoneNote}</span>
+            </div>
+            <div class="analogue-candidates">${cand}</div>`;
+        }).catch(err=>{
+          if(activeCaseId!==c.id||!sarEl.isConnected)return;
+          sarEl.innerHTML=`<div class="analogue-box-title">Future Climate Analogue · exploratory</div><div class="analogue-warning">Analogue calculation failed: ${err.message||err}.${zoneNote}</div>`;
+        });
+      }
+    }
+  } else {
+    if(futLoad)futLoad.style.display='none';
+    // future data unavailable — analogue-inline stays empty
   }
 }
 
